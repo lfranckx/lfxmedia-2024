@@ -1,0 +1,45 @@
+#subscribe-page {
+    header {
+        .text-wrap {
+            max-width: 1000px;
+            margin: auto;
+
+            p {
+                font-size: 1.25rem;
+                padding: 20px;
+
+                @media (max-width: 750px) {
+                    font-size: 1.1rem;
+                    padding: 20px 0;
+                }
+            }
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+
+            input {
+                width: 100%;
+            }
+
+            .btn {
+                margin: 10px 0;
+            }
+        }
+
+        .message {
+            max-width: 600px;
+            margin: 10px auto;
+
+            h3 {
+                font-size: 1.5rem;
+                padding: 10px 0;
+            }
+
+            p {
+                padding: 10px 0;
+            }
+        }
+    }
+}

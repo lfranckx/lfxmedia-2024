@@ -1,0 +1,47 @@
+footer {
+    background: #1ba49c;
+    padding: 96px 0 96px;
+
+    h1, p {
+        color: #fff;
+    }
+
+    
+    .logo-wrap {
+        max-width: 100px;
+        margin: auto;
+    }
+
+    h1 {
+        img {
+            border-radius: 4px;
+            max-width: 100px;
+        }
+    }
+
+    #quote {
+        font-weight: 400;
+        margin-top: 16px;
+    }
+
+    ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        max-width: 600px;
+        margin: 32px auto 32px;
+
+        li {
+            i {
+                font-size: 2rem;
+                color: #fff;
+            }
+        }
+    }
+
+    #copyright {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,83 @@
+#services {
+    margin: -96px auto 160px;
+    padding: 0 20px;
+
+    ul {
+        max-width: 1200px;
+        margin: auto;
+        display: -ms-grid;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+
+        @media (max-width: 350px) {
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+
+        li {
+            .card {
+                background-color: #fff;
+                -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
+                        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
+                border-radius: 30px;
+                padding: 20px 10px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+                -webkit-box-pack: center;
+                min-height: 100%; // keeps heights the same height as tallest element
+
+                h2 {
+                    font-size: 32px;
+                    @media (max-width: 660px) {
+                        font-size: 24px;
+                    }
+                }
+
+                p {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+        
+                .icon {
+                    font-size: 36px;
+                    color: #06BC9B;
+                }
+        
+                .btn-wrap {
+                    margin-top: auto;
+                }
+
+                button {
+                    &:hover {
+                        i {
+                            color: #0d4e4a;
+                        }
+                    }
+                }
+
+                @media (max-width: 750px) {
+                    min-height: 0;
+                    margin: auto;
+                }
+
+                @media (max-width: 350px) {
+                    max-width: 300px;
+                }
+            }
+        }
+
+        @media (max-width: 660px) {
+            max-width: 400px;
+            margin: auto;
+        }
+    }
+
+    @media (max-width: 440px) {
+        margin-top: -40px;
+    }
+}

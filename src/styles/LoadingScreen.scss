@@ -1,0 +1,103 @@
+.loading-screen{
+
+    &.active {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        // background-color: #1ba49c;
+        background-color: #fff;
+        z-index: 5;
+    }
+    
+    &.hidden {
+        z-index: -1;
+        transition: all .8s ease;
+    }
+
+    .logo-wrap {
+        opacity: 1;
+        transition: all .8s ease;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &.fade-out {
+            opacity: 0;
+            z-index: -1;
+        }
+        
+        @media(max-width: 750px) {
+            transform: translate(-50%, -60%);
+        }
+
+        svg {
+            max-width: 500px;
+
+            path {
+                animation: fill 0.5s 8s forwards;
+            }
+
+            path:nth-child(1) {
+                // Letter L
+                stroke-dasharray: 933px;
+                stroke-dashoffset: 933px;
+                animation: lineAnimate 2s 3s ease forwards, fill 0.5s 8s forwards;
+            }
+
+            path:nth-child(2) {
+                // Letter F
+                stroke-dasharray: 1336px;
+                stroke-dashoffset: 1336px;
+                animation: lineAnimate 2s 4s ease forwards, fill 0.5s 8s forwards;
+            }
+
+            path:nth-child(3) {
+                // Letter F bottom
+                stroke-dasharray: 266px;
+                stroke-dashoffset: 266px;
+                animation: lineAnimate 1s 4s ease forwards, fill 0.5s 8s forwards;
+            }
+
+            path:nth-child(5) {
+                // Letter X
+                stroke-dasharray: 1668px;
+                stroke-dashoffset: 1668px;
+                animation: lineAnimate 2s 5s ease forwards, fill 0.5s 8s forwards;
+            }
+
+            path:nth-child(6) {
+                // Border
+                stroke-dasharray: 5165px;
+                stroke-dashoffset: 5165px;
+                animation: lineAnimate 3s 5s ease forwards, fill 0.5s 8s forwards;
+            }
+
+            @media(max-width: 750px) {
+                max-width: 300px;
+            }
+
+            @media(max-width: 500px) {
+                max-width: 250px;
+            }
+        }
+
+        @keyframes lineAnimate {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes fill {
+            from {
+                fill: transparent;
+            }
+            
+            to {
+                fill: #1BA49C;
+            }
+        }
+    }
+}
