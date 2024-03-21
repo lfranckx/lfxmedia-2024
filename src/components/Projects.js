@@ -120,7 +120,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p></p>
+                                <p>Ollin salon is a creative space with the primary goal to help you embrace who you are and help you align with your inner potential. Ollin's story is a way of being and self-care that should be a way of life.</p>
                             </div>
                             <div className='btn-wrap'>
                                 <a  href='https://sonnabrado.com'
