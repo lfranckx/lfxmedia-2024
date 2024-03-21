@@ -110,37 +110,51 @@
                 opacity: 1;
             }
     
-            &:nth-child(1) {
+            &.leysa{
                 background: #F0BC68;
             }
-
-            &:nth-child(2) {
+            &.sah {
                 background-color: #DCCEC8;
                 background-image: url('../images/wave-lines.png');
                 background-size: cover;
             }
-
-            &:nth-child(3) {
+            &.ouidad {
                 background-color: #FAE6D8;
             }
             
-            &:nth-child(4) {
+            &.the {
                 background: #F29E66;
                 img { max-width: 230px; }
             }
+            &.sonna {
+                background-color: #58585A;
+                background-size: cover;
 
-            &:nth-child(5) {
                 img { max-width: 320px; }
             }
 
-            &:nth-child(6) {
+            &.johnny {
+                background-color: #000;
+                background-size: cover;
+
+                img { max-width: 320px; }
+            }
+            &.ollin {
+                background-color: #141313;
+                background-size: cover;
+
+                img { max-width: 320px; }
+            }
+            &.michelle{
                 background-color: #000;
                 background-image: url('../images/Michelle.png');
                 background-size: cover;
 
                 img { max-width: 320px; }
             }
-
+            &.omg {
+                img { max-width: 320px; }
+            }
             @media (max-width: 750px) {
                 img {
                     max-width: 200px;

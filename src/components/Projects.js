@@ -8,6 +8,9 @@ import ouidad from '../images/ouidad.png';
 import the from '../images/THE.png';
 import omg from '../images/omg.png';
 import michelle from '../images/Michelle-text.png';
+import sonna from '../images/SB-LOGO-WHITE.png';
+import johnny from '../images/johnny-ramirez.png';
+import ollin from '../images/ollin_cream_500.png';
 
 export default function Projects() {
     return (
@@ -19,7 +22,7 @@ export default function Projects() {
                     <Link className='btn-secondary' to={'/results'}>View my results <i className="fas fa-chevron-circle-right"></i></Link>
                 </div>
                 <ul>
-                    <li className='card'>
+                    <li className='card leysa'>
                         <div className='image-wrap'>
                             <img src={leysa} alt='Leysa' />
                         </div>
@@ -38,7 +41,7 @@ export default function Projects() {
                             </div>
                         </div>                  
                     </li>
-                    <li className='card'>
+                    <li className='card sah'>
                         <div className='image-wrap'>
                             <img src={sah} alt='Social Arthouse' />
                         </div>
@@ -56,7 +59,7 @@ export default function Projects() {
                             </div>
                         </div> 
                     </li>
-                    <li className='card'>
+                    <li className='card ouidad'>
                         <div className='image-wrap'>
                             <img src={ouidad} alt='Ouidad' />
                         </div>
@@ -74,7 +77,7 @@ export default function Projects() {
                             </div>
                         </div> 
                     </li>
-                    <li className='card'>
+                    <li className='card the'>
                         <div className='image-wrap'>
                             <img src={the} alt='Textured Hair Elevated' />
                         </div>
@@ -93,25 +96,61 @@ export default function Projects() {
                             </div>
                         </div>
                     </li>
-                    <li className='card'>
+                    <li className='card sonna'>
                         <div className='image-wrap'>
-                            <img src={omg} alt='OMG Artistry' />
+                            <img src={sonna} alt='Sonna Brado Serious Beauty Pro' />
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Published Celebrity Hair and Makeup Artist for Paris Hilton, Nick Jonas, Britney Spears NYFW Show, Joico Brand Storyteller, Key Note Speaker for Modern Salon, Top 100 Influencers on Modern Salon, and more.</p>    
+                                <p>Sonna Brado is the founder and creator of Serious Beauty Pro where she provides educational products and her own line of hand-crafted shears called Angel Blades. She has a big presence in the industry and has built numerous successful companies.</p>
                             </div>
                             <div className='btn-wrap'>
-                                <a  href='https://www.omgartistry.com/'
-                                    target="_blank" 
-                                    rel="noopener noreferrer" 
-                                    className='btn'>
-                                        View Website &#8594;
+                                <a  href='https://sonnabrado.com'
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className='btn'>
+                                    View Website &#8594;
                                 </a>
                             </div>
                         </div> 
                     </li>
-                    <li className='card'>
+                    <li className='card ollin'>
+                        <div className='image-wrap'>
+                            <img src={ollin} alt='Ollin Salon' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p></p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a  href='https://sonnabrado.com'
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className='btn'>
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div> 
+                    </li>
+                    <li className='card johnny'>
+                        <div className='image-wrap'>
+                            <img src={johnny} alt='Johnny Ramirez California' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>Johnny Ramirez is a talented celebrity colorist working in Beverly Hills since 2002. Ramirez has been recognized by some of the top national magazines such as Vogue and InStyle on his natural, sun-kissed hair color technique which was inspired by his upbringing in East L.A.</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a  href='https://johnnyramirez.com/'
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className='btn'>
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div> 
+                    </li>
+                    <li className='card michelle'>
                         <div className='image-wrap'>
                             <img src={michelle} alt='Michelle O Connor' />
                         </div>
@@ -125,6 +164,24 @@ export default function Projects() {
                                 rel="noopener noreferrer" 
                                 className='btn'>
                                     View Website &#8594;
+                                </a>
+                            </div>
+                        </div> 
+                    </li>
+                    <li className='card omg'>
+                        <div className='image-wrap'>
+                            <img src={omg} alt='OMG Artistry' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>Published Celebrity Hair and Makeup Artist for Paris Hilton, Nick Jonas, Britney Spears NYFW Show, Joico Brand Storyteller, Key Note Speaker for Modern Salon, Top 100 Influencers on Modern Salon, and more.</p>    
+                            </div>
+                            <div className='btn-wrap'>
+                                <a  href='https://www.omgartistry.com/'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'>
+                                        View Website &#8594;
                                 </a>
                             </div>
                         </div> 
