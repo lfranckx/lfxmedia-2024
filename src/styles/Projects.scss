@@ -88,6 +88,10 @@
                     p {
                         color: #fff;
                         padding-top: 32px;
+
+                        @media only screen and (max-width: 1200px) {
+                            font-size: 18px;
+                        }
                     }
                 }
 
