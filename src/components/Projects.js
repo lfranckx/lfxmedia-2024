@@ -102,7 +102,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Sonna Brado is the founder and creator of Serious Beauty Pro where she provides educational products and her own line of hand-crafted shears called Angel Blades. She has a big presence in the industry and has built numerous successful companies.</p>
+                                <p>Sonna Brado is reknown hairdresser and is the founder and creator of Serious Beauty Pro where she provides educational products and her own line of hand-crafted shears, Angel Blades.</p>
                             </div>
                             <div className='btn-wrap'>
                                 <a  href='https://sonnabrado.com'
@@ -138,7 +138,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Johnny Ramirez is a talented celebrity colorist working in Beverly Hills since 2002. Ramirez has been recognized by some of the top national magazines such as Vogue and InStyle on his natural, sun-kissed hair color technique which was inspired by his upbringing in East L.A.</p>
+                                <p>Johnny Ramirez is a celebrity colorist working in Beverly Hills since 2002. Ramirez has been recognized by some of the top national magazines such as Vogue and InStyle on his natural, sun-kissed hair color technique.</p>
                             </div>
                             <div className='btn-wrap'>
                                 <a  href='https://johnnyramirez.com/'
