@@ -4,7 +4,7 @@ import * as Yup from 'yup';
 import * as emailjs from 'emailjs-com';
 import { Helmet } from 'react-helmet';
 import '../../styles/pages/Contact.scss';
-import me from '../../images/me.png';
+import me from '../../images/us-crop.png';
 import { motion } from 'framer-motion';
 
 const Contact = (props) => {
@@ -59,7 +59,7 @@ const Contact = (props) => {
         <>
             <Helmet >
                 <title>Contact | LFX Media</title>
-                <meta name='description' content='Get in touch with Lachlan Franckx about his web services.'/>
+                <meta name='description' content='Need a new website or just need help getting more people to your website? Get in touch with Lachlan &amp; Raquel about their web services.'/>
             </Helmet>
             <motion.main
                 initial={{ opacity: 0 }}    
@@ -71,8 +71,8 @@ const Contact = (props) => {
                         <img src={me} alt='Myself and the pups' width='250px'/>
                     </div>
 
-                    <h1 className={messageSuccess ? 'header-wrap' : 'header-wrap active'}><span>Thanks for taking the time to reach out.</span><span>How can I help you today?</span></h1>
-                    {message && <h1 className={messageSuccess ? 'header-wrap active' : 'header-wrap'}><span>Thank you for reaching out {message.name}.</span><span>I normally respond within 1-2 business days.</span></h1>}
+                    <h1 className={messageSuccess ? 'header-wrap' : 'header-wrap active'}><span>Thanks for taking the time to reach out.</span><span>How can we help you today?</span></h1>
+                    {message && <h1 className={messageSuccess ? 'header-wrap active' : 'header-wrap'}><span>Thank you for reaching out {message.name}.</span><span> We normally respond within 1-2 business days. We will promptly respond via your email or phone number provided.</span></h1>}
 
                     <Formik 
                         initialValues={{ name: "", email: "", phone: "",  message: "", referral: ""}} 

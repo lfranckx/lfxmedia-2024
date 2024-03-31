@@ -6,8 +6,8 @@ export default function About () {
         <>
             <section id='about'>
                 <div className='container'>
-                    <h2>Hi, I'm Lachlan. Nice to meet you.</h2>
-                    <p>As a dedicated freelance web developer, my dream has led me to collaborate across diverse sectors, including Medical Billing, Construction, E-Commerce, and more. Initially rooted in the hair and beauty industry, my portfolio has grown to encompass a variety of dynamic clients. I combine quiet confidence with an ever-curious approach, constantly honing my skills in this vibrant profession.</p>
+                    <h2>Welcome to LFX Media. Your Partner in Digital Excellence.</h2>
+                    <p>Co-led by Lachlan and his wife, Raquel Franckx, LFX Media is your go-to team for making your business resonate with your target audience online. Whether you sell to other businesses or directly to consumers, we have a proven track record in diverse fields such as Medical, Healthcare, Construction, Contractors, E-Commmerce, Retail, Health &amp; Beauty, and more. That's why we tailor our digital services to fit exactly what you need, ensuring your message hits home with your audience. We're all about getting you the results that matter.</p>
                 </div>
             </section>
         </>
