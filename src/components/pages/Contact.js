@@ -59,7 +59,7 @@ const Contact = (props) => {
         <>
             <Helmet >
                 <title>Contact | LFX Media</title>
-                <meta name='description' content='Need a new website or just need help getting more people to your website? Get in touch with Lachlan &amp; Raquel about their web services.'/>
+                <meta name='description' content='LFX Media is your go-to team for digital excellence. Reach out to LFX Media for expert web development and digital marketing strategies that make your business stand out.'/>
             </Helmet>
             <motion.main
                 initial={{ opacity: 0 }}    
