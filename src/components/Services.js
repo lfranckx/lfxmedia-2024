@@ -16,7 +16,7 @@ export default function Services() {
                         <div className='card'>
                             <i className="icon fas fa-drafting-compass"></i>
                             <h2>Design</h2>
-                            <p>My approach to website design is to create a website that strengthens your company’s brand while ensuring ease of use for your audience.</p>
+                            <p>Our approach to website design is to create a website that strengthens your company’s brand while ensuring ease of use for your audience.</p>
 
                             <div className='btn-wrap'>
                                 <button className='btn-secondary' onClick={() => toggleDesignCard(!designCardOpen)}>Learn More <i className="fas fa-chevron-circle-right"></i></button>
@@ -27,7 +27,7 @@ export default function Services() {
                         <div className='card'>
                             <i className="icon fas fa-laptop-code"></i>
                             <h2>Development</h2>
-                            <p>After creating the design I will start the development phase of your website. We will decide the best platform to build and host your website on depending on your needs and budget.</p>
+                            <p>After creating the design we start the development phase of your website. We will decide the best platform to build and host your website on depending on your needs and budget.</p>
                             <div className='btn-wrap'>
                                 <button className='btn-secondary' onClick={() => {toggleDevelopmentCard(!developmentCardOpen)}}>Learn More <i className="fas fa-chevron-circle-right"></i></button>
                             </div>
