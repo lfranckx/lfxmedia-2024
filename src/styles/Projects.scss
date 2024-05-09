@@ -1,4 +1,4 @@
-#projects {
+.projects {
     padding: 0 20px 32px;
     margin-bottom: 160px;
 
@@ -164,9 +164,70 @@
 
                 img { max-width: 320px; }
             }
-            &.omg {
+            &.hairboss {
+                background: #000;
                 img { max-width: 320px; }
             }
+            &.ais {
+                background: #1F4F6C;
+                img { 
+                    max-width: 320px;
+                    width: 100%; 
+                }
+            }
+            &.spp {
+                img { 
+                    max-width: 180px;
+                    width: 100%; 
+                }
+            }
+            &.yuki {
+                background: #000;
+                img { 
+                    max-width: 280px;
+                    width: 100%; 
+                }
+            }
+            &.be {
+                background: #A03484;
+                img { 
+                    max-width: 120px;
+                    width: 100%; 
+                }
+            }
+            &.bp {
+                background: #024959;
+                img { 
+                    width: 100%;
+                    max-width: 250px
+                }
+            }
+            &.greenhills {
+                img {
+                    position: relative;
+                    bottom: 20px;
+                }
+            }
+            &.rdf {
+                img { 
+                    width: 100%;
+                    max-width: 200px
+                }
+            }
+            &.crossing {
+                img { 
+                    width: 100%;
+                    max-width: 200px
+                }
+            }
+            &.lfi {
+                background: #F1F2F5;
+                img { 
+                    width: 100%;
+                    max-width: 180px
+                }
+            }
+
             @media (max-width: 750px) {
                 img {
                     max-width: 200px;

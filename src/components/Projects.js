@@ -11,13 +11,24 @@ import michelle from '../images/Michelle-text.png';
 import sonna from '../images/SB-LOGO-WHITE.png';
 import johnny from '../images/johnny-ramirez.png';
 import ollin from '../images/ollin_cream_500.png';
+import hairboss from '../images/hairboss_black.webp';
+import ais from '../images/ais-logo-center-aligned.png';
+import spp from '../images/logo-large.png';
+import yuki from '../images/yuki-logo.png';
+import be from '../images/BE-white.png';
+import bp from '../images/logo-teal-bg.png';
+import greenhills from '../images/greenhills-logo.webp';
+import rdfranckx from '../images/rdf-logo-nobg.png';
+import crossing from '../images/crossingwellness-logo.png';
+import lfi from '../images/lfi-conference.png';
 
 export default function Projects() {
     return (
         <>
-            <section id='projects'>
-                <h2>Featured Work</h2>
-                <p className='h3'>Here are a few professional projects we have recently built. Want to see more? <span><a className='email' href='mailto:lachlan@lfxmedia.io'>Email us.</a></span></p>
+            <section className='projects'>
+                <h2>Spotlight on Style</h2>
+                <p>Discover our latest projects in the beauty and hairstyling industry, where creativity meets cutting-edge digital presence.</p> 
+                <p className='h3'>Want to see more? <span><a className='email' href='mailto:lachlan@lfxmedia.io'>Email us.</a></span></p>
                 <div className='btn-wrap'>
                     <Link className='btn-secondary' to={'/results'}>View my results <i className="fas fa-chevron-circle-right"></i></Link>
                 </div>
@@ -39,7 +50,7 @@ export default function Projects() {
                                     View Website &#8594;
                                 </a>
                             </div>
-                        </div>                  
+                        </div>
                     </li>
                     <li className='card sah'>
                         <div className='image-wrap'>
@@ -168,20 +179,194 @@ export default function Projects() {
                             </div>
                         </div> 
                     </li>
-                    <li className='card omg'>
+                    <li className='card hairboss'>
                         <div className='image-wrap'>
-                            <img src={omg} alt='OMG Artistry' />
+                            <img src={hairboss} alt='HAIRBOSS by Jamie Wiley' />
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Published Celebrity Hair and Makeup Artist for Paris Hilton, Nick Jonas, Britney Spears NYFW Show, Joico Brand Storyteller, Key Note Speaker for Modern Salon, Top 100 Influencers on Modern Salon, and more.</p>    
+                                <p>Jamie Wiley is an acclaimed industry stylist, educator, and internationally published author. Jamie is nationally recognized as the “Next Generation Top Influencer'' by American Salon Magazine.</p>    
                             </div>
                             <div className='btn-wrap'>
-                                <a  href='https://www.omgartistry.com/'
+                                <a  href='https://www.jamiewiley.com/'
                                     target="_blank" 
                                     rel="noopener noreferrer" 
                                     className='btn'>
                                         View Website &#8594;
+                                </a>
+                            </div>
+                        </div> 
+                    </li>
+                </ul>
+            </section>
+
+            <section className='projects'>
+                <h2>Diverse Expertise</h2>
+                <p>Explore our portfolio of transformative projects for various businesses of all kinds, designed to elevate and empower.</p>
+                <p className='h3'>Want to see more? <span><a className='email' href='mailto:lachlan@lfxmedia.io'>Email us.</a></span></p>
+                <div className='btn-wrap'>
+                    <Link className='btn-secondary' to={'/results'}>View my results <i className="fas fa-chevron-circle-right"></i></Link>
+                </div>
+                <ul>
+                    <li className='card ais'>
+                        <div className='image-wrap'>
+                            <img src={ais} alt='Advanced Insulation System' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>Advanced Insulation System is a custom insulation and energy solutions company specializing in residential &amp; commericial spaces. We have helped them earn over 2 million in sales in their first 6 months of being open!</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a href='https://advancedinsulationsystem.com/'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'
+                                    >
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li className='card spp'>
+                        <div className='image-wrap'>
+                            <img src={spp} alt='Sosa Practice Partners' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>Sosa Practice Partners is a full service medical billing, EHR software, and Practice Management company. Their team has nearly 30 years of experience in the field and have built a solid reputation for business integrity.</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a  href='https://www.sosapartners.com/'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'>
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div> 
+                    </li>
+                    <li className='card yuki'>
+                        <div className='image-wrap'>
+                            <img src={yuki} alt='Yuki Sushi' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>Since 1987, Yuki Sushi has been a culinary haven and local staple of Willow Glen &amp; Santa Clara, uniting the community with the art of Japanese cuisine.</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a  href='https://yukisushi.com/'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'>
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div> 
+                    </li>
+                    <li className='card be'>
+                        <div className='image-wrap'>
+                            <img src={be} alt='Beyond Energy' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>Beyond Energy is an energy drink like no other. Their formula is infused with all natural ingredients like ginseng &amp; antioxidants, but the thing that makes it truly special is the naturally occuring dopamine sourced from mucina pruriens.</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a  href='https://gobeyondenergy.com/'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'>
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div> 
+                    </li>
+                    <li className='card bp'>
+                        <div className='image-wrap'>
+                            <img src={bp} alt='The Build Pros' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>The Build Pros are redefining the standard for excellence in the general contracting industry. They are a full-service provider dedicated to transforming spaces from design to build.</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a  href='https://thebuildprosd.com/'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'>
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div> 
+                    </li>
+                    <li className='card greenhills'>
+                        <div className='image-wrap'>
+                            <img src={greenhills} alt='Green Hills Golf Course' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>Green Hills Golf Course has been a cornerstone of the Sandusky County golf community since it first opened in 1958. This 18-hole Public Golf Course is located in Northern Ohio and features a traditional American design.</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a  href='https://greenhillsgolf.com/'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'>
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div> 
+                    </li>
+                    <li className='card rdf'>
+                        <div className='image-wrap'>
+                            <img src={rdfranckx} alt='Raquel Debbie Franckx' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>RD Franckx is an contemporary artist working with multii-media. She is based out of the Ozarks. She believes in feeding the heart, by creating art, whatever that may be. </p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a  href='https://rdfranckx.lfxmedia.net'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'>
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div> 
+                    </li>
+                    <li className='card crossing'>
+                        <div className='image-wrap'>
+                            <img src={crossing} alt='Crossing Wellness' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>Crossing Wellness is a therapy &amp; psychology company focused on bringing everyone the joy of experiencing their best selves. They believe the best self isn't a destination, it's a journey that they are here to help guide you on.</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a  href='https://www.crossingwellness.org/'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'>
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div> 
+                    </li>
+                    <li className='card lfi'>
+                        <div className='image-wrap'>
+                            <img src={lfi} alt='Learning From Incidents' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>Learning from Incidents in Software is a community challenging conventional views and reshaping how the software industry thinks about incidents, software reliability, and the critical role people play in keeping their systems running.</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a  href='https://www.learningfromincidents.io/'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'>
+                                    View Website &#8594;
                                 </a>
                             </div>
                         </div> 
