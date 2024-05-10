@@ -30,7 +30,7 @@ export default function Homepage(props) {
                     <h2>We craft beautiful and functional websites that get results.</h2>
                     <div className='btn-wrap'>
                         <Link className='btn-secondary' activeClass="active" to="projects" spy={true} smooth={true} offset={0} duration={700}>
-                            View my work <i className="fas fa-chevron-circle-right" />
+                            View our work <i className="fas fa-chevron-circle-right" />
                         </Link>
                     </div>
                     <div className='image-wrap'>

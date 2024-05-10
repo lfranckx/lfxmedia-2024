@@ -68,7 +68,7 @@ const Contact = (props) => {
             >
                 <section id='contact' className={loading ? '' : 'fade-in-screen'}>
                     <div>
-                        <img src={me} alt='Myself and the pups' width='250px'/>
+                        <img src={me} alt='Meet the Team Behind LFX Media' width='250px'/>
                     </div>
 
                     <h1 className={messageSuccess ? 'header-wrap' : 'header-wrap active'}><span>Thanks for taking the time to reach out.</span><span>How can we help you today?</span></h1>

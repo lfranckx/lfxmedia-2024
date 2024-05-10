@@ -30,7 +30,7 @@ export default function Projects() {
                 <p>Discover our latest projects in the beauty and hairstyling industry, where creativity meets cutting-edge digital presence.</p> 
                 <p className='h3'>Want to see more? <span><a className='email' href='mailto:lachlan@lfxmedia.io'>Email us.</a></span></p>
                 <div className='btn-wrap'>
-                    <Link className='btn-secondary' to={'/results'}>View my results <i className="fas fa-chevron-circle-right"></i></Link>
+                    <Link className='btn-secondary' to={'/results'}>View our results <i className="fas fa-chevron-circle-right"></i></Link>
                 </div>
                 <ul>
                     <li className='card leysa'>
@@ -205,7 +205,7 @@ export default function Projects() {
                 <p>Explore our portfolio of transformative projects for various businesses of all kinds, designed to elevate and empower.</p>
                 <p className='h3'>Want to see more? <span><a className='email' href='mailto:lachlan@lfxmedia.io'>Email us.</a></span></p>
                 <div className='btn-wrap'>
-                    <Link className='btn-secondary' to={'/results'}>View my results <i className="fas fa-chevron-circle-right"></i></Link>
+                    <Link className='btn-secondary' to={'/results'}>View our results <i className="fas fa-chevron-circle-right"></i></Link>
                 </div>
                 <ul>
                     <li className='card ais'>
