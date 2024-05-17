@@ -103,7 +103,7 @@ export default function ContactSection() {
                                 <div>
                                     <Field
                                         name="referral"
-                                        placeholder='Where did you hear about me?'
+                                        placeholder='Where did you hear about us?'
                                         className='input'
                                     />
                                 </div>

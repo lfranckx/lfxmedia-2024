@@ -127,7 +127,7 @@ const Contact = (props) => {
                                     <div>
                                         <Field
                                             name="referral"
-                                            placeholder='Where did you hear about me?'
+                                            placeholder='Where did you hear about us?'
                                         />
                                     </div>
                                     <div>
