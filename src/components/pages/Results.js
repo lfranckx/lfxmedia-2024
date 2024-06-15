@@ -33,7 +33,7 @@ export default function Results(props) {
             >
                 <header className={loading ? '' : 'fade-in-screen'}>
                     <h1>2021 Client Case Study</h1>
-                    <h2>*Due to the client’s need for privacy the business’s name is left out</h2>
+                    <h2>Forever Curls by Leysa</h2>
                     <div className='image-wrap'>
                         <img src={computer} alt='desktop workspace' />
                     </div>
@@ -41,7 +41,7 @@ export default function Results(props) {
                 <main className={loading ? '' : 'fade-in-screen'}>
                     <section id='summary'>
                         <div className='container'>
-                            <p>I started working with this client at the end of 2020 and am continuing to work for today. Comparing the year I began managing the online store to the year prior, the company has made enormous improvements. We have an online brand that makes outstanding sales and has an excellent customer return rate. We are confident in the business's continued success because of its professional and easy-to-navigate store design. We expect continued growth through online advertising and maintaining strong visibility in search engines.</p>
+                            <p>We started working with Leysa at the end of 2020 and we continue to work together today. Comparing the year I began managing the online store to the year prior, the company has made enormous improvements. We have an online brand that makes outstanding sales and has an excellent customer return rate. We are confident in the business's continued success because of its professional and easy-to-navigate store design. We expect continued growth through online advertising and maintaining strong visibility in search engines.</p>
                         </div>
                     </section>
                     <section id='results'>
