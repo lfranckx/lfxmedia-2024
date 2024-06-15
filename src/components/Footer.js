@@ -57,7 +57,7 @@ export default function Footer() {
                         </a>
                     </li>
                 </ul>
-                <p id='copyright'>Copyright © 2021. All rights reserved.</p>
+                <p id='copyright'>Copyright © 2024. All rights reserved.</p>
             </footer>
         </>
     )

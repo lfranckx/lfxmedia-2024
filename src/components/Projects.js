@@ -33,56 +33,19 @@ export default function Projects() {
                     <Link className='btn-secondary' to={'/results'}>View our results <i className="fas fa-chevron-circle-right"></i></Link>
                 </div>
                 <ul>
-                    <li className='card leysa'>
+                    <li className='card sonna'>
                         <div className='image-wrap'>
-                            <img src={leysa} alt='Leysa' />
+                            <img src={sonna} alt='Sonna Brado Serious Beauty Pro' />
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Leysa Carrillo is a nationally recognized industry leader for her hair color transformations on textured hair. She is the founder of Forever Curls Academy where she provides education for hair stylists around the world.</p>
+                                <p>Sonna Brado is reknown hairdresser and is the founder and creator of Serious Beauty Pro where she provides educational products and her own line of hand-crafted shears, Angel Blades.</p>
                             </div>
                             <div className='btn-wrap'>
-                                <a href='https://forevercurlsbyleysa.com/'
-                                    target="_blank" 
-                                    rel="noopener noreferrer" 
-                                    className='btn'
-                                    >
-                                    View Website &#8594;
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li className='card sah'>
-                        <div className='image-wrap'>
-                            <img src={sah} alt='Social Arthouse' />
-                        </div>
-                        <div className='content-wrap'>
-                            <div className='text-wrap'>
-                                <p>A pro-beauty management and creative agency, offering an expansive consulting experience for brands through ingenuity, originality and imagination.</p>
-                            </div>
-                            <div className='btn-wrap'>
-                                <a  href='https://www.socialarthouse.com/'
-                                    target="_blank" 
-                                    rel="noopener noreferrer" 
-                                    className='btn'>
-                                    View Website &#8594;
-                                </a>
-                            </div>
-                        </div> 
-                    </li>
-                    <li className='card ouidad'>
-                        <div className='image-wrap'>
-                            <img src={ouidad} alt='Ouidad' />
-                        </div>
-                        <div className='content-wrap'>
-                            <div className='text-wrap'>
-                                <p>Ouidad believes that curly hair is a gift to be embraced and celebrated. They are dedicated to empowering every curly-haired individual to understand and love their fabulous hair!</p>
-                            </div>
-                            <div className='btn-wrap'>
-                                <a  href='https://ouidadeducation.com/'
-                                    target="_blank" 
-                                    rel="noopener noreferrer" 
-                                    className='btn'>
+                                <a  href='https://sonnabrado.com'
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className='btn'>
                                     View Website &#8594;
                                 </a>
                             </div>
@@ -107,19 +70,57 @@ export default function Projects() {
                             </div>
                         </div>
                     </li>
-                    <li className='card sonna'>
+                    <li className='card ouidad'>
                         <div className='image-wrap'>
-                            <img src={sonna} alt='Sonna Brado Serious Beauty Pro' />
+                            <img src={ouidad} alt='Ouidad' />
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Sonna Brado is reknown hairdresser and is the founder and creator of Serious Beauty Pro where she provides educational products and her own line of hand-crafted shears, Angel Blades.</p>
+                                <p>Ouidad believes that curly hair is a gift to be embraced and celebrated. They are dedicated to empowering every curly-haired individual to understand and love their fabulous hair!</p>
                             </div>
                             <div className='btn-wrap'>
-                                <a  href='https://sonnabrado.com'
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                className='btn'>
+                                <a  href='https://ouidadeducation.com/'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'>
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div> 
+                    </li>
+                    <li className='card leysa'>
+                        <div className='image-wrap'>
+                            <img src={leysa} alt='Leysa' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>Leysa Carrillo is a nationally recognized industry leader for her hair color transformations on textured hair. She is the founder of Forever Curls Academy where she provides education for hair stylists around the world.</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a href='https://forevercurlsbyleysa.com/'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'
+                                    >
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li className='card sah'>
+                        <div className='image-wrap'>
+                            <img src={sah} alt='Social Arthouse' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>A pro-beauty management and creative agency, offering an expansive consulting experience for brands through ingenuity, originality and imagination.</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a  href='https://www.socialarthouse.com/'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'>
                                     View Website &#8594;
                                 </a>
                             </div>
