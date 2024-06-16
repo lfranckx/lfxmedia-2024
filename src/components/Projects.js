@@ -6,7 +6,7 @@ import leysa from '../images/leysa.png';
 import sah from '../images/SAH.png';
 import ouidad from '../images/ouidad.png';
 import the from '../images/THE.png';
-import omg from '../images/omg.png';
+// import omg from '../images/omg.png';
 import michelle from '../images/Michelle-text.png';
 import sonna from '../images/SB-LOGO-WHITE.png';
 import johnny from '../images/johnny-ramirez.png';
@@ -114,7 +114,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>A pro-beauty management and creative agency, offering an expansive consulting experience for brands through ingenuity, originality and imagination.</p>
+                                <p>Social Art House is a pro-beauty management and creative agency, offering an expansive consulting experience for brands through ingenuity, originality and imagination.</p>
                             </div>
                             <div className='btn-wrap'>
                                 <a  href='https://www.socialarthouse.com/'

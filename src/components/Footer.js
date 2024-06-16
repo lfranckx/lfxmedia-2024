@@ -60,5 +60,5 @@ export default function Footer() {
                 <p id='copyright'>Copyright © 2024. All rights reserved.</p>
             </footer>
         </>
-    )
+    );
 }
