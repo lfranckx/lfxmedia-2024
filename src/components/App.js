@@ -39,7 +39,7 @@ function App() {
             <Route path='/contact' element={<Contact loading={loading}/>} />
             <Route path="/results" element={<Results loading={loading}/>} />
             <Route path="/subscribe" element={<Subscribe loading={loading}/>} />
-            <Route path="/raquel" element={<Raquel loading={loading}/>} />
+            {/* <Route path="/raquel" element={<Raquel loading={loading}/>} /> */}
             <Route element={<NotFound loading={loading}/>} />
           </Routes>
         </AnimatePresence>
