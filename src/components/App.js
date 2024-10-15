@@ -12,6 +12,7 @@ import NotFound from './pages/NotFound';
 import Results from './pages/Results';
 import Subscribe from './pages/Subscribe';
 import LoadingScreen from './LoadingScreen';
+import Raquel from './pages/Raquel';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -38,6 +39,7 @@ function App() {
             <Route path='/contact' element={<Contact loading={loading}/>} />
             <Route path="/results" element={<Results loading={loading}/>} />
             <Route path="/subscribe" element={<Subscribe loading={loading}/>} />
+            <Route path="/raquel" element={<Raquel loading={loading}/>} />
             <Route element={<NotFound loading={loading}/>} />
           </Routes>
         </AnimatePresence>
