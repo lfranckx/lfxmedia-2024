@@ -22,8 +22,8 @@ export default function Results(props) {
     return (
         <>
             <Helmet >
-                <title>2021 Client Case Study | LFX Media</title>
-                <meta name='description' content='Getting the best results for my clients through Search Engine Optimization, Online Marketing, and Professional Web Design and Development'/>
+                <title>Client Success Stories | Case Studies &amp; Results | LFX Media</title>
+                <meta name='description' content='Explore real client success stories from LFX Media. Discover how our digital marketing, SEO, and web development solutions increased sales by 685% and improved conversion rates by 47%.'/>
             </Helmet>
             <motion.div 
                 id='results-page'

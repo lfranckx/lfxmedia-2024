@@ -58,9 +58,11 @@ const Contact = (props) => {
     return (
         <>
             <Helmet >
-                <title>Contact | LFX Media</title>
-                <meta name='description' content='LFX Media is your go-to team for digital excellence. Reach out to LFX Media for expert web development and digital marketing strategies that make your business stand out.'/>
+                <title>Contact Us | LFX Media - Start Your Digital Growth Journey</title>
+                <meta name='description' content='Get in touch with LFX Media to elevate your brand with expert web development, digital marketing, and SEO services. Let’s create something extraordinary together!'/>
+                <meta name='keywords' content="Web Development, Digital Marketing Services, SEO Strategies, Marketing Agency, PPC Advertising, Google Ads, Facebook Advertising, Meta Advertising, Online Marketing Solutions" />
             </Helmet>
+            
             <motion.main
                 initial={{ opacity: 0 }}    
                 animate={{ opacity: 1 }}

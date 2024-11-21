@@ -15,8 +15,8 @@ export default function SubscribePage(props) {
     return (
         <>
             <Helmet >
-                <title>Subscribe | LFX Media</title>
-                <meta name='description' content='Subscribe to receive my educational newsletter where I give tips and advice. Be the first to know of important news and special offers!'/>
+                <title>Subscribe to LFX Media Insights | Tips, News &amp; Offers</title>
+                <meta name='description' content='Join LFX Media’s newsletter for exclusive tips on web development, digital marketing, and freelancing success. Stay informed with updates and special offers tailored for you.'/>
             </Helmet>
             <motion.div
                 initial={{ opacity: 0 }}    

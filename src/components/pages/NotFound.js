@@ -16,9 +16,11 @@ export default function NotFound (props) {
     return (
         <>
             <Helmet >
-                <title>404 Not Found | LFX Media</title>
-                <meta name='description' content='404, Page Not Found'/>
+                <title>Page Not Found | LFX Media - Web Development &amp; Digital Marketing Experts</title>
+                <meta name='description' content="Oops! The page you’re looking for doesn’t exist. Explore LFX Media for top-notch web development, digital marketing, and SEO services tailored to grow your business."/>
+                <meta name='keywords' content="Web Development, Digital Marketing Services, SEO Strategies, Marketing Agency, PPC Advertising, Google Ads, Facebook Advertising, Meta Advertising, Online Marketing Solutions" />
             </Helmet>
+
             <motion.main 
                 initial={{ opacity: 0 }}    
                 animate={{ opacity: 1 }}
@@ -28,6 +30,7 @@ export default function NotFound (props) {
                 className={loading ? '' : 'fade-in-screen'}
             >
                     <h1><span>404</span>Sorry, this page does not exist.</h1>
+                    <p>Oops! The page you’re looking for doesn’t exist. Explore LFX Media for top-notch web development, digital marketing, and SEO services tailored to grow your business.</p>
                     <div className='wrap'>
                         <Link className="btn" to="/">Return Home</Link>
                     </div>
