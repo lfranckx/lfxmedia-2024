@@ -24,7 +24,7 @@
     .about {
         padding: 100px 10px 100px;
         background: #1ba49c;
-        // min-height: 450px;
+        min-height: 450px;
 
         .container {
             max-width: 1000px;
@@ -34,6 +34,25 @@
         p {
             color: #fff;
             line-height: 1.8;
+        }
+    }
+
+    .profile-img-wrap {
+        max-width: 300px;
+        margin: auto;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .services-list {
+        p {
+            padding-bottom: 0;
+
+        }
+        h3 {
+            margin-top: 32px;
         }
     }
 }

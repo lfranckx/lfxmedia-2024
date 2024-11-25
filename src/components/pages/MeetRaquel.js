@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import '../../styles/pages/MeetRaquel.scss';
-import { Helmet } from 'react-helmet';
 import ContactSection from '../ContactSection';
+import ServicesPopup from '../ServicesPopup';
+import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import computer from '../../images/computer.png';
-import avatar from '../../images/raq-avatar-2-green.png';
+import avatar from '../../images/raquel/raq-avatar-2-mix.png';
 import raquel_1 from '../../images/raquel/headshot-1.png';
 import raquel_2 from '../../images/raquel/headshot-2.png';
 
@@ -13,10 +14,9 @@ export default function MeetRaquel(props) {
         window.scrollTo(0, 0);
     }, []);
 
-    const [salesCardOpen, toggleSalesCard] = useState(false);
-    const [trafficCardOpen, toggleTrafficCard] = useState(false);
-    const [returningCardOpen, toggleReturningCard] = useState(false);
-    const [conversionCardOpen, toggleConversionCard] = useState(false);
+    const [copywritingCardOpen, toggleCopywritingCard] = useState(false);
+    const [socialMediaCardOpen, toggleSocialMediaCard] = useState(false);
+    const [printDesignCardOpen, togglePrintDesignCard] = useState(false);
 
     const { loading } = props;
 
@@ -57,7 +57,55 @@ export default function MeetRaquel(props) {
                         </div>
                     </section>
                     
+                    <section id='services'>
+                        <ul>
+                            <li>
+                                <div className='card'>
+                                    <i className="icon fas fa-drafting-compass"></i>
+                                    <h2>Copywriting</h2>
+                                    <p>Writing persuasive, audience-focused content and SEO-driven blogs that engage readers, improve search rankings, and amplify your brand’s voice.</p>
+
+                                    <div className='btn-wrap'>
+                                        <button className='btn-secondary' onClick={() => toggleCopywritingCard(!copywritingCardOpen)}>Learn More <i className="fas fa-chevron-circle-right"></i></button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div className='card'>
+                                    <i className="icon fas fa-laptop-code"></i>
+                                    <h2>Social Media Strategy</h2>
+                                    <p>Crafting tailored strategies and content that represent your brand, connect with the right audience, and drive measurable results.</p>
+                                    <div className='btn-wrap'>
+                                        <button className='btn-secondary' onClick={() => {toggleSocialMediaCard(!socialMediaCardOpen)}}>Learn More <i className="fas fa-chevron-circle-right"></i></button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div className='card'>
+                                    <i className="icon fas fa-search-dollar"></i>
+                                    <h2>Digital &amp; Print Design</h2>
+                                    <p>Designing captivating flyers, menus, social media graphics, websites, and marketing materials that bring your brand to life.</p>
+                                    <div className='btn-wrap'>
+                                        <button className='btn-secondary' onClick={() => {togglePrintDesignCard(!printDesignCardOpen)}}>Learn More <i className="fas fa-chevron-circle-right"></i></button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <div className='profile-img-wrap'>
+                        <img className='profile-img' src={raquel_1} alt='Raquel D. Franckx' />
+                    </div>
                     <ContactSection />
+
+                    <ServicesPopup
+                        toggleCopywritingCard={toggleCopywritingCard}
+                        toggleSocialMediaCard={toggleSocialMediaCard}
+                        togglePrintDesignCard={togglePrintDesignCard}
+                        copywritingCardOpen={copywritingCardOpen}
+                        socialMediaCardOpen={socialMediaCardOpen}
+                        printDesignCardOpen={printDesignCardOpen}
+                    />
                 </main>
             </motion.div>
         </>

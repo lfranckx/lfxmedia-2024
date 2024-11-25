@@ -16,6 +16,7 @@ export default function Navbar(props) {
                 </Link>
 
                 <div className='wrap'>
+                    <Link className='navlink' to="/meet-raquel">Raquel</Link>
                     <Link className='navlink' to="/results">Results</Link>
                     <Link className='navlink' to="/subscribe">Newsletter</Link>
                     {location.pathname === '/contact' ? <Link className="btn" to="/">Close</Link> : <Link className="btn" to="/contact">Say Hello</Link>}
