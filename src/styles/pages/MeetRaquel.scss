@@ -1,0 +1,39 @@
+#meet-raquel {
+    header {
+        padding-top: 40px;
+        .headshot-wrap {
+            margin-bottom: 2rem;
+
+            .image-wrap {
+                margin: 0;
+            }
+
+            img {
+                max-width: 280px;
+            }
+        }
+
+        .line {
+            width: 100%;
+            max-width: 400px;
+            height: 2px;
+            background: #18A49B;
+        }
+    }
+
+    .about {
+        padding: 100px 10px 100px;
+        background: #1ba49c;
+        // min-height: 450px;
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        p {
+            color: #fff;
+            line-height: 1.8;
+        }
+    }
+}

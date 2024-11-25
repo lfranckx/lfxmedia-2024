@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import '../../styles/pages/Raquel.scss';
+import '../../styles/pages/MeetRaquel.scss';
 import { Helmet } from 'react-helmet';
 import ContactSection from '../ContactSection';
 import { motion } from 'framer-motion';
+import computer from '../../images/computer.png';
+import avatar from '../../images/raq-avatar-2-green.png';
 import raquel_1 from '../../images/raquel/headshot-1.png';
 import raquel_2 from '../../images/raquel/headshot-2.png';
 
-export default function Raquel(props) {
+export default function MeetRaquel(props) {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -26,24 +28,33 @@ export default function Raquel(props) {
             </Helmet>
 
             <motion.div 
-                id='about-raquel'
+                id='meet-raquel'
                 initial={{ opacity: 0 }}    
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
             >
                 <header className={loading ? '' : 'fade-in-screen'}>
-                    <div className='flex-wrap row-reverse'>
-                        <h1 class='page-title'>Design &amp; Social Media Content</h1>
+                    <div className='headshot-wrap flex column center'>
                         <div className='image-wrap'>
-                            <img class='headshot-1' src={raquel_1} alt='Raquel D. Franckx' />
+                            <img src={avatar} alt='Meet Raquel D. Franckx' />
                         </div>
                     </div>
-                </header>
-                <main className={loading ? '' : 'fade-in-screen'}>
 
-                    <section className='meet-raquel'>
-                        <h2 className='section-title'>Meet Raquel:</h2>
-                        <p>Raquel’s passion for art and design has been a lifelong journey, whether on a tangible canvas or a digital one. At LFX Media, she’s the creative force behind everything from infographics and brochures to menus and web design. Her artistic vision also extends into blog writing and social media marketing, helping our clients connect with their audience through compelling visuals and content. More than just partners in life, Lachlan and Raquel are also a dynamic creative duo, combining their talents to bring ideas to life.</p>
+                    <div className='title-wrap'>
+                        <h1 class='page-title'>Meet Raquel D. Franckx</h1>
+                        <h2>Digital Design &amp; Social Media Content Manager at LFX Media</h2>
+                    </div>
+
+                    <div className='image-wrap'>
+                        <img src={computer} alt='desktop workspace' />
+                    </div>
+                </header>
+
+                <main className={loading ? '' : 'fade-in-screen'}>
+                    <section className='about'>
+                        <div className='container'>
+                            <p>Raquel’s passion for art and design has been a lifelong journey, whether on a tangible canvas or a digital one. At LFX Media, she’s the creative force behind everything from infographics and brochures to menus and web design. Her artistic vision also extends into blog writing and social media marketing, helping our clients connect with their audience through compelling visuals and content. More than just partners in life, Lachlan and Raquel are also a dynamic creative duo, combining their talents to bring ideas to life.</p>
+                        </div>
                     </section>
                     
                     <ContactSection />
