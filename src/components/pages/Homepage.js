@@ -3,6 +3,7 @@ import '../../styles/Header.scss';
 import computer from '../../images/computer.png';
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet';
 
 import About from '../About';
 import Projects from '../Projects';
