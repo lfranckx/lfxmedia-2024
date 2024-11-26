@@ -30,6 +30,7 @@ export default function Navbar(props) {
             </nav>
             <div id='mobile-menu' className={`${active ? 'show' : 'hide'}`}>
                 <nav className='navlinks'>
+                    <Link className='navlink' to="/meet-raquel">Raquel</Link>
                     <Link className='navlink' to="/results" onClick={() => {setActive(false)}}>Results</Link>
                     <Link className='navlink' to="/subscribe" onClick={() => {setActive(false)}}>Newsletter</Link>
                     {location.pathname === '/contact' 
