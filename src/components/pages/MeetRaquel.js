@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 import computer from '../../images/computer.png';
 import avatar from '../../images/raquel/raq-avatar-2-mix.png';
 import raquel_1 from '../../images/raquel/headshot-1.png';
-import raquel_2 from '../../images/raquel/headshot-2.png';
+// import raquel_2 from '../../images/raquel/headshot-2.png';
 
 export default function MeetRaquel(props) {
     useEffect(() => {
@@ -61,7 +61,7 @@ export default function MeetRaquel(props) {
                         <ul>
                             <li>
                                 <div className='card'>
-                                    <i class="fa-solid fa-i-cursor"></i>
+                                    <i className="fa-solid fas fa-i-cursor icon"></i>
                                     <h2>Copywriting</h2>
                                     <p>Writing persuasive, audience-focused content and SEO-driven blogs that engage readers, improve search rankings, and amplify your brand’s voice.</p>
 
@@ -72,7 +72,7 @@ export default function MeetRaquel(props) {
                             </li>
                             <li>
                                 <div className='card'>
-                                <i class="fa-solid fa-hashtag"></i>
+                                <i className="fa-solid fas fa-hashtag icon"></i>
                                     <h2>Social Media Strategy</h2>
                                     <p>Crafting tailored strategies and content that represent your brand, connect with the right audience, and drive measurable results.</p>
                                     <div className='btn-wrap'>
@@ -82,7 +82,7 @@ export default function MeetRaquel(props) {
                             </li>
                             <li>
                                 <div className='card'>
-                                    <i class="fa-solid fa-pen-nib"></i>
+                                    <i className="fa-solid fas fa-pen-nib icon"></i>
                                     <h2>Digital &amp; Print Design</h2>
                                     <p>Designing captivating flyers, menus, social media graphics, websites, and marketing materials that bring your brand to life.</p>
                                     <div className='btn-wrap'>
