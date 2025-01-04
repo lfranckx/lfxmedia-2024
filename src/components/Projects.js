@@ -324,7 +324,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>RD Franckx is an contemporary artist working with multii-media. She is based out of the Ozarks. She believes in feeding the heart, by creating art, whatever that may be. </p>
+                                <p>RD Franckx is a contemporary artist working with multi-media. She is based out of the Ozarks. Bold colors &amp; creative upcycling of magazines characterizes her art.</p>
                             </div>
                             <div className='btn-wrap'>
                                 <a  href='https://rdfranckx.lfxmedia.net'
