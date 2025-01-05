@@ -51,25 +51,7 @@ export default function Projects() {
                             </div>
                         </div> 
                     </li>
-                    <li className='card the'>
-                        <div className='image-wrap'>
-                            <img src={the} alt='Textured Hair Elevated' />
-                        </div>
-                        <div className='content-wrap'>
-                            <div className='text-wrap'>
-                                <p>T.H.E. Awards is one of the newest inaugural hair competitions that celebrates the dynamic range of artistry of the industry's most brilliant, multicultural professional and student "texperts" across the country.</p>
-                            </div>
-                            
-                            <div className='btn-wrap'>
-                                <a  href='https://texturedhairelevated.com/'
-                                    target="_blank" 
-                                    rel="noopener noreferrer" 
-                                    className='btn'>
-                                    View Website &#8594;
-                                </a>
-                            </div>
-                        </div>
-                    </li>
+                    
                     <li className='card ouidad'>
                         <div className='image-wrap'>
                             <img src={ouidad} alt='Ouidad' />
@@ -161,6 +143,25 @@ export default function Projects() {
                                 </a>
                             </div>
                         </div> 
+                    </li>
+                    <li className='card the'>
+                        <div className='image-wrap'>
+                            <img src={the} alt='Textured Hair Elevated' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>T.H.E. Awards is one of the newest inaugural hair competitions that celebrates the dynamic range of artistry of the industry's most brilliant, multicultural professional and student "texperts" across the country.</p>
+                            </div>
+                            
+                            <div className='btn-wrap'>
+                                <a  href='https://texturedhairelevated.com/'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'>
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div>
                     </li>
                     <li className='card michelle'>
                         <div className='image-wrap'>
