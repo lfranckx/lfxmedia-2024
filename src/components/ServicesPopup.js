@@ -61,12 +61,16 @@ export default function ServicesPopup(props) {
                             <div className='wrap'>
                                 <h3>Frameworks &amp; Technologies</h3>
                                 <ul>
+                                    <li>Shopify</li>
+                                    <li>WordPress</li>
+                                    <li>Wix</li>
                                     <li>React.js</li>
                                     <li>Express.js</li>
                                     <li>Node.js</li>
                                     <li>PostgreSQL</li>
                                     <li>AWS-S3</li>
                                     <li>Liquid</li>
+                                    <li>PHP</li>
                                     <li>SASS/SCSS</li>
                                     <li>Bootstrap</li>
                                     <li>jQuery</li>
@@ -74,7 +78,6 @@ export default function ServicesPopup(props) {
                                     <li>AJAX</li>
                                     <li>Git/Github</li>
                                     <li>Squarespace</li>
-                                    <li>Shopify</li>
                                     <li>Terminal</li>
                                 </ul>
                             </div>
