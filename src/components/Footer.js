@@ -13,7 +13,6 @@ export default function Footer() {
                     </Link>
                 </div>
                 
-                
                 <p id='quote'>The best preparation for tomorrow is doing your best today.</p>
                 <ul>
                     <li>

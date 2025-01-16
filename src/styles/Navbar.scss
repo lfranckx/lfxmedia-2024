@@ -37,7 +37,7 @@
                 font-size: 20px;
                 margin: 0 20px;
 
-                &:hover {
+                &:hover, &.active {
                     color: #1ba49c;
                 }
             }
@@ -140,7 +140,7 @@
         .navlink {
             width: 106px;
             color: #000;
-            &:hover {
+            &:hover, &.active {
                 color: #1ba49c;
             }
 
