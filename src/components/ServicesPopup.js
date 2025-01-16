@@ -56,7 +56,7 @@ export default function ServicesPopup(props) {
                             </div>
                             <div className='wrap'>
                                 <h3>Languages we speak:</h3>
-                                <p>JavaScript, HTML, CSS, Java</p>
+                                <p>JavaScript, HTML, CSS, PHP, PSQL, Java</p>
                             </div>
                             <div className='wrap'>
                                 <h3>Frameworks &amp; Technologies</h3>
