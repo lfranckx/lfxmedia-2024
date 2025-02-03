@@ -3,6 +3,7 @@
         padding: 100px 10px 10px;
         background: #1ba49c;
         min-height: 450px;
+        height: 100%;
 
         .container {
             max-width: 1000px;
@@ -75,7 +76,7 @@
 
     @media (max-width: 900px) {
         #summary {
-            padding: 80px 10px 10px;
+            padding: 80px 10px 80px;
         }
 
         #results {
@@ -84,10 +85,6 @@
     }
 
     @media (max-width: 620px) {
-        #summary {
-            height: 550px;
-        }
-
         #results {
             max-width: 350px;
             margin: -100px auto 80px;
@@ -95,31 +92,8 @@
     }
 
     @media (max-width: 500px) {
-        #summary {
-            padding: 60px 10px 10px;
-            height: 600px;
-        }
-
         #results {
             margin: -80px auto 80px;
-        }
-    }
-
-    @media (max-width: 415px) {
-        #summary {
-            height: 640px;
-        }
-    }
-
-    @media (max-width: 375px) {
-        #summary {
-            height: 700px;
-        }
-    }
-
-    @media (max-width: 350px) {
-        #summary {
-            height: 750px;
         }
     }
 }
