@@ -36,7 +36,7 @@ export default function ServicesPopup(props) {
                             <div className='wrap'>
                                 <h3>Design Tools:</h3>
                                 <p>Figma</p>
-                                <p>Photoshop</p>
+                                <p>Adobe</p>
                                 <p>Canva</p>
                                 <p>Pen &amp; Paper</p>
                             </div>
