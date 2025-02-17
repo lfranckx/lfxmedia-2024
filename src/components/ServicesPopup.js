@@ -77,7 +77,6 @@ export default function ServicesPopup(props) {
                                     <li>RESTful APIs</li>
                                     <li>AJAX</li>
                                     <li>Git/Github</li>
-                                    <li>Squarespace</li>
                                     <li>Terminal</li>
                                 </ul>
                             </div>
