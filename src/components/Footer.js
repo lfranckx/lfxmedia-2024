@@ -16,15 +16,7 @@ export default function Footer() {
                 <p id='quote'>The best preparation for tomorrow is doing your best today.</p>
                 <ul>
                     <li>
-                        <a href='https://twitter.com/lfxmedia'
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <i className="fab fa-twitter"></i>
-                        </a>                        
-                    </li>
-                    <li>
-                        <a href='https://www.instagram.com/lachnr0ll/'
+                        <a href='https://www.instagram.com/lfxmedia/'
                             target="_blank" 
                             rel="noopener noreferrer"
                         >
@@ -32,7 +24,7 @@ export default function Footer() {
                         </a>
                     </li>
                     <li>
-                        <a href='https://www.linkedin.com/in/lachlanfranckx/'
+                        <a href='https://www.linkedin.com/company/lfx-media/'
                             target="_blank" 
                             rel="noopener noreferrer"
                         >
