@@ -72,6 +72,7 @@ export default function ServicesPopup(props) {
                                     <li>Liquid</li>
                                     <li>PHP</li>
                                     <li>SASS/SCSS</li>
+                                    <li>Tailwind CSS</li>
                                     <li>Bootstrap</li>
                                     <li>jQuery</li>
                                     <li>RESTful APIs</li>
