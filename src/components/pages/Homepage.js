@@ -21,7 +21,7 @@ export default function Homepage(props) {
     return (
         <>
             <Helmet>
-                <title>Web Development &amp; Digital Marketing Solutions | LFX Media</title>
+                <title>Your Partner for Web Design, SEO &amp; Paid Ads | LFX Media</title>
                 <meta name='description' content="LFX Media is your go-to team for digital excellence. With expertise in Medical, Construction, E-Commerce, and Beauty, we connect your business to its target audience"/>
                 <meta name='keywords' content='Web Development, Digital Marketing Services, SEO Strategies, Marketing Agency, PPC Advertising, Google Ads, Facebook Advertising, Meta Advertising, Online Marketing Solutions' />
             </Helmet>
@@ -33,7 +33,7 @@ export default function Homepage(props) {
                 exit={{ opacity: 0 }}
             >
                 <header className={loading ? '' : 'fade-in-screen'}>
-                    <h1>Web Development &amp; SEO Solutions</h1>
+                    <h1>Web Development &amp; Digital Marketing Solutions</h1>
                     <h2>We craft beautiful and functional websites that get results.</h2>
                     <div className='btn-wrap'>
                         <Link className='btn-secondary' activeClass="active" to="projects" spy={true} smooth={true} offset={0} duration={700}>
