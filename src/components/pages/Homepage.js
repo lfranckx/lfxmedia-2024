@@ -21,7 +21,7 @@ export default function Homepage(props) {
     return (
         <>
             <Helmet>
-                <title>Expert Web Development, Digital Marketing, &amp; SEO Services | LFX Media</title>
+                <title>Web Development &amp; Digital Marketing Solutions | LFX Media</title>
                 <meta name='description' content="LFX Media is your go-to team for digital excellence. With expertise in Medical, Construction, E-Commerce, and Beauty, we connect your business to its target audience"/>
                 <meta name='keywords' content='Web Development, Digital Marketing Services, SEO Strategies, Marketing Agency, PPC Advertising, Google Ads, Facebook Advertising, Meta Advertising, Online Marketing Solutions' />
             </Helmet>

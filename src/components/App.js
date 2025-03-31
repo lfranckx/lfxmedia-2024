@@ -26,7 +26,7 @@ function App() {
   return (
     <>
       <Helmet>
-        <title>Expert Web Development, Digital Marketing, &amp; SEO Services | LFX Media</title>
+        <title>Your Partner for Web Design, SEO &amp; Paid Ads | LFX Media</title>
         <meta name='description' content="LFX Media is your go-to team for digital excellence. With expertise in Medical, Construction, E-Commerce, and Beauty, we connect your business to its target audience"/>
         <meta name='keywords' content='Web Development, Digital Marketing Services, SEO Strategies, Marketing Agency, PPC Advertising, Google Ads, Facebook Advertising, Meta Advertising, Online Marketing Solutions' />
       </Helmet>
