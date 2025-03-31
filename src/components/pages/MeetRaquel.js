@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 import computer from '../../images/computer.png';
 import avatar from '../../images/raquel/raq-avatar-2-mix.png';
 import raquel_1 from '../../images/raquel/headshot-1.png';
-// import raquel_2 from '../../images/raquel/headshot-2.png';
+import raquel_2 from '../../images/raquel/headshot-2.png';
 
 export default function MeetRaquel(props) {
     useEffect(() => {
@@ -36,7 +36,7 @@ export default function MeetRaquel(props) {
                 <header className={loading ? '' : 'fade-in-screen'}>
                     <div className='headshot-wrap flex column center'>
                         <div className='image-wrap'>
-                            <img src={avatar} alt='Meet Raquel D. Franckx' />
+                            <img src={raquel_1} alt='Meet Raquel D. Franckx' />
                         </div>
                     </div>
 
@@ -93,9 +93,6 @@ export default function MeetRaquel(props) {
                         </ul>
                     </section>
 
-                    <div className='profile-img-wrap'>
-                        <img className='profile-img' src={raquel_1} alt='Raquel D. Franckx' />
-                    </div>
                     <ContactSection />
 
                     <ServicesPopup
