@@ -210,7 +210,7 @@ export default function Projects() {
                     <Link className='btn-secondary' to={'/results'}>View our results <i className="fas fa-chevron-circle-right"></i></Link>
                 </div>
                 <ul>
-                    <li className='card ais'>
+                    {/* <li className='card ais'>
                         <div className='image-wrap'>
                             <img src={ais} alt='Advanced Insulation System' />
                         </div>
@@ -228,7 +228,7 @@ export default function Projects() {
                                 </a>
                             </div>
                         </div>
-                    </li>
+                    </li> */}
                     <li className='card spp'>
                         <div className='image-wrap'>
                             <img src={spp} alt='Sosa Practice Partners' />
