@@ -240,7 +240,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Adventure Art is an art supply shop and studio in Eureka Springs. We enhanced their Weebly/Square store to sell in-house paints and classes online, driving repeat sales and sold-out workshops</p>
+                                <p>Adventure Art is a local art supply shop and studio in Eureka Springs where we expanded their online inventory to include in-house paints and class tickets, transforming tourist interest into repeat online sales and consistently sold-out workshops.</p>
                             </div>
                             <div className='btn-wrap'>
                                 <a href='https://www.arkansasadventureart.com'
