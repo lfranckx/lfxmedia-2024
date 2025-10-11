@@ -233,6 +233,7 @@ export default function Projects() {
                             </div>
                         </div>
                     </li>
+
                     <li className='card ais'>
                         <div className='image-wrap'>
                             <img src={ais} alt='Advanced Insulation System' />
@@ -252,6 +253,7 @@ export default function Projects() {
                             </div>
                         </div>
                     </li>
+
                     <li className='card koa'>
                         <div className='image-wrap'>
                             <img src={koa} alt='Slidell KOA Journey' />
@@ -270,24 +272,7 @@ export default function Projects() {
                             </div>
                         </div> 
                     </li>
-                    {/* <li className='card spp'>
-                        <div className='image-wrap'>
-                            <img src={spp} alt='Sosa Practice Partners' />
-                        </div>
-                        <div className='content-wrap'>
-                            <div className='text-wrap'>
-                                <p>Sosa Practice Partners is a full service medical billing, EHR software, and Practice Management company. Their team has nearly 30 years of experience in the field and have built a solid reputation for business integrity.</p>
-                            </div>
-                            <div className='btn-wrap'>
-                                <a  href='https://www.sosapartners.com/'
-                                    target="_blank" 
-                                    rel="noopener noreferrer" 
-                                    className='btn'>
-                                    View Website &#8594;
-                                </a>
-                            </div>
-                        </div> 
-                    </li> */}
+
                     <li className='card yuki'>
                         <div className='image-wrap'>
                             <img src={yuki} alt='Yuki Sushi' />
@@ -344,24 +329,6 @@ export default function Projects() {
                             </div>
                         </div> 
                     </li>
-                    {/* <li className='card bp'>
-                        <div className='image-wrap'>
-                            <img src={bp} alt='The Build Pros' />
-                        </div>
-                        <div className='content-wrap'>
-                            <div className='text-wrap'>
-                                <p>The Build Pros are redefining the standard for excellence in the general contracting industry. They are a full-service provider dedicated to transforming spaces from design to build.</p>
-                            </div>
-                            <div className='btn-wrap'>
-                                <a  href='https://thebuildprosd.com/'
-                                    target="_blank" 
-                                    rel="noopener noreferrer" 
-                                    className='btn'>
-                                    View Website &#8594;
-                                </a>
-                            </div>
-                        </div> 
-                    </li> */}
                     
                     <li className='card maria'>
                         <div className='image-wrap'>
@@ -400,6 +367,7 @@ export default function Projects() {
                             </div>
                         </div> 
                     </li>
+
                     <li className='card greenhills'>
                         <div className='image-wrap'>
                             <img src={greenhills} alt='Green Hills Golf Course' />
@@ -418,6 +386,7 @@ export default function Projects() {
                             </div>
                         </div> 
                     </li>
+                    
                     {/* <li className='card rdf'>
                         <div className='image-wrap'>
                             <img src={rdfranckx} alt='Raquel Debbie Franckx' />
@@ -428,6 +397,44 @@ export default function Projects() {
                             </div>
                             <div className='btn-wrap'>
                                 <a  href='https://rdfranckx.lfxmedia.net'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'>
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div> 
+                    </li> */}
+
+                    {/* <li className='card bp'>
+                        <div className='image-wrap'>
+                            <img src={bp} alt='The Build Pros' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>The Build Pros are redefining the standard for excellence in the general contracting industry. They are a full-service provider dedicated to transforming spaces from design to build.</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a  href='https://thebuildprosd.com/'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'>
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div> 
+                    </li> */}
+
+                    {/* <li className='card spp'>
+                        <div className='image-wrap'>
+                            <img src={spp} alt='Sosa Practice Partners' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>Sosa Practice Partners is a full service medical billing, EHR software, and Practice Management company. Their team has nearly 30 years of experience in the field and have built a solid reputation for business integrity.</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a  href='https://www.sosapartners.com/'
                                     target="_blank" 
                                     rel="noopener noreferrer" 
                                     className='btn'>
