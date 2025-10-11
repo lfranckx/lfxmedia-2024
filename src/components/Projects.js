@@ -30,183 +30,6 @@ export default function Projects() {
     return (
         <>
             <section className='projects'>
-                <h2>Spotlight on Style</h2>
-                <p>Discover our latest projects in the beauty and hairstyling industry, where creativity meets cutting-edge digital presence.</p> 
-                <p className='h3'>Want to see more? <span><a className='email' href='mailto:lachlan@lfxmedia.io'>Email us.</a></span></p>
-                <div className='btn-wrap'>
-                    <Link className='btn-secondary' to={'/results'}>View our results <i className="fas fa-chevron-circle-right"></i></Link>
-                </div>
-                <ul>
-                    <li className='card sonna'>
-                        <div className='image-wrap'>
-                            <img src={sonna} alt='Sonna Brado Serious Beauty Pro' />
-                        </div>
-                        <div className='content-wrap'>
-                            <div className='text-wrap'>
-                                <p>Sonna Brado is a renowned hairdresser and founder of Serious Beauty Pro. We manage her Shopify site, launch campaigns for Angel Blades, and handle ongoing SEO and paid ads to grow education and tool sales.</p>
-                            </div>
-                            <div className='btn-wrap'>
-                                <a  href='https://sonnabrado.com'
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                className='btn'>
-                                    View Website &#8594;
-                                </a>
-                            </div>
-                        </div> 
-                    </li>
-                    
-                    <li className='card ouidad'>
-                        <div className='image-wrap'>
-                            <img src={ouidad} alt='Ouidad' />
-                        </div>
-                        <div className='content-wrap'>
-                            <div className='text-wrap'>
-                                <p>Ouidad Education trains stylists to master curly hair. We built their education site on Shopify and custom certification system that displays verified credentials upon course completion.</p>
-                            </div>
-                            <div className='btn-wrap'>
-                                <a  href='https://ouidadeducation.com/'
-                                    target="_blank" 
-                                    rel="noopener noreferrer" 
-                                    className='btn'>
-                                    View Website &#8594;
-                                </a>
-                            </div>
-                        </div> 
-                    </li>
-                    <li className='card leysa'>
-                        <div className='image-wrap'>
-                            <img src={leysa} alt='Leysa' />
-                        </div>
-                        <div className='content-wrap'>
-                            <div className='text-wrap'>
-                                <p>Leysa Carrillo is a nationally recognized educator and founder of Forever Curls Academy. We built a modern course site on Shopify, optimized conversions, and run SEO/PPC to expand global enrollments.</p>
-                            </div>
-                            <div className='btn-wrap'>
-                                <a href='https://forevercurlsbyleysa.com/'
-                                    target="_blank" 
-                                    rel="noopener noreferrer" 
-                                    className='btn'
-                                    >
-                                    View Website &#8594;
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    
-                    <li className='card sah'>
-                        <div className='image-wrap'>
-                            <img src={sah} alt='Social Arthouse' />
-                        </div>
-                        <div className='content-wrap'>
-                            <div className='text-wrap'>
-                                <p>Social Art House is a pro-beauty management and creative agency offering brand consulting and education for industry professionals. We’ve had a long-standing partnership with their team, developing their website on React and supporting ongoing digital strategy and performance improvements.</p>
-                            </div>
-                            <div className='btn-wrap'>
-                                <a  href='https://www.socialarthouse.com/'
-                                    target="_blank" 
-                                    rel="noopener noreferrer" 
-                                    className='btn'>
-                                    View Website &#8594;
-                                </a>
-                            </div>
-                        </div> 
-                    </li>
-                    <li className='card ollin'>
-                        <div className='image-wrap'>
-                            <img src={ollin} alt='Ollin Salon' />
-                        </div>
-                        <div className='content-wrap'>
-                            <div className='text-wrap'>
-                                <p>Ollin Salon is Johnny Ramirez’s creative studio in Los Angeles, New York, and Miami. We designed and developed a minimal yet sleek React.js website with online booking to attract new clients and reflect the brand’s focus on self-care.</p>
-                            </div>
-                            <div className='btn-wrap'>
-                                <a  href='https://ollinsalon.com'
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                className='btn'>
-                                    View Website &#8594;
-                                </a>
-                            </div>
-                        </div> 
-                    </li>
-                    <li className='card johnny'>
-                        <div className='image-wrap'>
-                            <img src={johnny} alt='Johnny Ramirez California' />
-                        </div>
-                        <div className='content-wrap'>
-                            <div className='text-wrap'>
-                                <p>Johnny Ramirez is a Beverly Hills celebrity colorist known for his signature sun-kissed technique. We maintain and update his WordPress site and Shopify education store to keep them fast, modern, and on brand.</p>
-                            </div>
-                            <div className='btn-wrap'>
-                                <a  href='https://johnnyramirez.com/'
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                className='btn'>
-                                    View Website &#8594;
-                                </a>
-                            </div>
-                        </div> 
-                    </li>
-                    <li className='card the'>
-                        <div className='image-wrap'>
-                            <img src={the} alt='Textured Hair Elevated' />
-                        </div>
-                        <div className='content-wrap'>
-                            <div className='text-wrap'>
-                                <p>T.H.E. Awards is a national competition celebrating multicultural hair artistry. We delivered a high-impact event site on Wix, simplified entry flows, and supported paid media to grow submissions.</p>
-                            </div>
-                            
-                            <div className='btn-wrap'>
-                                <a  href='https://texturedhairelevated.com/'
-                                    target="_blank" 
-                                    rel="noopener noreferrer" 
-                                    className='btn'>
-                                    View Website &#8594;
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li className='card michelle'>
-                        <div className='image-wrap'>
-                            <img src={michelle} alt='Michelle O Connor' />
-                        </div>
-                        <div className='content-wrap'>
-                            <div className='text-wrap'>
-                                <p>Michelle O’Connor is a five-time NAHA winner, educator, and Matrix Global Artistic Director. We produced a clean, high-performance site on React.js with structured content and on-page SEO to support press and bookings.</p>
-                            </div>
-                            <div className='btn-wrap'>
-                                <a  href='https://www.michelleoconnorbeauty.com/'
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                className='btn'>
-                                    View Website &#8594;
-                                </a>
-                            </div>
-                        </div> 
-                    </li>
-                    <li className='card hairboss'>
-                        <div className='image-wrap'>
-                            <img src={hairboss} alt='HAIRBOSS by Jamie Wiley' />
-                        </div>
-                        <div className='content-wrap'>
-                            <div className='text-wrap'>
-                                <p>Jamie Wiley is an acclaimed stylist, educator, and author. We modernized her web presence with a new Shopify website, improved content structure, and connected analytics to track course and product engagement.</p>    
-                            </div>
-                            <div className='btn-wrap'>
-                                <a  href='https://www.jamiewiley.com/'
-                                    target="_blank" 
-                                    rel="noopener noreferrer" 
-                                    className='btn'>
-                                        View Website &#8594;
-                                </a>
-                            </div>
-                        </div> 
-                    </li>
-                </ul>
-            </section>
-
-            <section className='projects'>
                 <h2>Diverse Expertise</h2>
                 <p>Explore our portfolio of transformative projects for various businesses of all kinds, designed to elevate and empower.</p>
                 <p className='h3'>Want to see more? <span><a className='email' href='mailto:lachlan@lfxmedia.io'>Email us.</a></span></p>
@@ -298,7 +121,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Beyond Energy is an all-natural energy drink formulated with ginseng, antioxidants, and mucuna pruriens for a natural dopamine boost. We developed their WordPress website with WooCommerce and designed an impactful brand identity to position them as a premium, health-conscious alternative in the energy drink market.</p>
+                                <p>Beyond Energy is an all-natural energy drink with ginseng, antioxidants, and Mucuna pruriens for a natural dopamine boost. We built their WooCommerce website and crafted a bold brand identity to position them as a premium, health-conscious choice.</p>
                             </div>
                             <div className='btn-wrap'>
                                 <a  href='https://gobeyondenergy.com/'
@@ -317,7 +140,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Crossing Wellness is a therapy and psychology practice helping individuals discover their best selves through mindful, holistic care. We designed a warm, inviting Squarespace website experience and implemented SEO optimization and Google Ads to expand their reach and client bookings.</p>
+                                <p>Crossing Wellness is a therapy and psychology practice focused on helping individuals discover their best selves. We designed a warm Squarespace website and implemented on-page SEO to strengthen their local presence and increase client bookings.</p>
                             </div>
                             <div className='btn-wrap'>
                                 <a  href='https://www.crossingwellness.org/'
@@ -463,6 +286,183 @@ export default function Projects() {
                             </div>
                         </div> 
                     </li> */}
+                </ul>
+            </section>
+
+            <section className='projects'>
+                <h2>Spotlight on Style</h2>
+                <p>Discover our latest projects in the beauty and hairstyling industry, where creativity meets cutting-edge digital presence.</p> 
+                <p className='h3'>Want to see more? <span><a className='email' href='mailto:lachlan@lfxmedia.io'>Email us.</a></span></p>
+                <div className='btn-wrap'>
+                    <Link className='btn-secondary' to={'/results'}>View our results <i className="fas fa-chevron-circle-right"></i></Link>
+                </div>
+                <ul>
+                    <li className='card sonna'>
+                        <div className='image-wrap'>
+                            <img src={sonna} alt='Sonna Brado Serious Beauty Pro' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>Sonna Brado is a renowned hairdresser and founder of Serious Beauty Pro. We manage her Shopify site, launch campaigns for Angel Blades, and handle ongoing SEO, social media, and email marketing to grow education and tool sales.</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a  href='https://sonnabrado.com'
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className='btn'>
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div> 
+                    </li>
+                    
+                    <li className='card ouidad'>
+                        <div className='image-wrap'>
+                            <img src={ouidad} alt='Ouidad' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>Ouidad Education trains stylists to master curly hair. We built their education site on Shopify and custom certification system that displays verified credentials upon course completion.</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a  href='https://ouidadeducation.com/'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'>
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div> 
+                    </li>
+                    <li className='card leysa'>
+                        <div className='image-wrap'>
+                            <img src={leysa} alt='Leysa' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>Leysa Carrillo is a nationally recognized educator and founder of Forever Curls Academy. We built a modern course site on Shopify, optimized conversions, and run SEO/PPC to expand global enrollments.</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a href='https://forevercurlsbyleysa.com/'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'
+                                    >
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li className='card sah'>
+                        <div className='image-wrap'>
+                            <img src={sah} alt='Social Arthouse' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>Social Art House is a pro-beauty management and creative agency. We developed their React website and have been a long-term partner, collaborating on multiple projects and providing ongoing digital strategy and support.</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a  href='https://www.socialarthouse.com/'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'>
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div> 
+                    </li>
+                    <li className='card ollin'>
+                        <div className='image-wrap'>
+                            <img src={ollin} alt='Ollin Salon' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>Ollin Salon is Johnny Ramirez’s creative studio in Los Angeles, New York, and Miami. We designed and developed a minimal yet sleek React.js website with online booking to attract new clients and reflect the brand’s focus on self-care.</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a  href='https://ollinsalon.com'
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className='btn'>
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div> 
+                    </li>
+                    <li className='card johnny'>
+                        <div className='image-wrap'>
+                            <img src={johnny} alt='Johnny Ramirez California' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>Johnny Ramirez is a Beverly Hills celebrity colorist known for his signature sun-kissed technique. We maintain and update his WordPress site and Shopify education store to keep them fast, modern, and on brand.</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a  href='https://johnnyramirez.com/'
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className='btn'>
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div> 
+                    </li>
+                    <li className='card the'>
+                        <div className='image-wrap'>
+                            <img src={the} alt='Textured Hair Elevated' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>T.H.E. Awards is a national competition celebrating multicultural hair artistry. We delivered a high-impact event site on Wix, simplified entry flows, and supported paid media to grow submissions.</p>
+                            </div>
+                            
+                            <div className='btn-wrap'>
+                                <a  href='https://texturedhairelevated.com/'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'>
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li className='card michelle'>
+                        <div className='image-wrap'>
+                            <img src={michelle} alt='Michelle O Connor' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>Michelle O’Connor is a five-time NAHA winner, educator, and Matrix Global Artistic Director. We produced a clean, high-performance site on React.js with structured content and on-page SEO to support press and bookings.</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a  href='https://www.michelleoconnorbeauty.com/'
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className='btn'>
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div> 
+                    </li>
+                    <li className='card hairboss'>
+                        <div className='image-wrap'>
+                            <img src={hairboss} alt='HAIRBOSS by Jamie Wiley' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>Jamie Wiley is an acclaimed stylist, educator, and author. We modernized her web presence with a new Shopify website, improved content structure, and connected analytics to track course and product engagement.</p>    
+                            </div>
+                            <div className='btn-wrap'>
+                                <a  href='https://www.jamiewiley.com/'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'>
+                                        View Website &#8594;
+                                </a>
+                            </div>
+                        </div> 
+                    </li>
                 </ul>
             </section>
         </>
