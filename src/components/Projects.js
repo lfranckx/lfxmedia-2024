@@ -13,7 +13,8 @@ import johnny from '../images/johnny-ramirez.png';
 import ollin from '../images/ollin_cream_500.png';
 import hairboss from '../images/hairboss_black.webp';
 import ais from '../images/ais-logo-center-aligned.png';
-import spp from '../images/logo-large.png';
+import pp from '../images/PilgrimPlace_Logo.png';
+// import spp from '../images/logo-large.png';
 import yuki from '../images/yuki-logo.png';
 import be from '../images/BE-white.png';
 import bp from '../images/logo-teal-bg.png';
@@ -210,6 +211,25 @@ export default function Projects() {
                     <Link className='btn-secondary' to={'/results'}>View our results <i className="fas fa-chevron-circle-right"></i></Link>
                 </div>
                 <ul>
+                    <li className='card pilgrim'>
+                        <div className='image-wrap'>
+                            <img src={pp} alt='Pilgrim Place Claremont' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>Pilgrim Place is a continuing care retirement community in Claremont, California. We developed a targeted paid advertising strategy, integrating Salesforce and web form automation to drive qualified senior-living leads for this Claremont-based CCRC.</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a href='https://pilgrimplace.org/'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'
+                                    >
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div>
+                    </li>
                     <li className='card ais'>
                         <div className='image-wrap'>
                             <img src={ais} alt='Advanced Insulation System' />
@@ -229,26 +249,7 @@ export default function Projects() {
                             </div>
                         </div>
                     </li>
-                    {/* <li className='card ais'>
-                        <div className='image-wrap'>
-                            <img src={ais} alt='Slidell KOA Journey' />
-                        </div>
-                        <div className='content-wrap'>
-                            <div className='text-wrap'>
-                                <p></p>
-                            </div>
-                            <div className='btn-wrap'>
-                                <a href='https://koa.com/'
-                                    target="_blank" 
-                                    rel="noopener noreferrer" 
-                                    className='btn'
-                                    >
-                                    View Website &#8594;
-                                </a>
-                            </div>
-                        </div>
-                    </li> */}
-                    <li className='card spp'>
+                    {/* <li className='card spp'>
                         <div className='image-wrap'>
                             <img src={spp} alt='Sosa Practice Partners' />
                         </div>
@@ -265,7 +266,7 @@ export default function Projects() {
                                 </a>
                             </div>
                         </div> 
-                    </li>
+                    </li> */}
                     <li className='card yuki'>
                         <div className='image-wrap'>
                             <img src={yuki} alt='Yuki Sushi' />
