@@ -43,7 +43,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Sonna Brado is reknown hairdresser and is the founder and creator of Serious Beauty Pro where she provides educational products and her own line of hand-crafted shears, Angel Blades.</p>
+                                <p>Sonna Brado is a renowned hairdresser and founder of Serious Beauty Pro. We manage her Shopify site, launch campaigns for Angel Blades, and handle ongoing SEO and paid ads to grow education and tool sales.</p>
                             </div>
                             <div className='btn-wrap'>
                                 <a  href='https://sonnabrado.com'
@@ -62,7 +62,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Ouidad believes that curly hair is a gift to be embraced and celebrated. They are dedicated to empowering every curly-haired individual to understand and love their fabulous hair!</p>
+                                <p>Ouidad Education trains stylists to master curly hair. We built their education site on Shopify and custom certification system that displays verified credentials upon course completion.</p>
                             </div>
                             <div className='btn-wrap'>
                                 <a  href='https://ouidadeducation.com/'
@@ -80,7 +80,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Leysa Carrillo is a nationally recognized industry leader for her hair color transformations on textured hair. She is the founder of Forever Curls Academy where she provides education for hair stylists around the world.</p>
+                                <p>Leysa Carrillo is a nationally recognized educator and founder of Forever Curls Academy. We built a modern course site on Shopify, optimized conversions, and run SEO/PPC to expand global enrollments.</p>
                             </div>
                             <div className='btn-wrap'>
                                 <a href='https://forevercurlsbyleysa.com/'
@@ -100,7 +100,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Social Art House is a pro-beauty management and creative agency, offering an expansive consulting experience for brands through ingenuity, originality and imagination.</p>
+                                <p>Social Art House is a pro-beauty management and creative agency offering brand consulting and education for industry professionals. We’ve had a long-standing partnership with their team, developing their website on React and supporting ongoing digital strategy and performance improvements.</p>
                             </div>
                             <div className='btn-wrap'>
                                 <a  href='https://www.socialarthouse.com/'
@@ -118,7 +118,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Ollin salon is a creative space with the primary goal to help you embrace who you are and help you align with your inner potential. Ollin's story is a way of being and self-care that should be a way of life.</p>
+                                <p>Ollin Salon is Johnny Ramirez’s creative studio in Los Angeles, New York, and Miami. We designed and developed a minimal yet sleek React.js website with online booking to attract new clients and reflect the brand’s focus on self-care.</p>
                             </div>
                             <div className='btn-wrap'>
                                 <a  href='https://ollinsalon.com'
@@ -136,7 +136,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Johnny Ramirez is a celebrity colorist working in Beverly Hills since 2002. Ramirez has been recognized by some of the top national magazines such as Vogue and InStyle on his natural, sun-kissed hair color technique.</p>
+                                <p>Johnny Ramirez is a Beverly Hills celebrity colorist known for his signature sun-kissed technique. We maintain and update his WordPress site and Shopify education store to keep them fast, modern, and on brand.</p>
                             </div>
                             <div className='btn-wrap'>
                                 <a  href='https://johnnyramirez.com/'
@@ -154,7 +154,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>T.H.E. Awards is one of the newest inaugural hair competitions that celebrates the dynamic range of artistry of the industry's most brilliant, multicultural professional and student "texperts" across the country.</p>
+                                <p>T.H.E. Awards is a national competition celebrating multicultural hair artistry. We delivered a high-impact event site on Wix, simplified entry flows, and supported paid media to grow submissions.</p>
                             </div>
                             
                             <div className='btn-wrap'>
@@ -173,7 +173,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Michelle O'Connor is a five-time NAHA-winning hairstylist, trailblazer, influencer, educator, Matrix global artistic director, and an emerging voice on diversity and inclusion within the beauty industry.</p>
+                                <p>Michelle O’Connor is a five-time NAHA winner, educator, and Matrix Global Artistic Director. We produced a clean, high-performance site on React.js with structured content and on-page SEO to support press and bookings.</p>
                             </div>
                             <div className='btn-wrap'>
                                 <a  href='https://www.michelleoconnorbeauty.com/'
@@ -191,7 +191,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Jamie Wiley is an acclaimed industry stylist, educator, and internationally published author. Jamie is nationally recognized as the “Next Generation Top Influencer'' by American Salon Magazine.</p>    
+                                <p>Jamie Wiley is an acclaimed stylist, educator, and author. We modernized her web presence with a new Shopify website, improved content structure, and connected analytics to track course and product engagement.</p>    
                             </div>
                             <div className='btn-wrap'>
                                 <a  href='https://www.jamiewiley.com/'
@@ -298,7 +298,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Beyond Energy is an all-natural energy drink formulated with ginseng, antioxidants, and mucuna pruriens for a natural dopamine boost. We developed their Wordpress website with WooCommerce and designed an impactful brand identity to position them as a premium, health-conscious alternative in the energy drink market.</p>
+                                <p>Beyond Energy is an all-natural energy drink formulated with ginseng, antioxidants, and mucuna pruriens for a natural dopamine boost. We developed their WordPress website with WooCommerce and designed an impactful brand identity to position them as a premium, health-conscious alternative in the energy drink market.</p>
                             </div>
                             <div className='btn-wrap'>
                                 <a  href='https://gobeyondenergy.com/'
@@ -336,7 +336,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Maria’s Healing Arts is a wellness and movement studio offering yoga, Pilates, and energy healing. We designed and built a modern Wordpress website focused on clear service presentation, branding, and user experience.</p>
+                                <p>Maria’s Healing Arts is a wellness and movement studio offering yoga, Pilates, and energy healing. We designed and built a modern WordPress website focused on clear service presentation, branding, and user experience.</p>
                             </div>
                             <div className='btn-wrap'>
                                 <a  href='https://www.mariashealingarts.com'
