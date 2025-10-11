@@ -13,7 +13,7 @@ import johnny from '../images/johnny-ramirez.png';
 import ollin from '../images/ollin_cream_500.png';
 import hairboss from '../images/hairboss_black.webp';
 import ais from '../images/ais-logo-center-aligned.png';
-import pp from '../images/PilgrimPlace_Logo.png';
+import pp from '../images/PP_Green_Logo.webp';
 // import spp from '../images/logo-large.png';
 import yuki from '../images/yuki-logo.png';
 import be from '../images/BE-white.png';
