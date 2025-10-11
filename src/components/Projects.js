@@ -210,7 +210,7 @@ export default function Projects() {
                     <Link className='btn-secondary' to={'/results'}>View our results <i className="fas fa-chevron-circle-right"></i></Link>
                 </div>
                 <ul>
-                    {/* <li className='card ais'>
+                    <li className='card ais'>
                         <div className='image-wrap'>
                             <img src={ais} alt='Advanced Insulation System' />
                         </div>
@@ -228,7 +228,26 @@ export default function Projects() {
                                 </a>
                             </div>
                         </div>
-                    </li> */}
+                    </li>
+                    <li className='card ais'>
+                        <div className='image-wrap'>
+                            <img src={ais} alt='Slidell KOA Journey' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>Advanced Insulation System is a custom insulation and energy solutions company specializing in residential &amp; commericial spaces. We have helped them earn over 2 million in sales in their first 6 months of being open!</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a href='https://advancedinsulationsystemsd.com/'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'
+                                    >
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div>
+                    </li>
                     <li className='card spp'>
                         <div className='image-wrap'>
                             <img src={spp} alt='Sosa Practice Partners' />
