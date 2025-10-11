@@ -34,7 +34,7 @@ export default function Homepage(props) {
             >
                 <header className={loading ? '' : 'fade-in-screen'}>
                     <h1>Web Development &amp; Digital Marketing Solutions</h1>
-                    <h2>We craft beautiful and functional websites that get results.</h2>
+                    <h2>Beautiful design. Smart strategy. Measurable growth.</h2>
                     <div className='btn-wrap'>
                         <Link className='btn-secondary' activeClass="active" to="projects" spy={true} smooth={true} offset={0} duration={700}>
                             View our work <i className="fas fa-chevron-circle-right" />

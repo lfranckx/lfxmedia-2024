@@ -240,7 +240,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Adventure Art is an art supply shop and studio in Eureka Springs. We enhanced their Square/Weebly online inventory to include in-house paints and class tickets, transforming tourist interest into repeat online sales and consistently sold-out workshops.</p>
+                                <p>Adventure Art is an art supply shop and studio in Eureka Springs. We enhanced their Square/Weebly online inventory to feature in-house paints and class tickets, transforming tourist interest into repeat online sales and consistently sold-out workshops.</p>
                             </div>
                             <div className='btn-wrap'>
                                 <a href='https://www.arkansasadventureart.com'
@@ -279,7 +279,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Since 1987, Yuki Sushi has been a culinary haven and local staple of Willow Glen &amp; Santa Clara, uniting the community with the art of Japanese cuisine.</p>
+                                <p>Since 1987, Yuki Sushi has been a local favorite in Willow Glen and Santa Clara. We revitalized their digital presence with a new website design, optimized menu navigation, and local SEO improvements to strengthen their brand and attract more dine-in and takeout customers.</p>
                             </div>
                             <div className='btn-wrap'>
                                 <a  href='https://yukisushi.com/'
@@ -298,7 +298,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Beyond Energy is an energy drink like no other. Their formula is infused with all natural ingredients like ginseng &amp; antioxidants, but the thing that makes it truly special is the naturally occuring dopamine sourced from mucina pruriens.</p>
+                                <p>Beyond Energy is an all-natural energy drink formulated with ginseng, antioxidants, and mucuna pruriens for a natural dopamine boost. We developed their Wordpress website with WooCommerce and designed an impactful brand identity to position them as a premium, health-conscious alternative in the energy drink market.</p>
                             </div>
                             <div className='btn-wrap'>
                                 <a  href='https://gobeyondenergy.com/'
@@ -317,7 +317,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Crossing Wellness is a therapy &amp; psychology company focused on bringing everyone the joy of experiencing their best selves. They believe the best self isn't a destination, it's a journey that they are here to help guide you on.</p>
+                                <p>Crossing Wellness is a therapy and psychology practice helping individuals discover their best selves through mindful, holistic care. We designed a warm, inviting Squarespace website experience and implemented SEO optimization and Google Ads to expand their reach and client bookings.</p>
                             </div>
                             <div className='btn-wrap'>
                                 <a  href='https://www.crossingwellness.org/'
@@ -336,7 +336,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Maria’s Healing Arts is a wellness and movement studio offering yoga, Pilates, and energy healing, where I designed and built a modern website focused on clear service presentation, branding, and user experience.</p>
+                                <p>Maria’s Healing Arts is a wellness and movement studio offering yoga, Pilates, and energy healing. We designed and built a modern Wordpress website focused on clear service presentation, branding, and user experience.</p>
                             </div>
                             <div className='btn-wrap'>
                                 <a  href='https://www.mariashealingarts.com'
