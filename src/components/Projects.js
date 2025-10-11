@@ -12,7 +12,7 @@ import sonna from '../images/SB-LOGO-WHITE.png';
 import johnny from '../images/johnny-ramirez.png';
 import ollin from '../images/ollin_cream_500.png';
 import hairboss from '../images/hairboss_black.webp';
-import ais from '../images/ais-logo-center-aligned.png';
+import ais from '../images/ais-logo-center-aligned-2.png';
 import pp from '../images/PP_White_Logo.webp';
 // import spp from '../images/logo-large.png';
 import yuki from '../images/yuki-logo.png';
