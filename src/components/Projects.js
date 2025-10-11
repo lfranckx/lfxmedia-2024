@@ -43,7 +43,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Pilgrim Place is a continuing care retirement community in Claremont, California. We developed a targeted paid advertising strategy, integrating Salesforce and web form automation to drive qualified senior-living leads for this Claremont-based CCRC.</p>
+                                <p>Pilgrim Place is a continuing-care retirement community in Claremont, California. We developed a targeted paid advertising strategy, integrating Salesforce and web form automation to drive qualified senior-living leads for this Claremont-based CCRC.</p>
                             </div>
                             <div className='btn-wrap'>
                                 <a href='https://pilgrimplace.org/'
@@ -197,7 +197,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Green Hills Golf Course has been a cornerstone of the Sandusky County golf community since it first opened in 1958. We developed a custom full-stack Node.js and React.js web app for ticket printing, reporting, and daily operations</p>
+                                <p>Green Hills Golf Course has been a cornerstone of the Sandusky County golf community since it first opened in 1958. We developed a custom full-stack Node.js and React.js web app for ticket printing, reporting, and daily operations.</p>
                             </div>
                             <div className='btn-wrap'>
                                 <a  href='https://greenhillsgolf.com/'
@@ -322,7 +322,7 @@ export default function Projects() {
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Ouidad Education trains stylists to master curly hair. We built their education site on Shopify and custom certification system that displays verified credentials upon course completion.</p>
+                                <p>Ouidad Education trains stylists to master curly hair. We built their education site on Shopify and a custom certification system that displays verified credentials upon course completion.</p>
                             </div>
                             <div className='btn-wrap'>
                                 <a  href='https://ouidadeducation.com/'
