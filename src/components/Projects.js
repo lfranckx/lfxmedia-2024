@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Projects.scss';
 
@@ -12,7 +12,8 @@ import sonna from '../images/SB-LOGO-WHITE.png';
 import johnny from '../images/johnny-ramirez.png';
 import ollin from '../images/ollin_cream_500.png';
 import hairboss from '../images/hairboss_black.webp';
-import ais from '../images/ais-logo-center-aligned-2.png';
+// import ais from '../images/ais-logo-center-aligned-2.png';
+import aart from '../images/adventure-art-logo.webp';
 import pp from '../images/PP_White_Logo.webp';
 // import spp from '../images/logo-large.png';
 import yuki from '../images/yuki-logo.png';
@@ -233,16 +234,16 @@ export default function Projects() {
                         </div>
                     </li>
 
-                    <li className='card ais'>
+                    <li className='card aart'>
                         <div className='image-wrap'>
-                            <img src={ais} alt='Advanced Insulation System' />
+                            <img src={aart} alt='Adventure Art, Eureka Springs' />
                         </div>
                         <div className='content-wrap'>
                             <div className='text-wrap'>
-                                <p>Advanced Insulation System is a custom insulation and energy solutions company specializing in residential &amp; commericial spaces. We have helped them earn over 2 million in sales in their first 6 months of being open!</p>
+                                <p>Adventure Art is an art supply shop and studio in Eureka Springs. We enhanced their Weebly/Square store to sell in-house paints and classes online, driving repeat sales and sold-out workshops</p>
                             </div>
                             <div className='btn-wrap'>
-                                <a href='https://advancedinsulationsystemsd.com/'
+                                <a href='https://www.arkansasadventureart.com'
                                     target="_blank" 
                                     rel="noopener noreferrer" 
                                     className='btn'
@@ -385,6 +386,26 @@ export default function Projects() {
                             </div>
                         </div> 
                     </li>
+
+                    {/* <li className='card ais'>
+                        <div className='image-wrap'>
+                            <img src={ais} alt='Advanced Insulation System' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>Advanced Insulation System is a custom insulation and energy solutions company specializing in residential &amp; commericial spaces. We have helped them earn over 2 million in sales in their first 6 months of being open!</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a href='https://advancedinsulationsystemsd.com/'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'
+                                    >
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div>
+                    </li> */}
                     
                     {/* <li className='card rdf'>
                         <div className='image-wrap'>
