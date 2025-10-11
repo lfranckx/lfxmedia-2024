@@ -227,6 +227,23 @@
                     max-width: 180px
                 }
             }
+            &.pilgrim {
+                background: #3D5C46;
+            }
+            &.koa {
+                .image-wrap {
+                    max-width: 160px;
+                    width: 100%;
+
+                    img {
+                    width: 100%;
+                }
+                }
+                
+            }
+            &.maria {
+                background: #250831;
+            }
 
             @media (max-width: 750px) {
                 img {

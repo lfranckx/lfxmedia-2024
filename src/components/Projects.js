@@ -13,13 +13,16 @@ import johnny from '../images/johnny-ramirez.png';
 import ollin from '../images/ollin_cream_500.png';
 import hairboss from '../images/hairboss_black.webp';
 import ais from '../images/ais-logo-center-aligned.png';
-import pp from '../images/PP_Green_Logo.webp';
+import pp from '../styles/PP_White_Logo.webp';
 // import spp from '../images/logo-large.png';
 import yuki from '../images/yuki-logo.png';
 import be from '../images/BE-white.png';
-import bp from '../images/logo-teal-bg.png';
+// import bp from '../images/logo-teal-bg.png';
+import koa from '../images/brands-koa-journey-logo.png';
 import greenhills from '../images/greenhills-logo.webp';
-import rdfranckx from '../images/rdf-logo-nobg.png';
+// import rdfranckx from '../images/rdf-logo-nobg.png';
+import maria from '../images/mha-full-white-logo.png';
+
 import crossing from '../images/crossingwellness-logo.png';
 import lfi from '../images/lfi-conference.png';
 
@@ -249,6 +252,24 @@ export default function Projects() {
                             </div>
                         </div>
                     </li>
+                    <li className='card koa'>
+                        <div className='image-wrap'>
+                            <img src={koa} alt='Slidell KOA Journey' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>Slidell KOA Journey is a family-friendly campground in Louisiana. We manage Google Ads and Meta Ads campaigns, develop creative strategies, and handle ongoing performance optimization to increase bookings year-round.</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a  href='https://koa.com/campgrounds/slidell/'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'>
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div> 
+                    </li>
                     {/* <li className='card spp'>
                         <div className='image-wrap'>
                             <img src={spp} alt='Sosa Practice Partners' />
@@ -285,6 +306,7 @@ export default function Projects() {
                             </div>
                         </div> 
                     </li>
+                    
                     <li className='card be'>
                         <div className='image-wrap'>
                             <img src={be} alt='Beyond Energy' />
@@ -303,60 +325,7 @@ export default function Projects() {
                             </div>
                         </div> 
                     </li>
-                    <li className='card bp'>
-                        <div className='image-wrap'>
-                            <img src={bp} alt='The Build Pros' />
-                        </div>
-                        <div className='content-wrap'>
-                            <div className='text-wrap'>
-                                <p>The Build Pros are redefining the standard for excellence in the general contracting industry. They are a full-service provider dedicated to transforming spaces from design to build.</p>
-                            </div>
-                            <div className='btn-wrap'>
-                                <a  href='https://thebuildprosd.com/'
-                                    target="_blank" 
-                                    rel="noopener noreferrer" 
-                                    className='btn'>
-                                    View Website &#8594;
-                                </a>
-                            </div>
-                        </div> 
-                    </li>
-                    <li className='card greenhills'>
-                        <div className='image-wrap'>
-                            <img src={greenhills} alt='Green Hills Golf Course' />
-                        </div>
-                        <div className='content-wrap'>
-                            <div className='text-wrap'>
-                                <p>Green Hills Golf Course has been a cornerstone of the Sandusky County golf community since it first opened in 1958. This 18-hole Public Golf Course is located in Northern Ohio and features a traditional American design.</p>
-                            </div>
-                            <div className='btn-wrap'>
-                                <a  href='https://greenhillsgolf.com/'
-                                    target="_blank" 
-                                    rel="noopener noreferrer" 
-                                    className='btn'>
-                                    View Website &#8594;
-                                </a>
-                            </div>
-                        </div> 
-                    </li>
-                    <li className='card rdf'>
-                        <div className='image-wrap'>
-                            <img src={rdfranckx} alt='Raquel Debbie Franckx' />
-                        </div>
-                        <div className='content-wrap'>
-                            <div className='text-wrap'>
-                                <p>RD Franckx is a contemporary artist working with multi-media. She is based out of the Ozarks. Bold colors &amp; creative upcycling of magazines characterizes her art.</p>
-                            </div>
-                            <div className='btn-wrap'>
-                                <a  href='https://rdfranckx.lfxmedia.net'
-                                    target="_blank" 
-                                    rel="noopener noreferrer" 
-                                    className='btn'>
-                                    View Website &#8594;
-                                </a>
-                            </div>
-                        </div> 
-                    </li>
+                    
                     <li className='card crossing'>
                         <div className='image-wrap'>
                             <img src={crossing} alt='Crossing Wellness' />
@@ -375,6 +344,44 @@ export default function Projects() {
                             </div>
                         </div> 
                     </li>
+                    {/* <li className='card bp'>
+                        <div className='image-wrap'>
+                            <img src={bp} alt='The Build Pros' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>The Build Pros are redefining the standard for excellence in the general contracting industry. They are a full-service provider dedicated to transforming spaces from design to build.</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a  href='https://thebuildprosd.com/'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'>
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div> 
+                    </li> */}
+                    
+                    <li className='card maria'>
+                        <div className='image-wrap'>
+                            <img src={maria} alt="Maria's Healing Arts, Eureka Springs" />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>Maria’s Healing Arts is a wellness and movement studio offering yoga, Pilates, and energy healing, where I designed and built a modern website focused on clear service presentation, branding, and user experience.</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a  href='https://www.mariashealingarts.com'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'>
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div> 
+                    </li>
+                    
                     <li className='card lfi'>
                         <div className='image-wrap'>
                             <img src={lfi} alt='Learning From Incidents' />
@@ -393,6 +400,42 @@ export default function Projects() {
                             </div>
                         </div> 
                     </li>
+                    <li className='card greenhills'>
+                        <div className='image-wrap'>
+                            <img src={greenhills} alt='Green Hills Golf Course' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>Green Hills Golf Course has been a cornerstone of the Sandusky County golf community since it first opened in 1958. We developed a custom full-stack Node.js and React.js web app for ticket printing, reporting, and daily operations</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a  href='https://greenhillsgolf.com/'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'>
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div> 
+                    </li>
+                    {/* <li className='card rdf'>
+                        <div className='image-wrap'>
+                            <img src={rdfranckx} alt='Raquel Debbie Franckx' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>RD Franckx is a contemporary artist working with multi-media. She is based out of the Ozarks. Bold colors &amp; creative upcycling of magazines characterizes her art.</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a  href='https://rdfranckx.lfxmedia.net'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'>
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div> 
+                    </li> */}
                 </ul>
             </section>
         </>
