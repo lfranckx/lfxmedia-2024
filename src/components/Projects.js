@@ -13,7 +13,7 @@ import johnny from '../images/johnny-ramirez.png';
 import ollin from '../images/ollin_cream_500.png';
 import hairboss from '../images/hairboss_black.webp';
 import ais from '../images/ais-logo-center-aligned.png';
-import pp from '../styles/PP_White_Logo.webp';
+import pp from '../images/PP_White_Logo.webp';
 // import spp from '../images/logo-large.png';
 import yuki from '../images/yuki-logo.png';
 import be from '../images/BE-white.png';
@@ -22,7 +22,6 @@ import koa from '../images/brands-koa-journey-logo.png';
 import greenhills from '../images/greenhills-logo.webp';
 // import rdfranckx from '../images/rdf-logo-nobg.png';
 import maria from '../images/mha-full-white-logo.png';
-
 import crossing from '../images/crossingwellness-logo.png';
 import lfi from '../images/lfi-conference.png';
 
