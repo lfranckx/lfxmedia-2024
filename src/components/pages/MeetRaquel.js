@@ -5,9 +5,9 @@ import ServicesPopup from '../ServicesPopup';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import computer from '../../images/computer.png';
-import avatar from '../../images/raquel/raq-avatar-2-mix.png';
+// import avatar from '../../images/raquel/raq-avatar-2-mix.png';
 import raquel_1 from '../../images/raquel/headshot-1.png';
-import raquel_2 from '../../images/raquel/headshot-2.png';
+// import raquel_2 from '../../images/raquel/headshot-2.png';
 
 export default function MeetRaquel(props) {
     useEffect(() => {
