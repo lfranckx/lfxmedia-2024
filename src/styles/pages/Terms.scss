@@ -1,0 +1,33 @@
+#terms-page {
+    .image-wrap {
+        display: none;
+    }
+
+    #terms-content {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 32px 32px 96px;
+
+        .container {
+            text-align: left;
+        }
+
+        h2 {
+            margin-top: 28px;
+        }
+
+        ul {
+            margin: 12px 0 0 20px;
+            line-height: 1.6;
+        }
+
+        p {
+            line-height: 1.7;
+            margin-top: 12px;
+            padding-left: 0;
+            padding-bottom: 0;
+        }
+
+
+    }
+}

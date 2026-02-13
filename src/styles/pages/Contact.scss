@@ -15,7 +15,7 @@
         font-weight: 400;
         line-height: 1.5;
 
-        span{ 
+        span { 
             display: block; 
             max-width: 650px;
             margin: auto;
@@ -50,12 +50,13 @@
         }
     }
 
-    input, textarea {
+    input,
+    textarea {
         margin: 10px 0;
         padding: 8px;
         width: 400px;
 
-        @media(max-width: 700px) {
+        @media (max-width: 700px) {
             width: 100%;
             margin: 10px auto;
         }
@@ -63,8 +64,46 @@
 
     textarea {
         width: 600px;
-        @media(max-width: 700px) {
+
+        @media (max-width: 700px) {
             width: 100%;
+        }
+    }
+
+    /* ==============================
+       SMS OPT-IN STYLING
+    ============================== */
+
+    .sms-optin {
+        margin-top: 16px;
+        text-align: left;
+
+        label {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            flex: 0 0 16px;
+            margin-top: 4px;
+            padding: 0;
+        }
+
+        span {
+            font-size: 14px;
+            line-height: 1.5;
+            max-width: 400px;
+        }
+
+        .small {
+            font-size: 13px;
+            opacity: 0.7;
+            margin-left: 28px;
+            margin-top: 8px;
         }
     }
 

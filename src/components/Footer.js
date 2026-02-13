@@ -48,6 +48,16 @@ export default function Footer() {
                         </a>
                     </li>
                 </ul>
+
+
+                <ul>
+                    <li>
+                        <p className='small-text'><Link to={"/privacy-policy"}>Privacy Policy</Link></p>
+                    </li>
+                    <li>
+                        <p className='small-text'><Link to={"/terms-and-conditions"}>Terms of Use</Link></p>
+                    </li>
+                </ul>
                 <p id='copyright'>Copyright © 2024. All rights reserved.</p>
             </footer>
         </>

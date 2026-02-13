@@ -13,6 +13,8 @@ import Results from './pages/Results';
 import Subscribe from './pages/Subscribe';
 import LoadingScreen from './LoadingScreen';
 import MeetRaquel from './pages/MeetRaquel';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import Terms from './pages/Terms';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -41,6 +43,8 @@ function App() {
             <Route path="/results" element={<Results loading={loading}/>} />
             <Route path="/subscribe" element={<Subscribe loading={loading}/>} />
             <Route path="/meet-raquel" element={<MeetRaquel loading={loading}/>} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy loading={loading} /> } />
+            <Route path="/terms-and-conditions" element={<Terms loading={loading} />} />
             <Route element={<NotFound loading={loading}/>} />
           </Routes>
         </AnimatePresence>
