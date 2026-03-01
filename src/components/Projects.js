@@ -24,7 +24,7 @@ import greenhills from '../images/greenhills-logo.webp';
 // import rdfranckx from '../images/rdf-logo-nobg.png';
 import maria from '../images/mha-full-white-logo.png';
 import crossing from '../images/crossingwellness-logo.png';
-import lfi from '../images/lfi-conference.png';
+// import lfi from '../images/lfi-conference.png';
 
 export default function Projects() {
     return (
