@@ -12,7 +12,7 @@ import sonna from '../images/SB-LOGO-WHITE.png';
 import johnny from '../images/johnny-ramirez.png';
 import ollin from '../images/ollin_cream_500.png';
 import hairboss from '../images/hairboss_black.webp';
-// import ais from '../images/ais-logo-center-aligned-2.png';
+import ais from '../images/ais-logo-center-aligned-2.png';
 import aart from '../images/adventure-art-logo.webp';
 import pp from '../images/PP_White_Logo.webp';
 // import spp from '../images/logo-large.png';
@@ -31,12 +31,31 @@ export default function Projects() {
         <>
             <section className='projects'>
                 <h2>Diverse Expertise</h2>
-                <p>Explore our portfolio of transformative projects for various businesses of all kinds, designed to elevate and empower.</p>
+                <p>Explore our work with businesses across a wide range of industries — built on strategic partnerships, digital execution, and performance-driven marketing. From custom websites to ongoing growth strategies, every project is designed for measurable, long-term impact.</p>
                 <p className='h3'>Want to see more? <span><a className='email' href='mailto:lachlan@lfxmedia.io'>Email us.</a></span></p>
                 <div className='btn-wrap'>
                     <Link className='btn-secondary' to={'/results'}>View our results <i className="fas fa-chevron-circle-right"></i></Link>
                 </div>
                 <ul>
+                    <li className='card ais'>
+                        <div className='image-wrap'>
+                            <img src={ais} alt='Advanced Insulation System' />
+                        </div>
+                        <div className='content-wrap'>
+                            <div className='text-wrap'>
+                                <p>Advanced Insulation System is a custom insulation and energy solutions company specializing in residential &amp; commericial spaces. We have helped them earn over 2 million in sales in their first 6 months of being open!</p>
+                            </div>
+                            <div className='btn-wrap'>
+                                <a href='https://advancedinsulationsystemsd.com/'
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='btn'
+                                    >
+                                    View Website &#8594;
+                                </a>
+                            </div>
+                        </div>
+                    </li>
                     <li className='card pilgrim'>
                         <div className='image-wrap'>
                             <img src={pp} alt='Pilgrim Place Claremont' />
@@ -172,7 +191,7 @@ export default function Projects() {
                         </div> 
                     </li>
                     
-                    <li className='card lfi'>
+                    {/* <li className='card lfi'>
                         <div className='image-wrap'>
                             <img src={lfi} alt='Learning From Incidents' />
                         </div>
@@ -189,7 +208,7 @@ export default function Projects() {
                                 </a>
                             </div>
                         </div> 
-                    </li>
+                    </li> */}
 
                     <li className='card greenhills'>
                         <div className='image-wrap'>
@@ -209,26 +228,6 @@ export default function Projects() {
                             </div>
                         </div> 
                     </li>
-
-                    {/* <li className='card ais'>
-                        <div className='image-wrap'>
-                            <img src={ais} alt='Advanced Insulation System' />
-                        </div>
-                        <div className='content-wrap'>
-                            <div className='text-wrap'>
-                                <p>Advanced Insulation System is a custom insulation and energy solutions company specializing in residential &amp; commericial spaces. We have helped them earn over 2 million in sales in their first 6 months of being open!</p>
-                            </div>
-                            <div className='btn-wrap'>
-                                <a href='https://advancedinsulationsystemsd.com/'
-                                    target="_blank" 
-                                    rel="noopener noreferrer" 
-                                    className='btn'
-                                    >
-                                    View Website &#8594;
-                                </a>
-                            </div>
-                        </div>
-                    </li> */}
                     
                     {/* <li className='card rdf'>
                         <div className='image-wrap'>
@@ -291,7 +290,7 @@ export default function Projects() {
 
             <section className='projects'>
                 <h2>Spotlight on Style</h2>
-                <p>Discover our latest projects in the beauty and hairstyling industry, where creativity meets cutting-edge digital presence.</p> 
+                <p>Explore transformative partnerships with leading beauty and hairstyling brands. We combine brand strategy, digital presence, and marketing execution to help creatives scale with clarity and impact.</p> 
                 <p className='h3'>Want to see more? <span><a className='email' href='mailto:lachlan@lfxmedia.io'>Email us.</a></span></p>
                 <div className='btn-wrap'>
                     <Link className='btn-secondary' to={'/results'}>View our results <i className="fas fa-chevron-circle-right"></i></Link>
