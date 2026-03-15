@@ -31,7 +31,7 @@ export default function Projects() {
         <>
             <section className='projects'>
                 <h2>Diverse Expertise</h2>
-                <p>Explore our work with businesses across a wide range of industries — built on strategic partnerships, digital execution, and performance-driven marketing. From custom websites to ongoing growth strategies, every project is designed for measurable, long-term impact.</p>
+                <p className='description' >Explore our work with businesses across a wide range of industries — built on strategic partnerships, digital execution, and performance-driven marketing. From custom websites to ongoing growth strategies, every project is designed for measurable, long-term impact.</p>
                 <p className='h3'>Want to see more? <span><a className='email' href='mailto:lachlan@lfxmedia.io'>Email us.</a></span></p>
                 <div className='btn-wrap'>
                     <Link className='btn-secondary' to={'/results'}>View our results <i className="fas fa-chevron-circle-right"></i></Link>
