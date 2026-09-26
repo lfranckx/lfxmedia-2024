@@ -290,7 +290,7 @@ export default function Projects() {
 
             <section className='projects'>
                 <h2>Spotlight on Style</h2>
-                <p>Explore transformative partnerships with leading beauty and hairstyling brands. We combine brand strategy, digital presence, and marketing execution to help creatives scale with clarity and impact.</p> 
+                <p className='description'>Explore transformative partnerships with leading beauty and hairstyling brands. We combine brand strategy, digital presence, and marketing execution to help creatives scale with clarity and impact.</p> 
                 <p className='h3'>Want to see more? <span><a className='email' href='mailto:lachlan@lfxmedia.io'>Email us.</a></span></p>
                 <div className='btn-wrap'>
                     <Link className='btn-secondary' to={'/results'}>View our results <i className="fas fa-chevron-circle-right"></i></Link>
