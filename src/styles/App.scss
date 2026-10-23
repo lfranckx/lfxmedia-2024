@@ -1,5 +1,12 @@
 @use "tokens";
 
+// While the theme flips, kill transitions everywhere so every element changes in the same frame.
+html.theme-switching *,
+html.theme-switching *::before,
+html.theme-switching *::after {
+  transition: none !important;
+}
+
 * {
   font-family: 'Europa', 'Montserrat', sans-serif;
   -webkit-box-sizing: border-box;

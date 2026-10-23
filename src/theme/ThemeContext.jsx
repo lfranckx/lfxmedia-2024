@@ -18,7 +18,17 @@ export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(getInitialTheme);
 
   useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
+    const root = document.documentElement;
+    if (root.getAttribute('data-theme') !== theme) {
+      // Suspend every CSS transition for this frame so all colors flip together
+      // (gradient backgrounds can't animate, so without this they snap while text eases).
+      root.classList.add('theme-switching');
+      root.setAttribute('data-theme', theme);
+      void root.offsetHeight; // force the style recalc while transitions are off
+      const id = requestAnimationFrame(() => requestAnimationFrame(() => root.classList.remove('theme-switching')));
+      try { localStorage.setItem(STORAGE_KEY, theme); } catch (e) { /* ignore */ }
+      return () => cancelAnimationFrame(id);
+    }
     try { localStorage.setItem(STORAGE_KEY, theme); } catch (e) { /* ignore */ }
   }, [theme]);
 
