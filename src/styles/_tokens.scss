@@ -1,0 +1,116 @@
+// ---------------------------------------------------------------
+// LFX Media design tokens. Light = original brand, Dark = social-post palette.
+// Switch is driven by <html data-theme="light|dark"> (see ThemeContext).
+// ---------------------------------------------------------------
+:root {
+  color-scheme: light;
+
+  // brand
+  --teal: #1ba49c;
+  --teal-deep: #0d4e4a;
+  --teal-bright: #06bc9b;
+
+  // gradient (used in dark mode for buttons, logo, accents)
+  --grad-1: #4fd3c4;
+  --grad-2: #8edb70;
+  --grad-3: #e3e85a;
+  --gradient: linear-gradient(135deg, var(--grad-1) 0%, var(--grad-2) 55%, var(--grad-3) 100%);
+  --gradient-h: linear-gradient(90deg, var(--grad-1) 0%, var(--grad-2) 55%, var(--grad-3) 100%);
+
+  // surfaces
+  --bg: #ffffff;
+  --bg-alt: #f6f8f8;
+  --bg-card: #ffffff;
+  --bg-footer: #0d4e4a;
+  --bg-about: #1ba49c;
+  --bg-contact-bar: #141c3a;
+  --bg-popup: #0d4e4a;
+  --bg-loading: #ffffff;
+
+  // text
+  --text: #000000;
+  --text-muted: #4a4a4a;
+  --text-on-brand: #ffffff;
+  --accent: #1ba49c;
+  --accent-text: #1ba49c;
+  --accent-contrast: #ffffff;
+  --link: #1ba49c;
+
+  // lines & shadow
+  --border: #1ba49c;
+  --border-subtle: #e6e6e6;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.14);
+
+  // buttons
+  --btn-outline-color: #1ba49c;
+  --btn-outline-hover-bg: #1ba49c;
+  --btn-outline-hover-text: #ffffff;
+  --btn-primary-bg: linear-gradient(90deg, #06bc9b, #1ba49c);
+  --btn-primary-bg-hover: linear-gradient(90deg, #1ba49c, #06bc9b);
+  --btn-primary-text: #ffffff;
+  --btn-primary-icon-hover: #0d4e4a;
+
+  // logo
+  --logo-fill: #1ba49c;
+  --logo-stroke: #1ba49c;
+  --logo-nav-fill: #1ba49c;
+  --logo-footer-fill: #ffffff;
+
+  // theme toggle
+  --toggle-track: #e9eeee;
+  --toggle-border: #1ba49c;
+  --toggle-thumb: #1ba49c;
+  --toggle-icon: #ffffff;
+
+  // inputs
+  --input-bg: #ffffff;
+  --input-text: #000000;
+  --input-border: #767676;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: #161616;
+  --bg-alt: #1c1c1c;
+  --bg-card: #212121;
+  --bg-footer: #0f0f0f;
+  --bg-about: #1c1c1c;
+  --bg-contact-bar: #1f1f1f;
+  --bg-popup: #212121;
+  --bg-loading: #161616;
+
+  --text: #ededed;
+  --text-muted: #b8b8b8;
+  --text-on-brand: #ededed;
+  --accent: #8edb70;
+  --accent-text: #6ee0cf;
+  --accent-contrast: #121212;
+  --link: #8edb70;
+
+  --border: #8edb70;
+  --border-subtle: #2c2c2c;
+  --shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+
+  --btn-outline-color: #8edb70;
+  --btn-outline-hover-bg: var(--gradient-h);
+  --btn-outline-hover-text: #121212;
+  --btn-primary-bg: var(--gradient-h);
+  --btn-primary-bg-hover: linear-gradient(90deg, var(--grad-3) 0%, var(--grad-2) 45%, var(--grad-1) 100%);
+  --btn-primary-text: #121212;
+  --btn-primary-icon-hover: #121212;
+
+  --logo-fill: url(#lfx-grad);
+  --logo-stroke: url(#lfx-grad);
+  --logo-nav-fill: url(#lfx-grad);
+  --logo-footer-fill: url(#lfx-grad);
+
+  --toggle-track: #2a2a2a;
+  --toggle-border: #3a3a3a;
+  --toggle-thumb: #8edb70;
+  --toggle-icon: #121212;
+
+  --input-bg: #1f1f1f;
+  --input-text: #ededed;
+  --input-border: #3a3a3a;
+}

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/ContactSection.scss';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import * as emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 export default function ContactSection() {
 

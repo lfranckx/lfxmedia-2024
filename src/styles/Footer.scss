@@ -1,9 +1,9 @@
 footer {
-    background: #0D4E4A;
+    background: var(--bg-footer);
     padding: 96px 0 96px;
 
     h1, p {
-        color: #fff;
+        color: var(--text-on-brand);
     }
 
     
@@ -17,11 +17,16 @@ footer {
     }
 
     h1 {
-        img {
-            border-radius: 4px;
-            max-width: 100px;
+        line-height: 0;
+        .footer-logo {
+            width: 100px;
+            margin: auto;
+            path { fill: var(--logo-footer-fill); }
         }
     }
+
+    a:hover i { color: var(--accent-text); }
+    .small-text a { color: var(--text-on-brand); &:hover { color: var(--accent-text); } }
 
     #quote {
         font-weight: 400;
@@ -40,7 +45,7 @@ footer {
         li {
             i {
                 font-size: 2rem;
-                color: #fff;
+                color: var(--text-on-brand);
             }
         }
     }

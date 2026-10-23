@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import '../../styles/Header.scss';
-import '../../styles/pages/Results.scss';
-import { Helmet } from 'react-helmet';
+import '../../styles/pages/CaseStudy.scss';
+import { Link } from 'react-router-dom';
 import computer from '../../images/computer.png';
 import ResultsPopup from '../ResultsPopup';
 import ContactSection from '../ContactSection';
 import { motion } from 'framer-motion';
 
-export default function Results(props) {
+export default function CaseStudyForeverCurls(props) {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -21,19 +21,21 @@ export default function Results(props) {
 
     return (
         <>
-            <Helmet >
-                <title>Client Success Stories | Case Studies &amp; Results | LFX Media</title>
-                <meta name='description' content='Explore real client success stories from LFX Media. Discover how our digital marketing, SEO, and web development solutions increased sales by 685% and improved conversion rates by 47%.'/>
-            </Helmet>
+            <>
+                <title>Forever Curls Case Study | +685% Sales for an E-Commerce Hair Brand | LFX Media</title>
+                <meta name='description' content='How LFX Media grew Forever Curls by Leysa: +685% total sales, +162% organic traffic, +40% returning customers, and a +47% conversion rate after a Shopify rebuild, SEO, and paid growth.'/>
+            </>
             <motion.div 
-                id='results-page'
+                id='case-study-forever-curls'
+                className='case-study'
                 initial={{ opacity: 0 }}    
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
             >
                 <header className={loading ? '' : 'fade-in-screen'}>
-                    <h1>2021 Client Case Study</h1>
-                    <h2>Forever Curls by Leysa</h2>
+                    <p className='eyebrow'><Link to='/results'>Case studies</Link> / E-commerce</p>
+                    <h1>Forever Curls by Leysa</h1>
+                    <h2>An e-commerce hair care brand. Year one under management, compared to the year before.</h2>
                     <div className='image-wrap'>
                         <img src={computer} alt='desktop workspace' />
                     </div>
@@ -84,6 +86,9 @@ export default function Results(props) {
                             </li>
                         </ul>
                     </section>
+                    <div className='cta-row'>
+                        <Link className='btn' to='/results'>All case studies</Link>
+                    </div>
                     <ContactSection />
                     <ResultsPopup 
                         toggleSalesCard = {toggleSalesCard}

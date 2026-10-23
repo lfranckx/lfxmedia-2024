@@ -3,16 +3,26 @@
   <head>
     <title>Your Partner for Web Design, SEO &amp; Paid Ads | LFX Media</title>
     <meta charset="utf-8">
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="manifest" href="/manifest.json">
     <link rel="canonical" href="https://lfxmedia.io/">
-    <meta name="theme-color" content="#1ba49c">
+    <meta name="theme-color" content="#1ba49c" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)">
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('lfx-theme');
+          if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+      })();
+    </script>
     <meta name="author" content="Lachlan Franckx">
     <meta name='description' content="LFX Media is your go-to team for digital excellence. With expertise in Medical, Construction, E-Commerce, and Beauty, we connect your business to its target audience"/>
     <meta name='keywords' content='Web Development, Digital Marketing Services, SEO Strategies, Marketing Agency, PPC Advertising, Google Ads, Facebook Advertising, Meta Advertising, Online Marketing Solutions' />
     <meta property="og:title" content="LFX Media">
-    <meta pproperty="og:locale" content="en_US">
+    <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="LFX Media">
     <meta property="og:url" content="https://lfxmedia.io/">
     <meta property="og:type" content="website">
@@ -25,7 +35,7 @@
     <meta name='twitter:description' content="LFX Media is your go-to team for digital excellence. With expertise in Medical, Construction, E-Commerce, and Beauty, we connect your business to its target audience"/>
     <meta name="twitter:image" content="https://lfxmedia.s3.us-west-1.amazonaws.com/green-logo.png">
     <meta name="twitter:image:alt" content="Lachlan Franckx">
-    <link rel='stylesheet' href="%PUBLIC_URL%/fonts.css">
+    <link rel='stylesheet' href="/fonts.css">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/2305032838.js" crossorigin="anonymous"></script>
@@ -48,5 +58,6 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

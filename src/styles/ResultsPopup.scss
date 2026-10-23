@@ -6,9 +6,9 @@
         .content {
             padding: 20px;
             border-radius: 30px;
-            -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
-                    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
-            background: #fff;
+            -webkit-box-shadow: var(--shadow);
+                    box-shadow: var(--shadow);
+            background: var(--bg-card);
             overflow-y: auto;
             overflow-x: hidden;
             position: fixed;
@@ -24,11 +24,11 @@
             }
 
             button {
-                color: #1ba49c;
+                color: var(--accent-text);
                 margin-top: 32px;
 
                 &:hover {
-                    color: #fff;
+                    color: var(--btn-outline-hover-text);
                 }
             }
 

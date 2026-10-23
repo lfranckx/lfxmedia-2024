@@ -3,7 +3,7 @@
     padding: 0 20px;
 
     .content-wrap {
-        background: #141C3A;
+        background: var(--bg-contact-bar);
         max-width: 1200px;
         margin: 0 auto;
         padding: 48px 16px;
@@ -22,7 +22,7 @@
         h3 {
             font-size: 2rem;
             font-weight: 700;
-            color: #fff;
+            color: var(--text-on-brand);
             padding: 0;
         }
 
@@ -31,11 +31,11 @@
         }
     
         p, .btn {
-            color: #fff;
+            color: var(--text-on-brand);
         }
     
         .btn:hover {
-            background: #1ba49c;
+            background: var(--btn-outline-hover-bg); color: var(--btn-outline-hover-text);
         }
 
         @media (max-width: 750px) {

@@ -6,9 +6,9 @@
         .content {
             padding: 20px;
             border-radius: 30px;
-            -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
-                    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
-            background: #0d4e4a;
+            -webkit-box-shadow: var(--shadow);
+                    box-shadow: var(--shadow);
+            background: var(--bg-popup);
             overflow-y: auto;
             overflow-x: hidden;
             position: fixed;
@@ -25,11 +25,11 @@
     
                 h2 {
                     padding-top: 0;
-                    color: #fff;
+                    color: var(--text-on-brand);
                 }
         
                 h3 {
-                    color: #06BC9B;
+                    color: var(--accent-text);
                     margin-bottom: 16px;
                 }
 
@@ -41,18 +41,18 @@
                 }
         
                 p {
-                    color: #fff;
+                    color: var(--text-on-brand);
                     padding-left: 0;
                     padding-right: 0;
                 }
         
                 li {
-                    color: #fff;
+                    color: var(--text-on-brand);
                 }
             }
     
             button {
-                color: #fff;
+                color: var(--text-on-brand);
                 margin-top: 32px;
             }
     

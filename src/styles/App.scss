@@ -1,3 +1,5 @@
+@use "tokens";
+
 * {
   font-family: 'Europa', 'Montserrat', sans-serif;
   -webkit-box-sizing: border-box;
@@ -7,8 +9,14 @@
   transition: all .2s ease-in-out;
 }
 
+html {
+  background: var(--bg);
+}
+
 body {
   margin: 0;
+  background: var(--bg);
+  color: var(--text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
@@ -55,8 +63,13 @@ p {
 }
 
 a {
-  color: #1ba49c;
+  color: var(--link);
   text-decoration: none;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-contrast);
 }
 
 li {
@@ -72,6 +85,10 @@ input, textarea {
   margin: 10px 0;
   padding: 10px;
   width: 240px;
+  background: var(--input-bg);
+  color: var(--input-text);
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
 
   @media(max-width: 1100px) {
       width: 100%;
@@ -90,6 +107,7 @@ button {
   background: none;
   outline: unset;
   border: unset;
+  color: inherit;
 
   &:hover {
     cursor: pointer;
@@ -97,16 +115,18 @@ button {
 }
 
 .btn {
-  border: #1ba49c solid 2px;
-  color: #1ba49c;
+  border: var(--btn-outline-color) solid 2px;
+  color: var(--btn-outline-color);
   border-radius: 100px;
   padding: 8px 28px;
   font-size: 1.1rem;
   font-weight: 500;
+  background: transparent;
 
   &:hover, &:disabled {
-    background: #1ba49c;
-    color: #fff;
+    background: var(--btn-outline-hover-bg);
+    color: var(--btn-outline-hover-text);
+    border-color: transparent;
   }
 }
 
@@ -114,24 +134,23 @@ button {
   border: none;
   font-size: 1.1rem;
   padding: 8px 16px;
-  color: #fff;
+  color: var(--btn-primary-text);
   border-radius: 4px;
-  background-color: #06BC9B;
-  background-image: -webkit-linear-gradient(left,#06BC9B,#1ba49c);
+  background-image: var(--btn-primary-bg);
   cursor: pointer;
+  font-weight: 500;
 
   &:hover {
-      background-color: #06BC9B;
-      background-image: -webkit-linear-gradient(left,#1ba49c,#06BC9B);
-      
+      background-image: var(--btn-primary-bg-hover);
+
       i {
-          color: #0d4e4a;
+          color: var(--btn-primary-icon-hover);
       }
   }
 
   i {
       font-size: .8rem;
-      color: #fff;
+      color: var(--btn-primary-text);
       margin-left: 10px;
       -webkit-transition: none;
       -o-transition: none;
@@ -139,10 +158,31 @@ button {
   }
 }
 
+// gradient-filled wordmark / inline logo
+.lfx-logo {
+  display: block;
+  height: auto;
+
+  path {
+    fill: var(--logo-fill);
+  }
+}
+
+// gradient text helper (dark mode only; light mode stays teal)
+.grad-text {
+  color: var(--accent-text);
+}
+:root[data-theme="dark"] .grad-text {
+  background: var(--gradient-h);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .error {
   text-align: left;
   padding-left: 10px;
-  color: #1ba49c;
+  color: var(--accent-text);
 }
 
 .fade-in {
@@ -187,7 +227,7 @@ button {
 }
 
 .green {
-  color: #1ba49c;
+  color: var(--accent-text);
 }
 
 .mt10 {
@@ -205,5 +245,56 @@ button {
 
   h3 {
     font-size: 1.5rem;
+  }
+}
+// outlined button sitting on a brand-colored (teal) block
+.btn-on-brand {
+  border-color: var(--text-on-brand);
+  color: var(--text-on-brand);
+  display: inline-block;
+  margin-top: 8px;
+
+  &:hover {
+    background: var(--text-on-brand);
+    color: var(--teal);
+    border-color: transparent;
+  }
+}
+
+// --------------------------------------------------------------
+// Dark-mode accents: gradient hairlines on brand blocks + card edges
+// --------------------------------------------------------------
+:root[data-theme="dark"] {
+  .btn-on-brand:hover {
+    background: var(--gradient-h);
+    color: #121212;
+  }
+
+  #about,
+  .case-study #summary {
+    position: relative;
+    border-top: 1px solid var(--border-subtle);
+    border-bottom: 1px solid var(--border-subtle);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gradient-h);
+    }
+  }
+
+  #services .card,
+  .case-study #results .card,
+  #results-popup .content,
+  #contact-bar .content-wrap {
+    border: 1px solid var(--border-subtle);
+  }
+
+  footer {
+    border-top: 1px solid var(--border-subtle);
   }
 }

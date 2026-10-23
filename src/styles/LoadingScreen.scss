@@ -1,16 +1,14 @@
-.loading-screen{
-
+.loading-screen {
     &.active {
         width: 100%;
         height: 100vh;
         position: fixed;
         top: 0;
         left: 0;
-        // background-color: #1ba49c;
-        background-color: #fff;
+        background-color: var(--bg-loading);
         z-index: 5;
     }
-    
+
     &.hidden {
         z-index: -1;
         transition: all .8s ease;
@@ -23,81 +21,71 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        width: min(500px, 80vw);
 
         &.fade-out {
             opacity: 0;
             z-index: -1;
         }
-        
+
         @media(max-width: 750px) {
             transform: translate(-50%, -60%);
         }
 
-        svg {
-            max-width: 500px;
+        .lfx-logo.outline {
+            width: 100%;
 
             path {
-                animation: fill 0.5s 8s forwards;
+                fill: transparent;
+                stroke: var(--logo-stroke);
+                stroke-width: 10;
+                stroke-linejoin: round;
+                animation: fill 0.6s 8s forwards;
             }
 
-            path:nth-child(1) {
-                // Letter L
-                stroke-dasharray: 933px;
-                stroke-dashoffset: 933px;
-                animation: lineAnimate 2s 3s ease forwards, fill 0.5s 8s forwards;
+            // lengths measured from the 1000x497 wordmark paths
+            path:nth-of-type(1) { // L
+                stroke-dasharray: 1050px;
+                stroke-dashoffset: 1050px;
+                animation: lineAnimate 2s 3s ease forwards, fill 0.6s 8s forwards;
             }
-
-            path:nth-child(2) {
-                // Letter F
-                stroke-dasharray: 1336px;
-                stroke-dashoffset: 1336px;
-                animation: lineAnimate 2s 4s ease forwards, fill 0.5s 8s forwards;
+            path:nth-of-type(2) { // F foot
+                stroke-dasharray: 300px;
+                stroke-dashoffset: 300px;
+                animation: lineAnimate 1s 4s ease forwards, fill 0.6s 8s forwards;
             }
-
-            path:nth-child(3) {
-                // Letter F bottom
-                stroke-dasharray: 266px;
-                stroke-dashoffset: 266px;
-                animation: lineAnimate 1s 4s ease forwards, fill 0.5s 8s forwards;
+            path:nth-of-type(3) { // F
+                stroke-dasharray: 1480px;
+                stroke-dashoffset: 1480px;
+                animation: lineAnimate 2s 4s ease forwards, fill 0.6s 8s forwards;
             }
-
-            path:nth-child(5) {
-                // Letter X
-                stroke-dasharray: 1668px;
-                stroke-dashoffset: 1668px;
-                animation: lineAnimate 2s 5s ease forwards, fill 0.5s 8s forwards;
+            path:nth-of-type(4) { // X
+                stroke-dasharray: 1845px;
+                stroke-dashoffset: 1845px;
+                animation: lineAnimate 2s 5s ease forwards, fill 0.6s 8s forwards;
             }
-
-            path:nth-child(6) {
-                // Border
-                stroke-dasharray: 5165px;
-                stroke-dashoffset: 5165px;
-                animation: lineAnimate 3s 5s ease forwards, fill 0.5s 8s forwards;
-            }
-
-            @media(max-width: 750px) {
-                max-width: 300px;
-            }
-
-            @media(max-width: 500px) {
-                max-width: 250px;
+            path:nth-of-type(5) { // frame
+                stroke-dasharray: 5640px;
+                stroke-dashoffset: 5640px;
+                animation: lineAnimate 3s 5s ease forwards, fill 0.6s 8s forwards;
             }
         }
 
         @keyframes lineAnimate {
-            to {
-                stroke-dashoffset: 0;
-            }
+            to { stroke-dashoffset: 0; }
         }
 
         @keyframes fill {
-            from {
-                fill: transparent;
-            }
-            
-            to {
-                fill: #1BA49C;
-            }
+            from { fill: transparent; }
+            to { fill: var(--logo-fill); }
         }
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .loading-screen .logo-wrap .lfx-logo.outline path {
+        animation: none;
+        stroke-dashoffset: 0;
+        fill: var(--logo-fill);
     }
 }

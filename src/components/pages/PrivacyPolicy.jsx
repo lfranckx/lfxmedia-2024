@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import '../../styles/Header.scss';
 import '../../styles/pages/PrivacyPolicy.scss';
-import { Helmet } from 'react-helmet';
 import computer from '../../images/computer.png';
 import { motion } from 'framer-motion';
 
@@ -14,7 +13,7 @@ export default function PrivacyPolicy(props) {
 
   return (
     <>
-      <Helmet>
+      <>
         <title>Privacy Policy | LFX Media</title>
         <meta
           name="description"
@@ -24,7 +23,7 @@ export default function PrivacyPolicy(props) {
           name="keywords"
           content="LFX Media Privacy Policy, privacy policy, data privacy, SMS policy, text message consent"
         />
-      </Helmet>
+      </>
 
       <motion.div
         id="privacy-policy"

@@ -1,7 +1,6 @@
 import '../styles/App.scss';
 import React, { useState, useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
 import Navbar from './Navbar';
@@ -9,10 +8,12 @@ import Homepage from './pages/Homepage';
 import Contact from './pages/Contact';
 import Footer from './Footer';
 import NotFound from './pages/NotFound';
-import Results from './pages/Results';
+import CaseStudies from './pages/CaseStudies';
+import CaseStudyAIS from './pages/CaseStudyAIS';
+import CaseStudyForeverCurls from './pages/CaseStudyForeverCurls';
+import Team from './pages/Team';
 import Subscribe from './pages/Subscribe';
 import LoadingScreen from './LoadingScreen';
-import MeetRaquel from './pages/MeetRaquel';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Terms from './pages/Terms';
 
@@ -27,12 +28,6 @@ function App() {
 
   return (
     <>
-      <Helmet>
-        <title>Your Partner for Web Design, SEO &amp; Paid Ads | LFX Media</title>
-        <meta name='description' content="LFX Media is your go-to team for digital excellence. With expertise in Medical, Construction, E-Commerce, and Beauty, we connect your business to its target audience"/>
-        <meta name='keywords' content='Web Development, Digital Marketing Services, SEO Strategies, Marketing Agency, PPC Advertising, Google Ads, Facebook Advertising, Meta Advertising, Online Marketing Solutions' />
-      </Helmet>
-      
       <div className='app'>
         <Navbar />
         <LoadingScreen loading={loading} />
@@ -40,12 +35,15 @@ function App() {
           <Routes>
             <Route path="/" element={<Homepage loading={loading}/>} />
             <Route path='/contact' element={<Contact loading={loading}/>} />
-            <Route path="/results" element={<Results loading={loading}/>} />
+            <Route path="/results" element={<CaseStudies loading={loading}/>} />
+            <Route path="/results/advanced-insulation-system" element={<CaseStudyAIS loading={loading}/>} />
+            <Route path="/results/forever-curls" element={<CaseStudyForeverCurls loading={loading}/>} />
+            <Route path="/team" element={<Team loading={loading}/>} />
             <Route path="/subscribe" element={<Subscribe loading={loading}/>} />
-            <Route path="/meet-raquel" element={<MeetRaquel loading={loading}/>} />
+            <Route path="/meet-raquel" element={<Navigate to="/team#raquel" replace />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy loading={loading} /> } />
             <Route path="/terms-and-conditions" element={<Terms loading={loading} />} />
-            <Route element={<NotFound loading={loading}/>} />
+            <Route path="*" element={<NotFound loading={loading}/>} />
           </Routes>
         </AnimatePresence>
         <Footer />

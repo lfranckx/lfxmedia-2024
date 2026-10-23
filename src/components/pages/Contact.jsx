@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import * as emailjs from 'emailjs-com';
-import { Helmet } from 'react-helmet';
+import emailjs from '@emailjs/browser';
 import '../../styles/pages/Contact.scss';
 import me from '../../images/us-crop.png';
 import { motion } from 'framer-motion';
@@ -68,7 +67,7 @@ const Contact = (props) => {
 
   return (
     <>
-      <Helmet>
+      <>
         <title>Contact Us | LFX Media - Start Your Digital Growth Journey</title>
         <meta
           name="description"
@@ -78,7 +77,7 @@ const Contact = (props) => {
           name="keywords"
           content="Web Development, Digital Marketing Services, SEO Strategies, Marketing Agency, PPC Advertising, Google Ads, Facebook Advertising, Meta Advertising, Online Marketing Solutions"
         />
-      </Helmet>
+      </>
 
       <motion.main initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
         <section id="contact" className={loading ? '' : 'fade-in-screen'}>

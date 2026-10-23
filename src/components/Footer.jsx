@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Footer.scss';
-import white from '../images/white-logo.png';
+import Logo from './Logo';
 
 export default function Footer() {
     return (
@@ -9,7 +9,7 @@ export default function Footer() {
             <footer>
                 <div className='logo-wrap'>
                     <Link to={'/'}>
-                        <h1><img src={white} alt='white logo' /></h1>
+                        <h1><Logo className='footer-logo' /></h1>
                     </Link>
                 </div>
                 
@@ -58,7 +58,7 @@ export default function Footer() {
                         <p className='small-text'><Link to={"/terms-and-conditions"}>Terms of Use</Link></p>
                     </li>
                 </ul>
-                <p id='copyright'>Copyright © 2024. All rights reserved.</p>
+                <p id='copyright'>Copyright © {new Date().getFullYear()} LFX Media. All rights reserved.</p>
             </footer>
         </>
     );

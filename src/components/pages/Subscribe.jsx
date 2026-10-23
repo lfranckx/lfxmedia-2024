@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { Helmet } from 'react-helmet';
 import '../../styles/pages/Subscribe.scss';
 import computer from '../../images/computer.png';
 import SignUpForm from '../SignUpForm';
@@ -14,10 +13,10 @@ export default function SubscribePage(props) {
 
     return (
         <>
-            <Helmet >
+            <>
                 <title>Subscribe to LFX Media Insights | Tips, News &amp; Offers</title>
                 <meta name='description' content='Join LFX Media’s newsletter for exclusive tips on web development, digital marketing, and freelancing success. Stay informed with updates and special offers tailored for you.'/>
-            </Helmet>
+            </>
             <motion.div
                 initial={{ opacity: 0 }}    
                 animate={{ opacity: 1 }}

@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import '../../styles/Header.scss';
 import '../../styles/pages/Terms.scss';
-import { Helmet } from 'react-helmet';
 import computer from '../../images/computer.png';
 import { motion } from 'framer-motion';
 
@@ -14,7 +13,7 @@ export default function Terms(props) {
 
   return (
     <>
-      <Helmet>
+      <>
         <title>Terms &amp; Conditions | LFX Media</title>
         <meta
           name="description"
@@ -24,7 +23,7 @@ export default function Terms(props) {
           name="keywords"
           content="LFX Media Terms and Conditions, Terms of Use, website terms"
         />
-      </Helmet>
+      </>
 
       <motion.div
         id="terms-page"

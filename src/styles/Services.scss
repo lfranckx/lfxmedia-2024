@@ -1,6 +1,8 @@
 #services {
     margin: -96px auto 160px;
     padding: 0 20px;
+    position: relative;
+    z-index: 1;
 
     ul {
         max-width: 1200px;
@@ -16,9 +18,9 @@
 
         li {
             .card {
-                background-color: #fff;
-                -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
-                        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
+                background-color: var(--bg-card);
+                -webkit-box-shadow: var(--shadow);
+                        box-shadow: var(--shadow);
                 border-radius: 30px;
                 padding: 20px 10px;
                 display: -webkit-box;
@@ -45,7 +47,7 @@
         
                 .icon {
                     font-size: 36px;
-                    color: #06BC9B;
+                    color: var(--accent-text);
                 }
         
                 .btn-wrap {
@@ -55,7 +57,7 @@
                 button {
                     &:hover {
                         i {
-                            color: #0d4e4a;
+                            color: var(--btn-primary-icon-hover);
                         }
                     }
                 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 
 import '../../styles/pages/NotFound.scss';
@@ -15,11 +14,11 @@ export default function NotFound (props) {
 
     return (
         <>
-            <Helmet >
+            <>
                 <title>Page Not Found | LFX Media - Web Development &amp; Digital Marketing Experts</title>
                 <meta name='description' content="Oops! The page you’re looking for doesn’t exist. Explore LFX Media for top-notch web development, digital marketing, and SEO services tailored to grow your business."/>
                 <meta name='keywords' content="Web Development, Digital Marketing Services, SEO Strategies, Marketing Agency, PPC Advertising, Google Ads, Facebook Advertising, Meta Advertising, Online Marketing Solutions" />
-            </Helmet>
+            </>
 
             <motion.main 
                 initial={{ opacity: 0 }}    
