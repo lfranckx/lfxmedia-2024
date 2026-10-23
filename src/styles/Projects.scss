@@ -271,3 +271,68 @@
         }
     }
 }
+// ------------------------------------------------------------------
+// 2026 redesign: compact project grid (5-up on desktop so a whole set
+// fits on one screen) + every card gets a solid backdrop for its logo.
+// ------------------------------------------------------------------
+.projects ul {
+    max-width: 1400px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 16px;
+    padding: 0 20px;
+
+    @media (min-width: 1100px) {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .card {
+        height: 220px;
+        border-radius: 20px;
+        box-shadow: var(--shadow);
+
+        img { width: 160px; }
+
+        .content-wrap {
+            border-radius: 20px;
+            padding: 12px;
+
+            .text-wrap {
+                height: auto;
+                p {
+                    font-size: 13.5px !important;
+                    line-height: 1.4;
+                    padding: 0 0 8px;
+                    font-weight: 400;
+                }
+            }
+
+            .btn-wrap .btn {
+                font-size: .9rem;
+                padding: 5px 16px;
+            }
+        }
+
+        // per-logo sizing at the smaller card size
+        &.ais img, &.sonna img, &.johnny img, &.ollin img, &.michelle img, &.hairboss img { max-width: 190px; }
+        &.yuki img { max-width: 170px; }
+        &.the img { max-width: 140px; }
+        &.be img { max-width: 80px; }
+        &.koa .image-wrap { max-width: 100px; }
+        &.crossing img { max-width: 150px; }
+        &.greenhills img { bottom: 8px; max-width: 170px; }
+        &.aart img { max-width: 190px; border-radius: 6px; }
+        &.leysa img, &.ouidad img, &.sah img { max-width: 180px; }
+
+        // backdrops for logos that were sitting on the bare page background
+        &.aart { background: #ffffff; }          // logo file is opaque white, so match it
+        &.koa { background: #16324f; }           // navy against the yellow/red mark
+        &.crossing { background: #e9f3f8; }      // pale sky behind the blue watercolor
+        &.greenhills { background: #e8efe4; }    // pale sage behind the green script
+        &.spp, &.rdf, &.bp { background: #f1f2f5; }
+
+        @media (max-width: 750px) {
+            height: 200px;
+            img { max-width: 150px; }
+        }
+    }
+}
