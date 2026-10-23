@@ -24,6 +24,7 @@
         }
 
         .viewport {
+            position: relative; // popLayout pins the exiting card here while the next slides in
             overflow: hidden;
             min-height: 450px;
             display: flex;
@@ -34,6 +35,8 @@
         .card {
             width: 100%;
             padding: 0 8px;
+            box-sizing: border-box;
+            will-change: transform;
             cursor: grab;
             user-select: none;
             -webkit-user-select: none;

@@ -22,11 +22,13 @@ const TESTIMONIALS = [
 const SWIPE_DISTANCE = 60;   // px
 const SWIPE_VELOCITY = 400;  // px/s
 
+// Full-width slide: the outgoing card leaves one side while the next enters from the other.
 const variants = {
-    enter: (dir) => ({ x: dir > 0 ? 80 : -80, opacity: 0 }),
+    enter: (dir) => ({ x: dir > 0 ? '100%' : '-100%', opacity: 1 }),
     center: { x: 0, opacity: 1 },
-    exit: (dir) => ({ x: dir > 0 ? -80 : 80, opacity: 0 }),
+    exit: (dir) => ({ x: dir > 0 ? '-100%' : '100%', opacity: 1 }),
 };
+const SLIDE = { type: 'tween', ease: [0.32, 0.72, 0, 1], duration: 0.5 };
 
 export default function Testimonials() {
     const [[index, direction], setPage] = useState([0, 0]);
@@ -64,7 +66,7 @@ export default function Testimonials() {
                     </button>
 
                     <div className='viewport'>
-                        <AnimatePresence initial={false} custom={direction} mode='wait'>
+                        <AnimatePresence initial={false} custom={direction} mode='popLayout'>
                             <motion.div
                                 key={index}
                                 className='card'
@@ -73,7 +75,7 @@ export default function Testimonials() {
                                 initial='enter'
                                 animate='center'
                                 exit='exit'
-                                transition={{ x: { type: 'spring', stiffness: 320, damping: 32 }, opacity: { duration: 0.18 } }}
+                                transition={{ x: SLIDE }}
                                 drag='x'
                                 dragConstraints={{ left: 0, right: 0 }}
                                 dragElastic={0.6}
