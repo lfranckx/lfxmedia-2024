@@ -272,67 +272,21 @@
     }
 }
 // ------------------------------------------------------------------
-// 2026 redesign: unified card grid (same 3-up width as Services + Team)
-// and a solid backdrop behind every logo.
+// 2026 redesign: original card size kept (1200px grid, 320px cards);
+// just add a solid backdrop behind every logo.
 // ------------------------------------------------------------------
 .projects ul {
-    max-width: 1400px;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    grid-gap: 20px;
     padding: 0 20px;
 
-    @media (min-width: 900px) {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
     .card {
-        height: 300px;
-        border-radius: 30px;
         box-shadow: var(--shadow);
 
-        img { width: 220px; }
-
-        .content-wrap {
-            border-radius: 30px;
-            padding: 20px;
-
-            .text-wrap {
-                height: auto;
-                p {
-                    font-size: 16px !important;
-                    line-height: 1.45;
-                    padding: 0 0 14px;
-                    font-weight: 400;
-                }
-            }
-
-            .btn-wrap .btn {
-                font-size: 1rem;
-                padding: 6px 20px;
-            }
-        }
-
-        // per-logo sizing
-        &.ais img, &.sonna img, &.johnny img, &.ollin img, &.michelle img, &.hairboss img { max-width: 260px; }
-        &.yuki img { max-width: 230px; }
-        &.the img { max-width: 190px; }
-        &.be img { max-width: 110px; }
-        &.koa .image-wrap { max-width: 140px; }
-        &.crossing img { max-width: 200px; }
-        &.greenhills img { bottom: 10px; max-width: 230px; }
-        &.aart img { max-width: 260px; border-radius: 6px; }
-        &.leysa img, &.ouidad img, &.sah img { max-width: 240px; }
-
         // backdrops for logos that were sitting on the bare page background
-        &.aart { background: #ffffff; }          // logo file is opaque white, so match it
+        &.aart { background: #ffffff; img { border-radius: 6px; } }   // logo file is opaque white, so match it
         &.koa { background: #16324f; }           // navy against the yellow/red mark
         &.crossing { background: #e9f3f8; }      // pale sky behind the blue watercolor
         &.greenhills { background: #e8efe4; }    // pale sage behind the green script
+        &.ollin { background-color: #4a4a4a; }   // visible charcoal in dark mode behind the cream wordmark
         &.spp, &.rdf, &.bp { background: #f1f2f5; }
-
-        @media (max-width: 750px) {
-            height: 240px;
-            img { max-width: 180px; }
-        }
     }
 }
