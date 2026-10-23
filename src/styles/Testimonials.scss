@@ -1,21 +1,52 @@
 #testimonials {
-    padding: 0 32px;
+    padding: 0 16px;
 
     .container {
-        max-width: 800px;
+        max-width: 1000px;
         margin: auto;
 
-        h3 {
+        > h3 {
             font-size: 1.1rem;
         }
 
-        .card {
+        .slider {
+            display: grid;
+            grid-template-columns: 56px minmax(0, 1fr) 56px;
+            align-items: center;
+            gap: 8px;
+            margin-top: 8px;
+            outline: none;
+
+            &:focus-visible {
+                border-radius: 20px;
+                box-shadow: 0 0 0 2px var(--accent);
+            }
+        }
+
+        .viewport {
+            overflow: hidden;
             min-height: 450px;
-            
+            display: flex;
+            align-items: center;
+            touch-action: pan-y; // let vertical scroll through, we handle horizontal drag
+        }
+
+        .card {
+            width: 100%;
+            padding: 0 8px;
+            cursor: grab;
+            user-select: none;
+            -webkit-user-select: none;
+
+            &:active { cursor: grabbing; }
+
             img {
                 width: 200px;
+                height: 200px;
+                object-fit: cover;
                 border-radius: 50%;
                 margin: 32px 0 16px;
+                pointer-events: none;
             }
 
             h3 {
@@ -32,22 +63,73 @@
             p {
                 font-weight: 500;
                 padding: 0;
+                max-width: 800px;
+                margin: 0 auto;
             }
         }
 
-        button {
-            height: 15px;
-            width: 15px;
+        .arrow {
+            width: 48px;
+            height: 48px;
             border-radius: 50%;
-            border: solid 2px var(--accent);
-            margin: 20px 10px 0;
+            border: 2px solid var(--btn-outline-color);
+            color: var(--btn-outline-color);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            justify-self: center;
             padding: 0;
-            line-height: 15px;
-            transition: all .4s ease-in-out;
+            background: transparent;
+            transition: background .2s ease, color .2s ease, border-color .2s ease, transform .2s ease;
+
+            svg { width: 22px; height: 22px; }
+
+            &:hover {
+                background: var(--btn-outline-hover-bg);
+                color: var(--btn-outline-hover-text);
+                border-color: transparent;
+                transform: scale(1.06);
+            }
+
+            &:focus-visible {
+                outline: 2px solid var(--accent);
+                outline-offset: 3px;
+            }
         }
 
-        button.active {
-            background: var(--accent);
+        .dots {
+            margin-top: 20px;
+
+            .dot {
+                height: 15px;
+                width: 15px;
+                border-radius: 50%;
+                border: solid 2px var(--accent);
+                margin: 0 8px;
+                padding: 0;
+                transition: background .3s ease, transform .3s ease;
+
+                &.active {
+                    background: var(--accent);
+                    transform: scale(1.15);
+                }
+            }
+        }
+
+        .hint {
+            font-size: .85rem;
+            color: var(--text-muted);
+            padding: 12px 0 0;
+            font-weight: 400;
+        }
+
+        @media (max-width: 750px) {
+            .slider {
+                grid-template-columns: minmax(0, 1fr);
+            }
+            .arrow { display: none; }  // swipe is the gesture on phones
+            .viewport { min-height: 420px; }
+            .card img { width: 160px; height: 160px; }
         }
     }
 }
