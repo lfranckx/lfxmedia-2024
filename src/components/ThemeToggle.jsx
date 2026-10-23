@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTheme } from '../theme/ThemeContext';
 import '../styles/ThemeToggle.scss';
 
 export default function ThemeToggle({ className = '' }) {
   const { theme, toggleTheme } = useTheme();
-  const isDark = theme === 'dark';
+  // The knob moves immediately; the page colors follow after ThemeContext's short delay.
+  const [isDark, setIsDark] = useState(theme === 'dark');
+  useEffect(() => { setIsDark(theme === 'dark'); }, [theme]);
+  const onToggle = () => { setIsDark((d) => !d); toggleTheme(); };
 
   return (
     <button
       type="button"
       className={`theme-toggle ${className}`}
-      onClick={toggleTheme}
+      onClick={onToggle}
       role="switch"
       aria-checked={isDark}
       aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}

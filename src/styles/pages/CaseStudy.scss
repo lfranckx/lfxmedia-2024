@@ -364,10 +364,10 @@
             padding: 48px;
             min-height: 320px;
 
-            img { max-width: 320px; width: 100%; }
+            img { width: 100%; }
 
-            &.ais { background: #1f4f6c; }
-            &.leysa { background: #f0bc68; }
+            &.ais { background: #1f4f6c; img { max-width: 460px; } }
+            &.leysa { background: #f0bc68; img { max-width: 250px; } }
         }
 
         .body {
@@ -414,7 +414,7 @@
 
         @media (max-width: 900px) {
             grid-template-columns: 1fr !important;
-            .visual { min-height: 220px; padding: 32px; img { max-width: 220px; } }
+            .visual { min-height: 220px; padding: 32px; &.ais img { max-width: 300px; } &.leysa img { max-width: 180px; } }
             .body { padding: 28px 24px; }
             .mini-stats { grid-template-columns: repeat(3, 1fr); gap: 8px; .value { font-size: 1.3rem; } }
         }

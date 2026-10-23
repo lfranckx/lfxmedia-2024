@@ -32,8 +32,10 @@ export function ThemeProvider({ children }) {
     try { localStorage.setItem(STORAGE_KEY, theme); } catch (e) { /* ignore */ }
   }, [theme]);
 
+  // Short pause before the flip so the toggle reads first, then every color changes at once.
+  const SWITCH_DELAY_MS = 300;
   const toggleTheme = useCallback(() => {
-    setTheme((t) => (t === 'dark' ? 'light' : 'dark'));
+    setTimeout(() => setTheme((t) => (t === 'dark' ? 'light' : 'dark')), SWITCH_DELAY_MS);
   }, []);
 
   return (
