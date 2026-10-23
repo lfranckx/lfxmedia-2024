@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../../styles/Header.scss';
 import '../../styles/pages/CaseStudy.scss';
 import { Link } from 'react-router-dom';
-import computer from '../../images/computer.png';
+import WorkspaceArt from '../WorkspaceArt';
 import ResultsPopup from '../ResultsPopup';
 import ContactSection from '../ContactSection';
 import { motion } from 'framer-motion';
@@ -37,7 +37,7 @@ export default function CaseStudyForeverCurls(props) {
                     <h1>Forever Curls by Leysa</h1>
                     <h2>An e-commerce hair care brand. Year one under management, compared to the year before.</h2>
                     <div className='image-wrap'>
-                        <img src={computer} alt='desktop workspace' />
+                        <WorkspaceArt />
                     </div>
                 </header>
                 <main className={loading ? '' : 'fade-in-screen'}>

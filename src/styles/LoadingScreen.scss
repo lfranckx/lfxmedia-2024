@@ -43,31 +43,21 @@
                 animation: fill 0.6s 8s forwards;
             }
 
-            // lengths measured from the 1000x497 wordmark paths
+            // lengths measured from the merged 1000x497 wordmark paths
             path:nth-of-type(1) { // L
                 stroke-dasharray: 1050px;
                 stroke-dashoffset: 1050px;
                 animation: lineAnimate 2s 3s ease forwards, fill 0.6s 8s forwards;
             }
-            path:nth-of-type(2) { // F foot
-                stroke-dasharray: 300px;
-                stroke-dashoffset: 300px;
-                animation: lineAnimate 1s 4s ease forwards, fill 0.6s 8s forwards;
-            }
-            path:nth-of-type(3) { // F
-                stroke-dasharray: 1480px;
-                stroke-dashoffset: 1480px;
+            path:nth-of-type(2) { // F
+                stroke-dasharray: 1615px;
+                stroke-dashoffset: 1615px;
                 animation: lineAnimate 2s 4s ease forwards, fill 0.6s 8s forwards;
             }
-            path:nth-of-type(4) { // X
-                stroke-dasharray: 1845px;
-                stroke-dashoffset: 1845px;
-                animation: lineAnimate 2s 5s ease forwards, fill 0.6s 8s forwards;
-            }
-            path:nth-of-type(5) { // frame
-                stroke-dasharray: 5640px;
-                stroke-dashoffset: 5640px;
-                animation: lineAnimate 3s 5s ease forwards, fill 0.6s 8s forwards;
+            path:nth-of-type(3) { // X + frame
+                stroke-dasharray: 7260px;
+                stroke-dashoffset: 7260px;
+                animation: lineAnimate 3.5s 4.5s ease-in-out forwards, fill 0.6s 8s forwards;
             }
         }
 

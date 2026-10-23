@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import '../../styles/Header.scss';
-import computer from '../../images/computer.png';
+import WorkspaceArt from '../WorkspaceArt';
 import { motion } from 'framer-motion';
 
 import About from '../About';
@@ -43,7 +43,7 @@ export default function Homepage(props) {
                         </button>
                     </div>
                     <div className='image-wrap'>
-                        <img src={computer} alt='desktop workspace' />
+                        <WorkspaceArt />
                     </div>
                 </header>
                 <main className={loading ? '' : 'fade-in-screen'}>

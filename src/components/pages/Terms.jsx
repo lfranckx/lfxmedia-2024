@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import '../../styles/Header.scss';
 import '../../styles/pages/Terms.scss';
-import computer from '../../images/computer.png';
+import WorkspaceArt from '../WorkspaceArt';
 import { motion } from 'framer-motion';
 
 export default function Terms(props) {
@@ -35,7 +35,7 @@ export default function Terms(props) {
           <h1>Terms &amp; Conditions</h1>
           <h2>Rules and guidelines for using our website</h2>
           <div className="image-wrap">
-            <img src={computer} alt="desktop workspace" />
+            <WorkspaceArt />
           </div>
         </header>
 

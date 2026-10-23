@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import '../../styles/Header.scss';
 import '../../styles/pages/PrivacyPolicy.scss';
-import computer from '../../images/computer.png';
+import WorkspaceArt from '../WorkspaceArt';
 import { motion } from 'framer-motion';
 
 export default function PrivacyPolicy(props) {
@@ -35,7 +35,7 @@ export default function PrivacyPolicy(props) {
           <h1>Privacy Policy</h1>
           <h2>How we collect, use, and protect your information</h2>
           <div className="image-wrap">
-            <img src={computer} alt="desktop workspace" />
+            <WorkspaceArt />
           </div>
         </header>
 

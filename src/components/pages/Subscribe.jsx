@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import '../../styles/pages/Subscribe.scss';
-import computer from '../../images/computer.png';
+import WorkspaceArt from '../WorkspaceArt';
 import SignUpForm from '../SignUpForm';
 import { motion } from 'framer-motion';
 
@@ -38,7 +38,7 @@ export default function SubscribePage(props) {
                     <SignUpForm />
 
                     <div className='image-wrap'>
-                        <img src={computer} alt='desktop workspace' />
+                        <WorkspaceArt />
                     </div>
                 </header>
             </motion.div>

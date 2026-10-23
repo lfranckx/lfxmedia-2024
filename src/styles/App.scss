@@ -298,3 +298,10 @@ button {
     border-top: 1px solid var(--border-subtle);
   }
 }
+
+// theme-conditional elements
+.theme-dark-only { display: none; }
+:root[data-theme="dark"] {
+  .theme-light-only { display: none; }
+  .theme-dark-only { display: inline; }
+}
