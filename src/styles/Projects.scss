@@ -287,6 +287,16 @@
     .card {
         box-shadow: var(--shadow);
 
+        // the wrapper can stretch to full width; keep the logo centered inside it
+        .image-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            img { margin: 0 auto; }
+        }
+
         // backdrops for logos that were sitting on the bare page background
         &.aart { background: #ffffff; img { border-radius: 6px; } }   // logo file is opaque white, so match it
         &.koa { background: #16324f; }           // navy against the yellow/red mark

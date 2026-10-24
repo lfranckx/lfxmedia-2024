@@ -1,6 +1,6 @@
 import '../styles/App.scss';
 import React, { useState, useEffect } from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
 import Navbar from './Navbar';
@@ -19,6 +19,16 @@ import Terms from './pages/Terms';
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const location = useLocation();
+
+  // CallRail swap.js runs once on first load; re-run it after client-side route changes
+  // so phone numbers rendered on the new page are swapped too.
+  useEffect(() => {
+    const t = setTimeout(() => {
+      try { window.CallTrk?.swap?.(); } catch (e) { /* CallRail not loaded */ }
+    }, 300);
+    return () => clearTimeout(t);
+  }, [location.pathname]);
 
   useEffect(() => {
     setTimeout(() => {

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import '../../styles/Header.scss';
 import WorkspaceArt from '../WorkspaceArt';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 import About from '../About';
 import Projects from '../Projects';
@@ -21,7 +22,7 @@ export default function Homepage(props) {
     return (
         <>
             <>
-                <title>LFX Media | Google Ads, SEO &amp; Web Design for Service Businesses</title>
+                <title>Digital Marketing Solutions &amp; Web Development Services | LFX Media</title>
                 <meta name='description' content="Digital marketing agency for service businesses: Google Ads management, local SEO, AI search optimization, and websites built to convert — with every lead tracked to the dollar." />
             </>
             
@@ -33,9 +34,9 @@ export default function Homepage(props) {
                 exit={{ opacity: 0 }}
             >
                 <header className={loading ? '' : 'fade-in-screen'}>
-                    <h1>Marketing that brings in jobs, not just clicks.</h1>
-                    <h2>Google Ads, SEO, AI search visibility and websites built to convert — for contractors, senior living, home services and local businesses. Every lead tracked.</h2>
-                    <div className='btn-wrap'>
+                    <h1>Digital Marketing Solutions &amp; Web Development Services</h1>
+                    <h2>Beautiful design. Smart strategy. Measurable growth.</h2>
+                    <div className='btn-wrap hero-ctas'>
                         <button
                             type="button"
                             className='btn-secondary'
@@ -43,6 +44,7 @@ export default function Homepage(props) {
                         >
                             View our work <i className="fas fa-chevron-circle-right" />
                         </button>
+                        <Link className='btn' to='/contact'>Contact us</Link>
                     </div>
                     <div className='image-wrap'>
                         <WorkspaceArt />
