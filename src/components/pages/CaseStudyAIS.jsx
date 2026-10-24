@@ -6,29 +6,40 @@ import { motion } from 'framer-motion';
 import ais from '../../images/ais-logo-center-aligned-2.png';
 import ContactSection from '../ContactSection';
 
-// Source: Google Ads + HubSpot, Advanced Insulation System account, Oct 2023 – Jun 2026
+// Sources: Google Ads account (Oct 2023 – Oct 2026) and HubSpot CRM, Advanced Insulation System.
+// January 2026 is the account's best month and is used for the headline stats.
 const STATS = [
-    { value: '7×', label: 'Monthly lead volume', note: 'From ~18 leads/mo in the first quarter to ~128/mo in 2026' },
-    { value: '3×', label: 'Conversion rate', note: '4.0% of ad clicks became a lead at launch — 13.9% today' },
+    { value: '6×', label: 'Return on ad spend', note: 'January 2026: $23K in ad spend produced $142K in closed jobs tracked in HubSpot' },
+    { value: '14.6%', label: 'Conversion rate', note: '184 calls & quote requests from 1,261 clicks in January 2026' },
     { value: '3,000+', label: 'Calls & quote requests', note: '3,088 leads in 33 months; 1,516 in the last 12' },
-    { value: '~$180', label: 'Cost per qualified lead', note: 'For jobs worth thousands of dollars each' },
+    { value: '~$170', label: 'Cost per qualified lead', note: 'January 2026 — for jobs worth thousands of dollars each' },
+];
+
+const BEST_MONTH = [
+    { k: 'Ad spend', v: '$23,078' },
+    { k: 'Clicks', v: '1,261' },
+    { k: 'Calls & quote requests', v: '184' },
+    { k: 'Click-to-lead conversion rate', v: '14.6%' },
+    { k: 'Cost per call or form', v: '$125' },
+    { k: 'Closed jobs from that month\u2019s paid leads', v: '19 jobs · $141,980' },
+    { k: 'Return on ad spend', v: '6.2×' },
 ];
 
 const CRM = [
-    { year: '2024', value: 568, pct: 43 },
-    { year: '2025', value: 1319, pct: 100 },
-    { year: '2026', value: 1280, pct: 97, projected: true, display: '~1,280*' },
+    { year: '2024', value: 568, pct: 37 },
+    { year: '2025', value: 1319, pct: 86 },
+    { year: '2026', value: 1526, pct: 100, display: '1,526' },
 ];
 
 const JSON_LD = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'Advanced Insulation System Case Study: 7× Monthly Leads from Google Ads',
+    headline: 'Advanced Insulation System Case Study: 6× Return on Google Ads Spend',
     about: { '@type': 'Organization', name: 'Advanced Insulation System', url: 'https://advancedinsulationsystemsd.com/' },
     author: { '@type': 'Organization', name: 'LFX Media', url: 'https://lfxmedia.io' },
     publisher: { '@type': 'Organization', name: 'LFX Media', url: 'https://lfxmedia.io' },
     datePublished: '2026-07-15',
-    dateModified: '2026-10-23',
+    dateModified: '2026-10-24',
     mainEntityOfPage: 'https://lfxmedia.io/results/advanced-insulation-system',
 };
 
@@ -37,8 +48,8 @@ export default function CaseStudyAIS({ loading }) {
 
     return (
         <>
-            <title>Advanced Insulation System Case Study | 7× Monthly Leads from Google Ads | LFX Media</title>
-            <meta name='description' content='How LFX Media took a new San Diego insulation contractor from zero to ~128 qualified leads a month: service-split Google Search campaigns, dedicated landing pages, CallRail, and HubSpot attribution. 13.9% conversion rate, ~$180 cost per lead.' />
+            <title>Advanced Insulation System Case Study | 6× Return on Google Ads | LFX Media</title>
+            <meta name='description' content='How LFX Media built a San Diego insulation contractor\u2019s Google Ads program from zero: a 6× return on ad spend in its best month, 14.6% click-to-lead conversion rate, 3,000+ tracked calls and quote requests, and a CRM that has already passed last year\u2019s lead total.' />
             <script type='application/ld+json'>{JSON.stringify(JSON_LD)}</script>
 
             <motion.div id='case-study-ais' className='case-study' initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
@@ -106,29 +117,46 @@ export default function CaseStudyAIS({ loading }) {
                     <section className='prose'>
                         <h2>The results</h2>
                         <p>Over 33 months the account generated <strong>3,088 qualified leads</strong> — 1,516 of them in the last 12 months alone. Monthly lead volume went from roughly 18 in the first quarter to roughly 128 in 2026, a 7× increase. The conversion rate climbed from 4.0% of ad clicks at launch to 13.9%, comfortably inside the 10–15% range we target for local service accounts.</p>
-                        <p>Ad spend scaled with the results: from about $3K/month at launch to about $25K/month today, for <strong>$562K+ in total managed spend</strong> at roughly $180 per qualified lead. In the client's first six months in business, the program helped drive over $2 million in sales.</p>
+                        <p>Ad spend scaled with the results: from about $3K/month at launch to $25–35K/month today, for <strong>$680K+ in total managed spend</strong>. In the client's first six months in business, the program helped drive over $2 million in sales.</p>
+
+                        <h2>The best month: January 2026</h2>
+                        <p>January is the cleanest snapshot of what a mature, well-tuned Search account looks like for an insulation contractor. Every number below is from the Google Ads account and the client's HubSpot CRM; the revenue figure counts only jobs whose deal was opened in January from a paid-search lead, so it's a floor, not a ceiling.</p>
+                    </section>
+
+                    <section className='best-month' aria-label='January 2026 by the numbers'>
+                        <table>
+                            <tbody>
+                                {BEST_MONTH.map(r => (
+                                    <tr key={r.k}><th scope='row'>{r.k}</th><td>{r.v}</td></tr>
+                                ))}
+                            </tbody>
+                        </table>
+                        <p className='source'>Source: Google Ads and HubSpot, Advanced Insulation System accounts, January 2026. Jobs attributed by HubSpot original source = Paid Search.</p>
+                    </section>
+
+                    <section className='prose'>
                     </section>
 
                     <section className='chart' aria-label='New HubSpot contacts per year'>
                         <p className='chart-title'>New contacts created in HubSpot per year</p>
-                        <p className='chart-sub'>+132% year over year — 568 new leads in 2024 became 1,319 in 2025, and 2026 is holding that pace.</p>
+                        <p className='chart-sub'>568 new leads in 2024 became 1,319 in 2025 (+132%). 2026 passed last year's full total in September and sits at 1,526 with the busiest quarter still to go.</p>
                         <div className='bars'>
                             {CRM.map(b => (
                                 <div className='bar' key={b.year}>
                                     <div className='num'>{b.display || b.value.toLocaleString()}</div>
-                                    <div className={`fill ${b.projected ? 'projected' : ''}`} style={{ height: `${b.pct}%` }} role='img' aria-label={`${b.year}: ${b.value} new contacts${b.projected ? ' (projected)' : ''}`} />
+                                    <div className='fill' style={{ height: `${b.pct}%` }} role='img' aria-label={`${b.year}: ${b.value} new contacts`} />
                                 </div>
                             ))}
                         </div>
                         <div className='labels'>
                             {CRM.map(b => <span key={b.year}>{b.year}</span>)}
                         </div>
-                        <p className='source'>*CRM launched Nov 2023. 2026 shows Jan–mid-July actuals, on pace for ~1,280. Source: HubSpot and Google Ads, Advanced Insulation System accounts, Oct 2023 – Jun 2026.</p>
+                        <p className='source'>CRM launched Nov 2023. 2026 is Jan 1 – Oct 23 actuals. Source: HubSpot, Advanced Insulation System account.</p>
                     </section>
 
                     <section className='prose'>
                         <h3>Paid search drives 70% of the pipeline</h3>
-                        <p>Of the 692 leads created in the CRM in 2026 so far, 488 came from the ads. Because every contact carries its source, the owner can see exactly which campaign produced which job — which is what makes the decision to scale an easy one.</p>
+                        <p>Through mid-July 2026, 488 of the 692 leads created in the CRM came from the ads. Because every contact carries its source, the owner can see exactly which campaign produced which job — which is what makes the decision to scale an easy one.</p>
 
                         <div className='callout'>
                             <p><strong>Why this works for insulation specifically:</strong> jobs are worth thousands of dollars, the buyer searches with clear intent, and the decision happens on the phone. A tracked Search campaign with a strong landing page is the highest-leverage thing a contractor can run — as long as the tracking is honest.</p>

@@ -14,8 +14,8 @@ const STUDIES = [
         title: 'Advanced Insulation System',
         summary: 'A San Diego insulation contractor that opened in late 2023. We built their Google Ads program from zero and turned it into a tracked, scalable lead engine.',
         stats: [
-            { value: '7×', label: 'monthly lead volume' },
-            { value: '13.9%', label: 'ad-click conversion rate' },
+            { value: '6×', label: 'return on ad spend' },
+            { value: '14.6%', label: 'ad-click conversion rate' },
             { value: '3,000+', label: 'calls & quote forms' },
         ],
         img: ais, alt: 'Advanced Insulation System', visual: 'ais', featured: true,
@@ -40,7 +40,7 @@ export default function CaseStudies({ loading }) {
     return (
         <>
             <title>Case Studies | Real Lead Gen & E-Commerce Results | LFX Media</title>
-            <meta name='description' content='Real client results from LFX Media: 7× monthly leads and a 13.9% Google Ads conversion rate for an insulation contractor, +685% sales for an e-commerce hair brand. Tracked numbers, not vanity metrics.' />
+            <meta name='description' content='Real client results from LFX Media: a 6× return on Google Ads spend and 14.6% conversion rate for an insulation contractor, +685% sales for an e-commerce hair brand. Tracked numbers, not vanity metrics.' />
 
             <motion.div id='case-studies' initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
                 <header className={loading ? '' : 'fade-in-screen'}>
