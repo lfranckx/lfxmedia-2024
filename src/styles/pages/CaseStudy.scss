@@ -413,10 +413,10 @@
             padding: 48px;
             min-height: 320px;
 
-            img { width: 100%; }
+            img { display: block; margin: 0 auto; height: auto; }
 
-            &.ais { background: #1f4f6c; img { max-width: min(300px, 80%); } }
-            &.leysa { background: #f0bc68; img { max-width: 250px; } }
+            &.ais { background: #1f4f6c; img { width: min(300px, 80%); } }
+            &.leysa { background: #f0bc68; img { width: min(250px, 70%); } }
         }
 
         .body {
@@ -463,7 +463,7 @@
 
         @media (max-width: 900px) {
             grid-template-columns: 1fr !important;
-            .visual { min-height: 220px; padding: 32px; &.ais img { max-width: 240px; } &.leysa img { max-width: 180px; } }
+            .visual { min-height: 220px; padding: 32px; &.ais img { width: min(240px, 80%); } &.leysa img { width: min(180px, 70%); } }
             .body { padding: 28px 24px; }
             .mini-stats { grid-template-columns: repeat(3, 1fr); gap: 8px; .value { font-size: 1.3rem; } }
         }
