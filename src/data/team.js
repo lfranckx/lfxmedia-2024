@@ -27,7 +27,7 @@ const team = [
         focus: ['Social Media', 'Content & SEO', 'Graphic Design', 'Brand Voice'],
         bio: [
             'Raquel leads social media strategy and SEO content for LFX clients — blog writing, Google Business Profile posts, email campaigns, and the graphics that keep a brand consistent everywhere it shows up.',
-            'A lifelong artist and designer, she handles everything from infographics and brochures to menus and web graphics. Lachlan and Raquel are partners in life as well as business, and have run LFX together since the beginning.',
+            'A lifelong artist and designer, she handles everything from web design and social media graphics to brand assets, infographics and print. Lachlan and Raquel are partners in life as well as business, and have run LFX together since the beginning.',
         ],
         links: {
             email: 'mailto:raquel@lfxmedia.io',
