@@ -7,8 +7,8 @@
     "node": ">=20"
   },
   "scripts": {
-    "dev": "vite",
-    "start": "vite",
+    "dev": "vite --open",
+    "start": "vite --open",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint ."
