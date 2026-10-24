@@ -14,8 +14,8 @@ export default function SubscribePage(props) {
     return (
         <>
             <>
-                <title>Subscribe to LFX Media Insights | Tips, News &amp; Offers</title>
-                <meta name='description' content='Join LFX Media’s newsletter for exclusive tips on web development, digital marketing, and freelancing success. Stay informed with updates and special offers tailored for you.'/>
+                <title>Newsletter | What's Working in Google Ads, SEO &amp; AI Search | LFX Media</title>
+                <meta name='description' content='A short monthly note for business owners: what is working right now in Google Ads, local SEO and AI search, with real numbers from our client accounts. Free, cancel anytime.'/>
             </>
             <motion.div
                 initial={{ opacity: 0 }}    
@@ -26,11 +26,9 @@ export default function SubscribePage(props) {
                 <header className={loading ? '' : 'fade-in-screen'}>
                     <div className='container'>
                         <div className='text-wrap'>
-                            <h1>Being a web developer is tough.</h1>
+                            <h1>One email a month. What's actually working.</h1>
                             <p>
-                                Running a business as a web developer is even harder.
-                                I will be sending out tips on surviving the world of freelance by letting you know what works and how to get started.
-                                It's free and you can cancel anytime.
+                                Short notes for business owners on Google Ads, local SEO and AI search — what we're seeing across client accounts, what changed, and what to do about it. Free, and you can cancel anytime.
                             </p>
                         </div>
                     </div>

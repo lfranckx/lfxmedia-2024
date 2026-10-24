@@ -17,8 +17,8 @@ export default function Team({ loading }) {
 
     return (
         <>
-            <title>Meet the LFX Media Team | Lachlan, Raquel & Zahid</title>
-            <meta name='description' content='Meet the team behind LFX Media: Lachlan Franckx (CEO & Director), Raquel Franckx (Social Media & SEO), and Zahid Ilahi (Web Development & SEO). A small team that handles strategy, build, and tracking in-house.' />
+            <title>Our Team | LFX Media — Digital Marketing &amp; Web Development</title>
+            <meta name='description' content='Meet the LFX Media team: Lachlan Franckx (CEO & Director, paid media and tracking), Raquel Franckx (social media and SEO content) and Zahid Ilahi (web development and technical SEO). Strategy, build and tracking in-house.' />
 
             <motion.div
                 id='team-page'
@@ -29,7 +29,7 @@ export default function Team({ loading }) {
                 <header className={loading ? '' : 'fade-in-screen'}>
                     <p className='eyebrow'>The team</p>
                     <h1>Small team. Full stack.</h1>
-                    <h2>Strategy, design, development, and tracking are all handled in-house — so nothing gets lost between a brief and a live campaign.</h2>
+                    <h2>Strategy, design, development and tracking handled in-house, so nothing gets lost between the plan and the live campaign.</h2>
                 </header>
 
                 <main className={loading ? '' : 'fade-in-screen'}>
@@ -65,15 +65,15 @@ export default function Team({ loading }) {
                         <ul>
                             <li>
                                 <h3>Strategy first</h3>
-                                <p>Lachlan scopes the plan, the budget, and the tracking before anything goes live — so every campaign has a number it's accountable to.</p>
+                                <p>Lachlan scopes the plan, budget and tracking before anything goes live, so every campaign has a number it's accountable to.</p>
                             </li>
                             <li>
                                 <h3>Built in-house</h3>
-                                <p>Zahid and Lachlan build the pages, forms, and integrations. No hand-offs to a third-party dev shop, no mystery about why something broke.</p>
+                                <p>Zahid and Lachlan build the pages, forms and integrations. No hand-offs to a third-party dev shop.</p>
                             </li>
                             <li>
                                 <h3>Content that compounds</h3>
-                                <p>Raquel keeps the brand consistent across social, blog, and local search so paid traffic lands on something that actually converts.</p>
+                                <p>Raquel keeps the brand consistent across social, blog and local search, so paid traffic lands on something that converts.</p>
                             </li>
                         </ul>
                         <div className='btn-wrap'>

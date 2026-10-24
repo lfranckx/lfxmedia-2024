@@ -88,36 +88,42 @@
                 -ms-flex-pack: center;
                     justify-content: center;
 
+                padding: 24px 20px 22px;
+                box-sizing: border-box;
+                justify-content: space-between;
+
                 .text-wrap {
-                    height: 70%;
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    overflow: hidden;
+
                     p {
                         color: #fff;
-                        padding-top: 32px;
+                        padding: 0;
+                        font-size: 1.05rem;
+                        line-height: 1.45;
 
-                        @media only screen and (max-width: 1200px) {
-                            font-size: 18px;
-                        }
-
-                        @media only screen and (max-width: 660px) {
-                            font-size: 20px;
-                        }
-
-                        @media only screen and (max-width: 400px) {
-                            font-size: 18px;
-                        }
+                        @media only screen and (max-width: 1200px) { font-size: 1rem; }
+                        @media only screen and (max-width: 400px)  { font-size: .95rem; }
                     }
                 }
 
                 .btn-wrap {
-                    max-width: 250px;
-                    margin: auto;
+                    flex: 0 0 auto;
+                    margin: 14px auto 0;
 
                     .btn {
                         color: #fff;
-                        font-size: 1.1rem;
+                        font-size: 1rem;
+                        padding: 6px 20px;
                     }
                 }
             }
+
+            // Touch devices have no hover: tap toggles the card
+            &.open img { opacity: 0; }
+            &.open .content-wrap { opacity: 1; }
 
             &:hover img {
                 opacity: 0;

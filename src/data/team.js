@@ -10,8 +10,8 @@ const team = [
         photo: lachlan,
         focus: ['Paid Ads', 'Conversion Tracking', 'Web Development', 'Strategy'],
         bio: [
-            'Lachlan founded LFX Media to give service-based businesses something most agencies skip: a straight line from ad spend to booked jobs. He runs strategy and paid media across Google and Meta, builds the tracking behind every campaign, and still writes code — WordPress, Shopify, and custom React/Node builds.',
-            'Before the agency, he spent years as a freelance developer for brands in beauty, hospitality, healthcare, and construction. That mix of engineering and marketing is why LFX clients get landing pages, CallRail, GA4, and CRM attribution set up properly instead of bolted on later.',
+            'Lachlan founded LFX Media in 2020 to give service businesses a straight line from ad spend to booked jobs. He leads strategy and paid media across Google and Meta, builds the conversion tracking behind every campaign, and still writes code.',
+            'A full-stack developer before he was an agency owner, he builds in WordPress, Shopify and custom React/Node. That mix is why LFX clients get landing pages, CallRail, GA4 and CRM attribution set up properly from day one.',
         ],
         links: {
             linkedin: 'https://www.linkedin.com/company/lfx-media/',
@@ -26,8 +26,8 @@ const team = [
         photo: raquel,
         focus: ['Social Media', 'Content & SEO', 'Graphic Design', 'Brand Voice'],
         bio: [
-            'Raquel’s passion for art and design has been a lifelong journey, whether on a tangible canvas or a digital one. At LFX Media she’s the creative force behind everything from infographics and brochures to menus and web graphics.',
-            'She leads social media strategy and SEO content for our clients — blog writing, Google Business Profile posts, and the visuals that make a brand feel consistent everywhere it shows up. More than partners in life, Lachlan and Raquel are a creative duo who combine their talents to bring ideas to life.',
+            'Raquel leads social media strategy and SEO content for LFX clients — blog writing, Google Business Profile posts, email campaigns, and the graphics that keep a brand consistent everywhere it shows up.',
+            'A lifelong artist and designer, she handles everything from infographics and brochures to menus and web graphics. Lachlan and Raquel are partners in life as well as business, and have run LFX together since the beginning.',
         ],
         links: {
             email: 'mailto:raquel@lfxmedia.io',
@@ -40,8 +40,8 @@ const team = [
         photo: zahid,
         focus: ['WordPress & Shopify', 'Technical SEO', 'Site Speed', 'Schema & AEO'],
         bio: [
-            'Zahid builds and maintains client websites across WordPress, Shopify, and custom stacks, with a focus on clean architecture, fast load times, and pages that are easy for both people and search engines to read.',
-            'On the SEO side he handles technical audits, on-page optimization, schema markup, and the structured content that helps our clients show up in traditional search and AI-generated answers. If something on a site is slow, broken, or not indexing, Zahid is usually the one who finds out why.',
+            'Zahid builds and maintains client websites on WordPress, Shopify and custom stacks, with a focus on clean architecture, fast load times, and pages that are easy for people and search engines to read.',
+            'On the SEO side he runs technical audits, on-page optimization, schema markup and the structured content that helps clients appear in both traditional search and AI-generated answers.',
         ],
         links: {
             linkedin: 'https://www.linkedin.com/in/zahid-ilahi-990840263/',

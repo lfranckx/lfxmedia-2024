@@ -1,0 +1,67 @@
+#faq {
+    padding: 96px 20px 40px;
+
+    .container {
+        max-width: 820px;
+        margin: auto;
+        text-align: left;
+    }
+
+    h2 {
+        text-align: center;
+        padding-bottom: 28px;
+    }
+
+    ul li {
+        border-bottom: 1px solid var(--border-subtle);
+
+        h3 {
+            margin: 0;
+            font-family: 'Europa', 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 1.15rem;
+        }
+
+        button {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            text-align: left;
+            padding: 18px 4px;
+            color: var(--text);
+            font: inherit;
+
+            svg {
+                flex: 0 0 auto;
+                width: 20px;
+                height: 20px;
+                color: var(--accent-text);
+                transition: transform .25s ease;
+            }
+
+            &:hover span { color: var(--accent-text); }
+            &:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
+        }
+
+        &.open button svg { transform: rotate(180deg); }
+
+        .answer p {
+            padding: 0 4px 20px;
+            font-size: 1.05rem;
+            color: var(--text-muted);
+        }
+    }
+
+    .more {
+        text-align: center;
+        padding: 28px 0 0;
+        font-size: 1.05rem;
+    }
+
+    @media (max-width: 750px) {
+        padding: 64px 20px 24px;
+        ul li h3 { font-size: 1.05rem; }
+    }
+}

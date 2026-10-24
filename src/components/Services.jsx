@@ -1,59 +1,62 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Services.scss';
-import ServicesPopup from './ServicesPopup';
+import '../styles/ServicesPopup.scss';
+import services from '../data/services';
 
 export default function Services() {
-
-    const [designCardOpen, toggleDesignCard] = useState(false);
-    const [developmentCardOpen, toggleDevelopmentCard] = useState(false);
-    const [seoCardOpen, toggleSeoCard] = useState(false);
+    const [openSlug, setOpenSlug] = useState(null);
+    const open = services.find(s => s.slug === openSlug);
 
     return (
         <>
-            <section id='services'>
+            <section id='services' aria-label='Services'>
                 <ul>
-                    <li>
-                        <div className='card'>
-                            <i className="icon fas fa-drafting-compass"></i>
-                            <h2>Design</h2>
-                            <p>Our approach to website design is to create a website that strengthens your company’s brand while ensuring ease of use for your audience.</p>
-
-                            <div className='btn-wrap'>
-                                <button className='btn-secondary' onClick={() => toggleDesignCard(!designCardOpen)}>Learn More <i className="fas fa-chevron-circle-right"></i></button>
+                    {services.map(s => (
+                        <li key={s.slug}>
+                            <div className='card'>
+                                <i className={`icon ${s.icon}`} aria-hidden='true'></i>
+                                <h2>{s.title}</h2>
+                                <p>{s.blurb}</p>
+                                <div className='btn-wrap'>
+                                    <button type='button' className='btn-secondary' onClick={() => setOpenSlug(s.slug)} aria-haspopup='dialog'>
+                                        Learn More <i className="fas fa-chevron-circle-right" aria-hidden='true'></i>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div className='card'>
-                            <i className="icon fas fa-laptop-code"></i>
-                            <h2>Development</h2>
-                            <p>After creating the design we start the development phase of your website. We will decide the best platform to build and host your website on depending on your needs and budget.</p>
-                            <div className='btn-wrap'>
-                                <button className='btn-secondary' onClick={() => {toggleDevelopmentCard(!developmentCardOpen)}}>Learn More <i className="fas fa-chevron-circle-right"></i></button>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div className='card'>
-                            <i className="icon fas fa-search-dollar"></i>
-                            <h2>SEO</h2>
-                            <p>Search Engine Optimization is the practice of improving and promoting a website in order to increase the number of visitors through search engines such as Google.</p>
-                            <div className='btn-wrap'>
-                                <button className='btn-secondary' onClick={() => {toggleSeoCard(!seoCardOpen)}}>Learn More <i className="fas fa-chevron-circle-right"></i></button>
-                            </div>
-                        </div>
-                    </li>
+                        </li>
+                    ))}
                 </ul>
             </section>
 
-            <ServicesPopup
-                toggleDesignCard = {toggleDesignCard}
-                toggleDevelopmentCard = {toggleDevelopmentCard}
-                toggleSeoCard = {toggleSeoCard}
-                designCardOpen = {designCardOpen}
-                developmentCardOpen = {developmentCardOpen}
-                seoCardOpen = {seoCardOpen}
-            />
+            {open && (
+                <section id='services-popup' role='dialog' aria-modal='true' aria-labelledby='services-popup-title' onClick={() => setOpenSlug(null)}>
+                    <div className='content-wrap' onClick={(e) => e.stopPropagation()}>
+                        <ul className='services-list'>
+                            <li className='services-list-item'>
+                                <div className='content'>
+                                    <div className='wrap'>
+                                        <h2 id='services-popup-title'>{open.detail.heading}</h2>
+                                        <p>{open.detail.body}</p>
+                                    </div>
+                                    <div className='wrap'>
+                                        <h3>What's included</h3>
+                                        <ul>
+                                            {open.detail.includes.map(i => <li key={i}>{i}</li>)}
+                                        </ul>
+                                    </div>
+                                    <div className='btn-wrap'>
+                                        <Link className='btn-secondary' to={open.detail.link.to} onClick={() => setOpenSlug(null)}>
+                                            {open.detail.link.label} <i className="fas fa-chevron-circle-right" aria-hidden='true'></i>
+                                        </Link>
+                                    </div>
+                                    <button type='button' className='btn' onClick={() => setOpenSlug(null)}>Close</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            )}
         </>
-    )
+    );
 }

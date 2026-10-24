@@ -50,6 +50,16 @@ footer {
         }
     }
 
+    #nap {
+        margin-top: 12px;
+        font-size: .95rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px 18px;
+        a { color: var(--text-on-brand); &:hover { color: var(--accent-text); } }
+    }
+
     #copyright {
         font-size: 1rem;
     }

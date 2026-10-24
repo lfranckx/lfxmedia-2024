@@ -14,6 +14,11 @@ export default function Footer() {
                 </div>
                 
                 <p id='quote'>The best preparation for tomorrow is doing your best today.</p>
+                <p id='nap'>
+                    <span>LFX Media · Eureka Springs, Arkansas</span>
+                    <span><a href='tel:+14084992830'>(408) 499-2830</a></span>
+                    <span><a href='mailto:lachlan@lfxmedia.io'>lachlan@lfxmedia.io</a></span>
+                </p>
                 <ul>
                     <li>
                         <a href='https://www.instagram.com/lfxmedia/'

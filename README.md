@@ -39,6 +39,14 @@ Light/dark theme is driven by `data-theme` on `<html>`.
 | `/contact`, `/subscribe`, `/privacy-policy`, `/terms-and-conditions` | as before |
 | `/meet-raquel` | redirects to `/team#raquel` |
 
+## Content & SEO
+
+- Copy that repeats across the site lives in `src/data/`: `services.js` (homepage cards + popups), `projects.js` (portfolio cards), `faq.js`, `team.js`. Edit there, not in components.
+- `src/components/SiteSchema.jsx` renders Organization / ProfessionalService, WebSite and Person JSON-LD. `Faq.jsx` renders FAQPage. `CaseStudyAIS.jsx` renders Article.
+- Each page sets its own `<title>` and `<meta name="description">` at the top of its component.
+- `public/robots.txt`, `public/sitemap.xml` (update `lastmod` when pages change), `public/og-image.png`.
+- Audit notes: `docs/seo-copy-audit-2026-10.md`.
+
 ## Deploy
 
 Vercel builds from `master`. The project should use the **Vite** framework preset (build `vite build`, output `dist`). `vercel.json` rewrites all routes to `index.html` for client-side routing.

@@ -68,14 +68,10 @@ const Contact = (props) => {
   return (
     <>
       <>
-        <title>Contact Us | LFX Media - Start Your Digital Growth Journey</title>
+        <title>Contact LFX Media | Free Marketing Consultation</title>
         <meta
           name="description"
-          content="Get in touch with LFX Media to elevate your brand with expert web development, digital marketing, and SEO services. Let’s create something extraordinary together!"
-        />
-        <meta
-          name="keywords"
-          content="Web Development, Digital Marketing Services, SEO Strategies, Marketing Agency, PPC Advertising, Google Ads, Facebook Advertising, Meta Advertising, Online Marketing Solutions"
+          content="Tell us about your business and we'll come back with a plan: Google Ads, SEO, AI search visibility or a new website. We reply within one to two business days."
         />
       </>
 
@@ -86,8 +82,8 @@ const Contact = (props) => {
           </div>
 
           <h1 className={messageSuccess ? 'header-wrap' : 'header-wrap active'}>
-            <span>Thanks for taking the time to reach out.</span>
-            <span>How can we help you today?</span>
+            <span>Tell us about your business.</span>
+            <span>We'll come back with a plan, not a pitch.</span>
           </h1>
 
           {message && (

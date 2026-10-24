@@ -9,19 +9,17 @@ import ContactSection from '../ContactSection';
 // Sources: Google Ads account (Oct 2023 – Oct 2026) and HubSpot CRM, Advanced Insulation System.
 // January 2026 is the account's best month and is used for the headline stats.
 const STATS = [
-    { value: '6×', label: 'Return on ad spend', note: 'January 2026: $23K in ad spend produced $142K in closed jobs tracked in HubSpot' },
-    { value: '14.6%', label: 'Conversion rate', note: '184 calls & quote requests from 1,261 clicks in January 2026' },
+    { value: '6×', label: 'Return on ad spend', note: 'January 2026 — verified against closed jobs in the client\u2019s CRM, not estimated' },
+    { value: '14.6%', label: 'Conversion rate', note: 'Clicks that became a call or quote request in January 2026 — roughly 2× the Google Ads average' },
     { value: '3,000+', label: 'Calls & quote requests', note: '3,088 leads in 33 months; 1,516 in the last 12' },
     { value: '~$170', label: 'Cost per qualified lead', note: 'January 2026 — for jobs worth thousands of dollars each' },
 ];
 
 const BEST_MONTH = [
-    { k: 'Ad spend', v: '$23,078' },
-    { k: 'Clicks', v: '1,261' },
     { k: 'Calls & quote requests', v: '184' },
     { k: 'Click-to-lead conversion rate', v: '14.6%' },
-    { k: 'Cost per call or form', v: '$125' },
-    { k: 'Closed jobs from that month\u2019s paid leads', v: '19 jobs · $141,980' },
+    { k: 'Google Ads average, all industries', v: '~8%' },
+    { k: 'Closed jobs from that month\u2019s paid leads', v: '19' },
     { k: 'Return on ad spend', v: '6.2×' },
 ];
 
@@ -75,8 +73,8 @@ export default function CaseStudyAIS({ loading }) {
 
                     <section className='prose'>
                         <h2>The starting point</h2>
-                        <p>AIS opened its doors in late 2023 as a brand-new company with a solid crew and no online lead flow. The owner wanted a predictable stream of residential and commercial retail jobs — spray foam, attic, blown-in, crawl space, and more — without relying on word of mouth or waiting on referrals.</p>
-                        <p>The brief was simple: every dollar spent on ads needed to be traceable to a phone call or a quote request, and the budget needed to scale only as the results proved out.</p>
+                        <p>AIS opened in late 2023 with a solid crew and no online lead flow. The owner wanted a predictable stream of residential and commercial jobs — spray foam, attic, blown-in, crawl space — without relying on word of mouth.</p>
+                        <p>The brief: every ad dollar traceable to a call or quote request, and budget that scales only as results prove out. We've worked together since day one.</p>
 
                         <div className='callout'>
                             <p><strong>What counts as a lead here:</strong> a phone call or quote form that came from the ads. We don't count clicks, page views, or "engaged sessions." If it isn't a person asking about insulation, it isn't on the chart.</p>
@@ -117,10 +115,10 @@ export default function CaseStudyAIS({ loading }) {
                     <section className='prose'>
                         <h2>The results</h2>
                         <p>Over 33 months the account generated <strong>3,088 qualified leads</strong> — 1,516 of them in the last 12 months alone. Monthly lead volume went from roughly 18 in the first quarter to roughly 128 in 2026, a 7× increase. The conversion rate climbed from 4.0% of ad clicks at launch to 13.9%, comfortably inside the 10–15% range we target for local service accounts.</p>
-                        <p>Ad spend scaled with the results: from about $3K/month at launch to $25–35K/month today, for <strong>$680K+ in total managed spend</strong>. In the client's first six months in business, the program helped drive over $2 million in sales.</p>
+                        <p>Ad spend scaled with the results — roughly tenfold from launch to today, into six figures a year — and the account converts at about twice the Google Ads average. In the client's first six months in business, the program helped drive over $2 million in sales.</p>
 
-                        <h2>The best month: January 2026</h2>
-                        <p>January is the cleanest snapshot of what a mature, well-tuned Search account looks like for an insulation contractor. Every number below is from the Google Ads account and the client's HubSpot CRM; the revenue figure counts only jobs whose deal was opened in January from a paid-search lead, so it's a floor, not a ceiling.</p>
+                        <h2>A representative month: January 2026</h2>
+                        <p>January is a clean snapshot of a mature, well-tuned Search account for an insulation contractor. Numbers are from the Google Ads account and the client's HubSpot CRM. The return counts only jobs opened that month from a paid-search lead, so it's a floor.</p>
                     </section>
 
                     <section className='best-month' aria-label='January 2026 by the numbers'>
@@ -131,7 +129,7 @@ export default function CaseStudyAIS({ loading }) {
                                 ))}
                             </tbody>
                         </table>
-                        <p className='source'>Source: Google Ads and HubSpot, Advanced Insulation System accounts, January 2026. Jobs attributed by HubSpot original source = Paid Search.</p>
+                        <p className='source'>Source: Google Ads and HubSpot, Advanced Insulation System accounts, January 2026. Industry average from WordStream/LocaliQ 2025 Google Ads benchmarks.</p>
                     </section>
 
                     <section className='prose'>

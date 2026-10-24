@@ -8,6 +8,8 @@ import Projects from '../Projects';
 import Services from '../Services';
 import Testimonials from '../Testimonials';
 import ContactBar from '../ContactBar';
+import Faq from '../Faq';
+import SiteSchema from '../SiteSchema';
 
 export default function Homepage(props) {
     useEffect(() => {
@@ -19,11 +21,11 @@ export default function Homepage(props) {
     return (
         <>
             <>
-                <title>Your Partner for Web Design, SEO &amp; Paid Ads | LFX Media</title>
-                <meta name='description' content="LFX Media is your go-to team for digital excellence. With expertise in Medical, Construction, E-Commerce, and Beauty, we connect your business to its target audience"/>
-                <meta name='keywords' content='Web Development, Digital Marketing Services, SEO Strategies, Marketing Agency, PPC Advertising, Google Ads, Facebook Advertising, Meta Advertising, Online Marketing Solutions' />
+                <title>LFX Media | Google Ads, SEO &amp; Web Design for Service Businesses</title>
+                <meta name='description' content="Digital marketing agency for service businesses: Google Ads management, local SEO, AI search optimization, and websites built to convert — with every lead tracked to the dollar." />
             </>
             
+            <SiteSchema />
             <motion.div 
                 id="homepage"
                 initial={{ opacity: 0 }}    
@@ -31,8 +33,8 @@ export default function Homepage(props) {
                 exit={{ opacity: 0 }}
             >
                 <header className={loading ? '' : 'fade-in-screen'}>
-                    <h1>Web Development &amp; Digital Marketing Solutions</h1>
-                    <h2>Beautiful design. Smart strategy. Measurable growth.</h2>
+                    <h1>Marketing that brings in jobs, not just clicks.</h1>
+                    <h2>Google Ads, SEO, AI search visibility and websites built to convert — for contractors, senior living, home services and local businesses. Every lead tracked.</h2>
                     <div className='btn-wrap'>
                         <button
                             type="button"
@@ -51,6 +53,7 @@ export default function Homepage(props) {
                     <Services />
                     <Projects />
                     <Testimonials />
+                    <Faq />
                     <ContactBar />
                 </main>
             </motion.div>
