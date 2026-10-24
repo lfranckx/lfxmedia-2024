@@ -287,22 +287,6 @@
     .card {
         box-shadow: var(--shadow);
 
-        // Center the logo by sizing the wrapper (block + margin auto), not the img.
-        // Safari mis-positions a flex-item <img> that has width:100% + max-width.
-        .image-wrap {
-            display: block;
-            width: 100%;
-            margin: 0 auto;
-            text-align: center;
-
-            img {
-                display: block;
-                margin: 0 auto;
-                width: auto;
-                max-width: 100%;
-            }
-        }
-
         // backdrops for logos that were sitting on the bare page background
         &.aart { background: #ffffff; img { border-radius: 6px; } }   // logo file is opaque white, so match it
         &.koa { background: #16324f; }           // navy against the yellow/red mark
@@ -312,8 +296,14 @@
         &.spp, &.rdf, &.bp { background: #f1f2f5; }
 
         // same rule as the case-study panel so the AIS mark renders at one size site-wide
-        &.ais .image-wrap { width: min(300px, 80%); }
-        &.ais img { width: 100%; }
-        @media (max-width: 750px) { &.ais .image-wrap { width: 240px; max-width: 80%; } }
+        // AIS only: size the wrapper and center it with margin auto (Safari mis-centers a
+        // width:100% + max-width image), then let the img fill the wrapper.
+        &.ais .image-wrap {
+            display: block;
+            width: min(300px, 80%);
+            margin: 0 auto;
+            @media (max-width: 750px) { width: min(240px, 80%); }
+        }
+        &.ais img { width: 100%; max-width: none; display: block; }
     }
 }
