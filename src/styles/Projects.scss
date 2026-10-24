@@ -288,5 +288,8 @@
         &.greenhills { background: #e8efe4; }    // pale sage behind the green script
         &.ollin { background-color: #4a4a4a; }   // visible charcoal in dark mode behind the cream wordmark
         &.spp, &.rdf, &.bp { background: #f1f2f5; }
+
+        // same rule as the case-study panel so the AIS mark renders at one size site-wide
+        &.ais img { max-width: min(300px, 80%); width: 100%; @media (max-width: 750px) { max-width: 240px; } }
     }
 }
