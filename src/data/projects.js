@@ -22,7 +22,7 @@ import crossing from '../images/crossingwellness-logo.png';
 export const serviceBusinesses = [
     {
         slug: 'ais', img: ais, alt: 'Advanced Insulation System logo',
-        blurb: 'San Diego insulation contractor. Google Ads, landing pages, CallRail and HubSpot built from zero — 3,000+ tracked leads and a 6× return on ad spend.',
+        blurb: 'San Diego insulation contractor. Google Ads, landing pages, CallRail and HubSpot built from zero — 3,000+ tracked leads and an 8.8× return on qualified leads.',
         cta: { label: 'Case Study', to: '/results/advanced-insulation-system' },
     },
     {

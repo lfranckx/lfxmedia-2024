@@ -9,18 +9,20 @@ import ContactSection from '../ContactSection';
 // Sources: Google Ads account (Oct 2023 – Oct 2026) and HubSpot CRM, Advanced Insulation System.
 // January 2026 is the account's best month and is used for the headline stats.
 const STATS = [
-    { value: '6×', label: 'Return on ad spend', note: 'January 2026 — verified against closed jobs in the client\u2019s CRM, not estimated' },
+    { value: '8.8×', label: 'Return on qualified leads', note: 'January 2026 — every qualified lead came back as roughly $1,600 in closed work against a $183 cost, verified in the client\u2019s CRM' },
     { value: '14.6%', label: 'Conversion rate', note: 'Clicks that became a call or quote request in January 2026 — roughly 2× the Google Ads average' },
     { value: '3,000+', label: 'Calls & quote requests', note: '3,088 leads in 33 months; 1,516 in the last 12' },
-    { value: '~$170', label: 'Cost per qualified lead', note: 'January 2026 — for jobs worth thousands of dollars each' },
+    { value: '~$180', label: 'Cost per qualified lead', note: 'For jobs worth thousands of dollars each' },
 ];
 
 const BEST_MONTH = [
     { k: 'Calls & quote requests', v: '184' },
     { k: 'Click-to-lead conversion rate', v: '14.6%' },
     { k: 'Google Ads average, all industries', v: '~8%' },
-    { k: 'Closed jobs from that month\u2019s paid leads', v: '19' },
-    { k: 'Return on ad spend', v: '6.2×' },
+    { k: 'Qualified leads added to the CRM', v: '126' },
+    { k: 'Closed jobs from those leads', v: '26 (21%)' },
+    { k: 'Return on ad spend, paid-search-tagged jobs only', v: '5.9×' },
+    { k: 'Return on all January leads', v: '8.8×' },
 ];
 
 const CRM = [
@@ -32,7 +34,7 @@ const CRM = [
 const JSON_LD = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'Advanced Insulation System Case Study: 6× Return on Google Ads Spend',
+    headline: 'Advanced Insulation System Case Study: 8.8× Return on Qualified Leads from Google Ads',
     about: { '@type': 'Organization', name: 'Advanced Insulation System', url: 'https://advancedinsulationsystemsd.com/' },
     author: { '@type': 'Organization', name: 'LFX Media', url: 'https://lfxmedia.io' },
     publisher: { '@type': 'Organization', name: 'LFX Media', url: 'https://lfxmedia.io' },
@@ -46,8 +48,8 @@ export default function CaseStudyAIS({ loading }) {
 
     return (
         <>
-            <title>Advanced Insulation System Case Study | 6× Return on Google Ads | LFX Media</title>
-            <meta name='description' content='How LFX Media built a San Diego insulation contractor\u2019s Google Ads program from zero: a 6× return on ad spend in its best month, 14.6% click-to-lead conversion rate, 3,000+ tracked calls and quote requests, and a CRM that has already passed last year\u2019s lead total.' />
+            <title>Advanced Insulation System Case Study | 8.8× Return on Google Ads Leads | LFX Media</title>
+            <meta name='description' content='How LFX Media built a San Diego insulation contractor\u2019s Google Ads program from zero: an 8.8× return on qualified leads, 14.6% click-to-lead conversion rate, 3,000+ tracked calls and quote requests, and a CRM that has already passed last year\u2019s lead total.' />
             <script type='application/ld+json'>{JSON.stringify(JSON_LD)}</script>
 
             <motion.div id='case-study-ais' className='case-study' initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
@@ -118,7 +120,7 @@ export default function CaseStudyAIS({ loading }) {
                         <p>Ad spend scaled with the results — roughly tenfold from launch to today, into six figures a year — and the account converts at about twice the Google Ads average. In the client's first six months in business, the program helped drive over $2 million in sales.</p>
 
                         <h2>A representative month: January 2026</h2>
-                        <p>January is a clean snapshot of a mature, well-tuned Search account for an insulation contractor. Numbers are from the Google Ads account and the client's HubSpot CRM. The return counts only jobs opened that month from a paid-search lead, so it's a floor.</p>
+                        <p>January is a clean snapshot of a mature, well-tuned Search account for an insulation contractor. Numbers are from the Google Ads account and the client's HubSpot CRM, following every lead that came in that month through to closed jobs. Two returns are shown: the strict one counts only jobs HubSpot tags as paid search; the full one counts every January lead, since the program is what brings them in.</p>
                     </section>
 
                     <section className='best-month' aria-label='January 2026 by the numbers'>
