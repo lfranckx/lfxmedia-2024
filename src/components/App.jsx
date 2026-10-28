@@ -1,5 +1,5 @@
 import '../styles/App.scss';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
@@ -28,6 +28,14 @@ function App() {
       try { window.CallTrk?.swap?.(); } catch (e) { /* CallRail not loaded */ }
     }, 300);
     return () => clearTimeout(t);
+  }, [location.pathname]);
+
+  // Meta Pixel: the base code in index.html fires the first PageView.
+  // Fire one on each client-side route change after that.
+  const isFirstRoute = useRef(true);
+  useEffect(() => {
+    if (isFirstRoute.current) { isFirstRoute.current = false; return; }
+    try { window.fbq?.('track', 'PageView'); } catch (e) { /* pixel blocked */ }
   }, [location.pathname]);
 
   useEffect(() => {
