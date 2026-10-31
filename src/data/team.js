@@ -22,7 +22,7 @@ const team = [
     {
         slug: 'raquel',
         name: 'Raquel D. Franckx',
-        role: 'SEO & Social Media Specialist',
+        role: 'SEO, Social Media & Design Specialist',
         photo: raquel,
         focus: ['Social Media', 'Content & SEO', 'Graphic Design', 'Brand Voice'],
         bio: [
