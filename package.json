@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "vite --open",
     "start": "vite --open",
-    "build": "vite build",
+    "build": "vite build && node scripts/prerender-meta.mjs",
     "preview": "vite preview",
     "lint": "eslint ."
   },
