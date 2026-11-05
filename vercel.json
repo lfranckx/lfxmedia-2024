@@ -6,5 +6,15 @@
   "redirects": [
     { "source": "/meet-raquel", "destination": "/team#raquel", "permanent": true }
   ],
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "rewrites": [
+    { "source": "/results", "destination": "/results/index.html" },
+    { "source": "/results/advanced-insulation-system", "destination": "/results/advanced-insulation-system/index.html" },
+    { "source": "/results/forever-curls", "destination": "/results/forever-curls/index.html" },
+    { "source": "/team", "destination": "/team/index.html" },
+    { "source": "/contact", "destination": "/contact/index.html" },
+    { "source": "/subscribe", "destination": "/subscribe/index.html" },
+    { "source": "/privacy-policy", "destination": "/privacy-policy/index.html" },
+    { "source": "/terms-and-conditions", "destination": "/terms-and-conditions/index.html" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
