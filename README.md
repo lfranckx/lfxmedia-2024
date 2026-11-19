@@ -42,7 +42,7 @@ Light/dark theme is driven by `data-theme` on `<html>`.
 ## Content & SEO
 
 - Copy that repeats across the site lives in `src/data/`: `services.js` (homepage cards + popups), `projects.js` (portfolio cards), `faq.js`, `team.js`. Edit there, not in components.
-- `src/components/SiteSchema.jsx` renders Organization / ProfessionalService, WebSite and Person JSON-LD. `Faq.jsx` renders FAQPage. `CaseStudyAIS.jsx` renders Article.
+- Structured data for every route is built in `src/data/schema.js` (Organization, WebSite, WebPage, BreadcrumbList, plus FAQPage on `/`, Person on `/team`, Article on case studies, CollectionPage on `/results`). `scripts/prerender-meta.mjs` writes it into each route's static HTML at build and `components/JsonLd.jsx` keeps `<head>` in sync on client-side navigation. Add a route's title/description in `src/data/routes.js`; add a case study to `CASE_STUDIES` in `schema.js`.
 - Each page sets its own `<title>` and `<meta name="description">` at the top of its component.
 - `public/robots.txt`, `public/sitemap.xml` (update `lastmod` when pages change), `public/og-image.png`.
 - Audit notes: `docs/seo-copy-audit-2026-10.md`.

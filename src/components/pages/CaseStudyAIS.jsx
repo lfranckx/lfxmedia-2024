@@ -31,18 +31,6 @@ const CRM = [
     { year: '2026', value: 1526, pct: 100, display: '1,526' },
 ];
 
-const JSON_LD = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: 'Advanced Insulation System Case Study: 8.8× Return on Qualified Leads from Google Ads',
-    about: { '@type': 'Organization', name: 'Advanced Insulation System', url: 'https://advancedinsulationsystemsd.com/' },
-    author: { '@type': 'Organization', name: 'LFX Media', url: 'https://lfxmedia.io' },
-    publisher: { '@type': 'Organization', name: 'LFX Media', url: 'https://lfxmedia.io' },
-    datePublished: '2026-07-15',
-    dateModified: '2026-10-24',
-    mainEntityOfPage: 'https://lfxmedia.io/results/advanced-insulation-system',
-};
-
 export default function CaseStudyAIS({ loading }) {
     useEffect(() => { window.scrollTo(0, 0); }, []);
 
@@ -50,7 +38,6 @@ export default function CaseStudyAIS({ loading }) {
         <>
             <title>Advanced Insulation System Case Study | 8.8× Return on Google Ads Leads | LFX Media</title>
             <meta name='description' content='How LFX Media built a San Diego insulation contractor\u2019s Google Ads program from zero: an 8.8× return on qualified leads, 14.6% click-to-lead conversion rate, 3,000+ tracked calls and quote requests, and a CRM that has already passed last year\u2019s lead total.' />
-            <script type='application/ld+json'>{JSON.stringify(JSON_LD)}</script>
 
             <motion.div id='case-study-ais' className='case-study' initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
                 <header className={loading ? '' : 'fade-in-screen'}>

@@ -10,7 +10,6 @@ import Services from '../Services';
 import Testimonials from '../Testimonials';
 import ContactBar from '../ContactBar';
 import Faq from '../Faq';
-import SiteSchema from '../SiteSchema';
 
 export default function Homepage(props) {
     useEffect(() => {
@@ -26,7 +25,6 @@ export default function Homepage(props) {
                 <meta name='description' content="Digital marketing agency for service businesses: Google Ads management, local SEO, AI search optimization, and websites built to convert — with every lead tracked to the dollar." />
             </>
             
-            <SiteSchema />
             <motion.div 
                 id="homepage"
                 initial={{ opacity: 0 }}    

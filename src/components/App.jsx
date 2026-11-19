@@ -16,6 +16,7 @@ import Subscribe from './pages/Subscribe';
 import LoadingScreen from './LoadingScreen';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Terms from './pages/Terms';
+import JsonLd from './JsonLd';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -46,6 +47,7 @@ function App() {
 
   return (
     <>
+      <JsonLd />
       <div className='app'>
         <Navbar />
         <LoadingScreen loading={loading} />

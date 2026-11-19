@@ -6,19 +6,9 @@ import '../styles/Faq.scss';
 export default function Faq() {
     const [openIdx, setOpenIdx] = useState(0);
 
-    const schema = {
-        '@context': 'https://schema.org',
-        '@type': 'FAQPage',
-        mainEntity: faq.map(f => ({
-            '@type': 'Question',
-            name: f.q,
-            acceptedAnswer: { '@type': 'Answer', text: f.a },
-        })),
-    };
 
     return (
         <section id='faq' aria-labelledby='faq-title'>
-            <script type='application/ld+json'>{JSON.stringify(schema)}</script>
             <div className='container'>
                 <h2 id='faq-title'>Questions we get on the first call</h2>
                 <ul>
