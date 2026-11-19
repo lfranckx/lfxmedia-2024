@@ -21,6 +21,15 @@ export default function Footer() {
                 </p>
                 <ul>
                     <li>
+                        <a href='https://www.facebook.com/profile.php?id=61568936833016'
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            aria-label='LFX Media on Facebook'
+                        >
+                            <i className="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
                         <a href='https://www.instagram.com/lfxmedia/'
                             target="_blank" 
                             rel="noopener noreferrer"

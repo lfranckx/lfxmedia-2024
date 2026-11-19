@@ -54,6 +54,7 @@ const organization = () => ({
         { '@type': 'State', name: 'Colorado' },
     ],
     sameAs: [
+        'https://www.facebook.com/profile.php?id=61568936833016',
         'https://www.linkedin.com/company/lfx-media/',
         'https://www.instagram.com/lfxmedia/',
         'https://github.com/lfranckx',
